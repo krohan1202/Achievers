@@ -1,3 +1,3 @@
 # TreatAp Projects
 
-Projects I worked on in TreatAp Company
+Projects I worked on in TreatAp
