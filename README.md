@@ -1,1 +1,1 @@
-# TreatAp Company Projects
+# TreatAp Projects
