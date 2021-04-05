@@ -1,10 +1,10 @@
-import React, {useContext, useState} from 'react'
-import {GlobalState} from '../../GlobalState'
-import Menu from './icon/menu.svg'
-import Close from './icon/close.svg'
-import Cart from './icon/cart.svg'
-import {Link} from 'react-router-dom'
-import axios from 'axios'
+import React, {useContext, useState} from 'react';
+import {GlobalState} from '../../GlobalState';
+import Menu from './icon/menu.svg';
+import Close from './icon/close.svg';
+import Cart from './icon/cart.svg';
+import {Link} from 'react-router-dom';
+import axios from 'axios';
 
 function Header() {
     const state = useContext(GlobalState)
