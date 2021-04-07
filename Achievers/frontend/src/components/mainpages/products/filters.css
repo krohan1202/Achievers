@@ -1,0 +1,31 @@
+/* ------------ Filters Menu ----------------- */
+.filter_menu {
+  position: absolute;
+  width: 100%;
+  top: 8vw;
+  left: 43vw;
+  z-index: 1;
+}
+.nav__searchBar {
+  background-color: #010e26;
+  outline: none;
+  width: 51.5vw;
+  height: 40px;
+  padding: 0 12px;
+  position: relative;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+.nav__searchBar::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.07vw;
+  color: #fff;
+}
+.nav__searchIcon {
+  position: relative;
+  width: 22px;
+  top: 8px;
+  left: -2.05vw;
+  margin: 0 0 0 10px;
+}

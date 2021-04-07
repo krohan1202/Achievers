@@ -10,7 +10,7 @@
 }
 .logo {
   position: relative;
-  width: 500px;
+  width: 32.55vw;
   left: 2.8vw;
   top: 1vw;
 }
@@ -19,12 +19,12 @@
   position: relative;
   top: -7vw;
   left: 9.3vw;
-  width: 18px;
+  width: 1.17vw;
 }
 .nav__emailIcon {
   top: -9.87vw;
   left: 79.25vw;
-  width: 20px;
+  width: 1.3vw;
 }
 .nav__helpLine,
 .nav__email {
@@ -45,7 +45,7 @@
 }
 .cart-icon {
   position: relative;
-  top: -12vw;
+  top: -10.4vw;
   left: 75vw;
 }
 .cart-icon span {
@@ -60,9 +60,26 @@
 }
 .nav__cart {
   color: #fff;
+  width: 37px;
   position: relative;
-  top: -1.8vw;
+  top: -1.9vw;
   left: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.2vw;
+}
+.nav__loginIcon {
+  position: absolute;
+  top: 4.6vw;
+  left: 84.1vw;
+  width: 31px;
+}
+.nav__login {
+  color: #fff;
+  width: 87vw;
+  position: absolute;
+  top: 4.8vw;
+  left: 87vw;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.2vw;

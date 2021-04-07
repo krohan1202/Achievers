@@ -2,9 +2,9 @@ import React, {useContext, useState} from 'react';
 import {GlobalState} from '../../GlobalState';
 import Menu from './icon/menu.svg';
 import Close from './icon/close.svg';
-import Cart from './icon/cart.svg';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import Filters from '../mainpages/products/Filters';
 
 //Header Assets
 import Logo from "../../assets/Home/Navbar/Logo.png";
@@ -77,7 +77,11 @@ function Header() {
                 {isAdmin && adminRouter()}
 
                 {
-                    isLogged ? loggedRouter() : <li><Link to="/login">Login ✥ Register</Link></li>
+                    isLogged ? loggedRouter() : <li><Link to="/login">
+                        <svg className="nav__loginIcon" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.5 0C8.288 0 0 8.288 0 18.5C0 28.712 8.288 37 18.5 37C28.712 37 37 28.712 37 18.5C37 8.288 28.712 0 18.5 0ZM18.5 5.55C21.571 5.55 24.05 8.029 24.05 11.1C24.05 14.171 21.571 16.65 18.5 16.65C15.429 16.65 12.95 14.171 12.95 11.1C12.95 8.029 15.429 5.55 18.5 5.55ZM18.5 31.82C16.3019 31.82 14.138 31.2761 12.2013 30.2367C10.2645 29.1973 8.61504 27.6947 7.4 25.863C7.4555 22.1815 14.8 20.165 18.5 20.165C22.1815 20.165 29.5445 22.1815 29.6 25.863C28.385 27.6947 26.7355 29.1973 24.7987 30.2367C22.862 31.2761 20.6981 31.82 18.5 31.82Z" fill="white"/>
+                        </svg>
+                        <p className="nav__login">Login / Signup</p></Link></li>
                 }
 
                 <li onClick={() => setMenu(!menu)}>
@@ -99,6 +103,7 @@ function Header() {
                 </span>
             }
             
+            <Filters />
         </div>
     )
 }
