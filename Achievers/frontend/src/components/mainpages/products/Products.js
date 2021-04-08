@@ -5,6 +5,9 @@ import Loading from '../utils/loading/Loading'
 import axios from 'axios'
 import LoadMore from './LoadMore'
 
+//Assets
+import HeroVid from "../../../assets/Pics/Home/Hero/Video Part.png";
+
 
 function Products() {
     const state = useContext(GlobalState)
@@ -58,7 +61,8 @@ function Products() {
     if(loading) return <div><Loading /></div>
     return (
         <>
-        
+        <img src={HeroVid} className="hero__vid" />
+
         {
             isAdmin && 
             <div className="delete-all">

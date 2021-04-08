@@ -10,6 +10,7 @@
 @import url("../utils/productItem/productItem.css");
 
 .delete-all {
+  position: relative;
   text-align: right;
   margin: 20px;
 }
