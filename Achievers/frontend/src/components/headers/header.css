@@ -1,6 +1,7 @@
 .navbar {
+  position: relative;
   background-color: #010e26;
-  height: 22.3vw;
+  height: 12.6vw;
   width: 100%;
   overflow: hidden;
   flex-wrap: wrap;
@@ -23,7 +24,7 @@
 }
 .nav__emailIcon {
   top: -9.87vw;
-  left: 79.25vw;
+  left: 80.25vw;
   width: 1.3vw;
 }
 .nav__helpLine,
@@ -38,32 +39,34 @@
 }
 .nav__email {
   top: -11.3vw;
-  left: 81.6vw;
+  left: 82.5vw;
 }
 .menu {
   display: none;
 }
 .cart-icon {
-  position: relative;
-  top: -10.4vw;
-  left: 75vw;
+  position: absolute;
+  top: 4.65vw;
+  left: 74.7vw;
+  width: 100px;
+  height: 33px;
+  padding-left: 5px;
 }
 .cart-icon span {
   background: crimson;
   border-radius: 50%;
   color: white;
   position: absolute;
-  top: 5px;
-  right: 17.5px;
+  top: 12px;
+  left: 0;
   padding: 4px 6px;
   font-size: 10px;
 }
 .nav__cart {
   color: #fff;
-  width: 37px;
-  position: relative;
-  top: -1.9vw;
-  left: 40px;
+  position: absolute;
+  top: 0vw;
+  left: 3vw;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.2vw;
@@ -71,7 +74,7 @@
 .nav__loginIcon {
   position: absolute;
   top: 4.6vw;
-  left: 84.1vw;
+  left: 85.1vw;
   width: 31px;
 }
 .nav__login {
@@ -79,8 +82,37 @@
   width: 87vw;
   position: absolute;
   top: 4.8vw;
-  left: 87vw;
+  left: 88vw;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.2vw;
+}
+.nav__logout {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 4.8vw;
+  left: 88vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.21vw;
+}
+.smallNav {
+  height: 50px;
+  position: relative;
+  margin-top: -1px;
+  background-color: #0b1d3e;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__smallNav--li {
+  display: flex;
+  align-items: center;
+  margin: 0 2.9vw;
+}
+.nav__smallNav {
+  color: #fff;
+  font-size: 1vw;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
 }
