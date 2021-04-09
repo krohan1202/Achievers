@@ -62,7 +62,41 @@ function Products() {
     return (
         <>
         <img src={HeroVid} className="hero__vid" />
-
+        
+        <span className="hero__card1">
+            <a href="#"><button className="hero__card--btn">Class 4</button></a>
+            <a href="#"><button className="hero__card--btn">Class 5</button></a>
+            <a href="#"><button className="hero__card--btn">Class 6</button></a>
+            <a href="#"><button className="hero__card--btn">Class 7</button></a>
+            <a href="#"><button className="hero__card--btn">Class 8</button></a>
+            <a href="#"><button className="hero__card--btn">Class 9</button></a>
+            <a href="#"><button className="hero__card--btn">Class 10</button></a>
+            <a href="#"><button className="hero__card--btn">Class 11</button></a>
+            <a href="#"><button className="hero__card--btn">Class 12</button></a>
+        </span>
+        <span className="hero__card2">
+            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Chemistry</button></a>
+            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Maths</button></a>
+            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Physics</button></a>
+            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Statistics</button></a>
+            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Comp Sc.</button></a>
+            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Economics</button></a>
+            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Bio Sc.</button></a>
+            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Literature</button></a>
+            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Others</button></a>
+        </span>
+        <span className="hero__card3">
+            <a href="#" className="hero__card--btn hero__card--btn-resize2">IIT-JEE (Main & Adv)</a>
+            <a href="#" className="hero__card--btn hero__card--btn-resize">NEET</a>
+            <a href="#" className="hero__card--btn hero__card--btn-resize2">KVPY & Olympiad</a>
+            <a href="#" className="hero__card--btn hero__card--btn-resize">IIT-JAM</a>
+            <a href="#" className="hero__card--btn hero__card--btn-resize">BL-BT</a>
+            <a href="#" className="hero__card--btn hero__card--btn-resize1">Other MSc entrances</a>
+            <a href="#" className="hero__card--btn hero__card--btn-resize">CSIR-NET</a>
+            <a href="#" className="hero__card--btn hero__card--btn-resize">CSIR + Gate</a>
+            <a href="#" className="hero__card--btn hero__card--btn-resize">Others</a>
+        </span>
+        <h1 className="ach__studyMat">ACHIEVERS STUDY MATERIALS</h1>
         {
             isAdmin && 
             <div className="delete-all">

@@ -3,9 +3,61 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-items: center;
-  margin: 20px 0;
+  margin: 20vw 0;
 }
 
+.hero__vid {
+  width: 100%;
+  background-size: cover;
+}
+
+.hero__card1,
+.hero__card2,
+.hero__card3 {
+  width: 29.3vw;
+  height: 22.2vw;
+  position: absolute;
+  background-color: #010e26;
+  top: 49.5vw;
+  left: 3.8vw;
+  border-radius: 10%;
+}
+.hero__card2 {
+  top: 60.5vw;
+  left: 50%;
+  transform: translate(-48.4%, -50%);
+}
+.hero__card3 {
+  left: 66.8vw;
+}
+.hero__card--btn {
+  background-color: #ff4e53;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1vw;
+  font-weight: 600;
+  color: #fff;
+  width: 7.48vw;
+  height: 2.47vw;
+  border-radius: 1.62vw;
+  position: relative;
+  top: 8vw;
+  left: 1.4vw;
+  margin: 0.71vw 0.65vw;
+}
+.hero__card--btn-resize {
+  font-size: 0.84vw;
+}
+.hero__card--btn-resize1 {
+  font-size: 0.7vw;
+}
+.hero__card--btn-resize2 {
+  font-size: 0.7vw;
+  padding: 0 2px;
+}
+.ach__studyMat {
+  position: relative;
+  top: 10vw;
+}
 /* ----------- Product Item ----------------- */
 @import url("../utils/productItem/productItem.css");
 

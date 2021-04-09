@@ -23,7 +23,6 @@ code {
     monospace;
 }
 .App {
-  min-height: 100vh;
   margin: 0 auto;
   padding: 0;
   box-shadow: 0 0 35px #eee;
