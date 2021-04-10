@@ -58,45 +58,66 @@ function Products() {
         })
     }
 
+    const redirect = () => {
+        window.location.href = ("/hehe")
+      }
+
     if(loading) return <div><Loading /></div>
     return (
         <>
         <img src={HeroVid} className="hero__vid" />
         
         <span className="hero__card1">
-            <a href="#"><button className="hero__card--btn">Class 4</button></a>
-            <a href="#"><button className="hero__card--btn">Class 5</button></a>
-            <a href="#"><button className="hero__card--btn">Class 6</button></a>
-            <a href="#"><button className="hero__card--btn">Class 7</button></a>
-            <a href="#"><button className="hero__card--btn">Class 8</button></a>
-            <a href="#"><button className="hero__card--btn">Class 9</button></a>
-            <a href="#"><button className="hero__card--btn">Class 10</button></a>
-            <a href="#"><button className="hero__card--btn">Class 11</button></a>
-            <a href="#"><button className="hero__card--btn">Class 12</button></a>
+            <p className="hero__card1--heading">ACHIEVERS SCHOOL PROGRAM</p>
+            <hr className="hero__card1--underline"></hr>
+            <a href="#" className="hero__card--btn hero__card3-font">Class 4</a>
+            <a href="#" className="hero__card--btn hero__card3-font">Class 5</a>
+            <a href="#" className="hero__card--btn hero__card3-font">Class 6</a>
+            <a href="#" className="hero__card--btn hero__card3-font">Class 7</a>
+            <a href="#" className="hero__card--btn hero__card3-font">Class 8</a>
+            <a href="#" className="hero__card--btn hero__card3-font">Class 9</a>
+            <a href="#" className="hero__card--btn hero__card3-font">Class 10</a>
+            <a href="#" className="hero__card--btn hero__card3-font">Class 11</a>
+            <a href="#" className="hero__card--btn hero__card3-font">Class 12</a>
         </span>
         <span className="hero__card2">
-            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Chemistry</button></a>
-            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Maths</button></a>
-            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Physics</button></a>
-            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Statistics</button></a>
-            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Comp Sc.</button></a>
-            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Economics</button></a>
-            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Bio Sc.</button></a>
-            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Literature</button></a>
-            <a href="#"><button className="hero__card--btn hero__card--btn-resize">Others</button></a>
+            <p className="hero__card1--heading">ACHIEVERS GRADUATION PROGRAM</p>
+            <hr className="hero__card1--underline"></hr>
+            <a href="#" className="hero__card--btn hero__card3-font1">Chemistry</a>
+            <a href="#" className="hero__card--btn hero__card3-font1">Maths</a>
+            <a href="#" className="hero__card--btn hero__card3-font1">Physics</a>
+            <a href="#" className="hero__card--btn hero__card3-font1">Statistics</a>
+            <a href="#" className="hero__card--btn hero__card3-font1">Comp Sc.</a>
+            <a href="#" className="hero__card--btn hero__card3-font1">Economics</a>
+            <a href="#" className="hero__card--btn hero__card3-font1">Bio Sc.</a>
+            <a href="#" className="hero__card--btn hero__card3-font1">Literature</a>
+            <a href="#" className="hero__card--btn hero__card3-font1">Others</a>
         </span>
         <span className="hero__card3">
-            <a href="#" className="hero__card--btn hero__card--btn-resize2">IIT-JEE (Main & Adv)</a>
-            <a href="#" className="hero__card--btn hero__card--btn-resize">NEET</a>
-            <a href="#" className="hero__card--btn hero__card--btn-resize2">KVPY & Olympiad</a>
-            <a href="#" className="hero__card--btn hero__card--btn-resize">IIT-JAM</a>
-            <a href="#" className="hero__card--btn hero__card--btn-resize">BL-BT</a>
-            <a href="#" className="hero__card--btn hero__card--btn-resize1">Other MSc entrances</a>
-            <a href="#" className="hero__card--btn hero__card--btn-resize">CSIR-NET</a>
-            <a href="#" className="hero__card--btn hero__card--btn-resize">CSIR + Gate</a>
-            <a href="#" className="hero__card--btn hero__card--btn-resize">Others</a>
+            <p className="hero__card1--heading">ACHIEVERS ENTRANCE PROGRAM</p>
+            <hr className="hero__card1--underline"></hr>
+            <a className="hero__card--btn hero__card3-font2" href="/hehe">IIT-JEE (Main & Adv)</a>
+            <a className="hero__card--btn hero__card3-font1" href="#">NEET</a>
+            <a className="hero__card--btn hero__card3-font2" href="#">KVPY & Olympiad</a>
+            <a className="hero__card--btn hero__card3-font1" href="#">IIT-JAM</a>
+            <a className="hero__card--btn hero__card3-font1" href="#">BL-BT</a>
+            <a className="hero__card--btn hero__card3-font2" href="#">Other MSc entrances</a>
+            <a className="hero__card--btn hero__card3-font1" href="#">CSIR-NET</a>
+            <a className="hero__card--btn hero__card3-font1" href="#">CSIR + Gate</a>
+            <a className="hero__card--btn hero__card3-font1" href="#">Others</a>
         </span>
-        <h1 className="ach__studyMat">ACHIEVERS STUDY MATERIALS</h1>
+
+        {/* Achievers Study Materials  */}
+            <h1 className="ach__studyMat--heading">ACHIEVERS STUDY MATERIALS</h1>
+            <hr className="ach__studyMat--underline"></hr>
+            <a className="ach__studyMat--exploreBtn" href="#">EXPLORE</a>
+            
+            <span>
+                <span className="ach__studyMat--innovativeStudyMat">Innovative</span>
+                <span className="ach__studyMat--innovativeStudyMat ach__studyMat--studyMat"> Study Materials</span>
+            </span>
+            <p className="ach__stdyMat--carefully">Carefully prepared by the experts at Achievers</p>
+
         {
             isAdmin && 
             <div className="delete-all">

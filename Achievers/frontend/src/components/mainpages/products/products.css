@@ -10,7 +10,6 @@
   width: 100%;
   background-size: cover;
 }
-
 .hero__card1,
 .hero__card2,
 .hero__card3 {
@@ -30,6 +29,22 @@
 .hero__card3 {
   left: 66.8vw;
 }
+.hero__card1--heading {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+  font-size: 1.34vw;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 2.6vw;
+}
+.hero__card1--underline {
+  width: 80%;
+  position: relative;
+  top: 3.9vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .hero__card--btn {
   background-color: #ff4e53;
   font-family: "Montserrat", sans-serif;
@@ -37,27 +52,82 @@
   font-weight: 600;
   color: #fff;
   width: 7.48vw;
-  height: 2.47vw;
+  height: 2.57vw;
   border-radius: 1.62vw;
   position: relative;
-  top: 8vw;
+  top: 6vw;
   left: 1.4vw;
+  display: inline-block;
   margin: 0.71vw 0.65vw;
+  padding: 0.6vw 0.5vw;
 }
-.hero__card--btn-resize {
-  font-size: 0.84vw;
+.hero__card3-font {
+  font-size: 1vw;
+  text-align: center;
+  vertical-align: middle;
 }
-.hero__card--btn-resize1 {
-  font-size: 0.7vw;
+.hero__card3-font1,
+.hero__card3-font2 {
+  font-size: 0.9vw;
+  text-align: center;
+  vertical-align: middle;
 }
-.hero__card--btn-resize2 {
-  font-size: 0.7vw;
-  padding: 0 2px;
+.hero__card3-font2 {
+  font-size: 0.8vw;
+  padding: 0.3vw 0.5vw;
 }
-.ach__studyMat {
+.ach__studyMat--heading,
+.ach__studyMat--underline {
   position: relative;
-  top: 10vw;
+  top: 18.5vw;
+  left: 5.8vw;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.18vw;
+  font-weight: 700;
+  color: #f30007;
 }
+.ach__studyMat--underline {
+  width: 46vw;
+  border: none;
+  border-bottom: 3px solid #f30007;
+  margin-top: 0.4vw;
+}
+.ach__studyMat--exploreBtn {
+  background-color: #68c938;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: #fff;
+  width: 14vw;
+  height: 3.9vw;
+  border-radius: 2.82vw;
+  position: relative;
+  top: 14.8vw;
+  left: 79.2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ach__studyMat--innovativeStudyMat {
+  position: relative;
+  left: 5.8vw;
+  top: 18vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.7vw;
+}
+.ach__studyMat--studyMat {
+  color: #b60000;
+}
+.ach__stdyMat--carefully {
+  position: relative;
+  left: 5.8vw;
+  top: 19.4vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.61vw;
+}
+
 /* ----------- Product Item ----------------- */
 @import url("../utils/productItem/productItem.css");
 
