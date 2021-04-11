@@ -41,6 +41,16 @@
   top: -11.3vw;
   left: 82.5vw;
 }
+.nav__createProduct {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 4.8vw;
+  left: 70vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.21vw;
+}
 .menu {
   display: none;
 }
@@ -87,7 +97,9 @@
   font-weight: 700;
   font-size: 1.2vw;
 }
-.nav__logout {
+.nav__logout,
+.nav__createProduct,
+.nav__category {
   color: #fff;
   position: absolute;
   z-index: 1;
@@ -96,6 +108,12 @@
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.21vw;
+}
+.nav__createProduct {
+  left: 60vw;
+}
+.nav__category {
+  left: 73.5vw;
 }
 .smallNav {
   height: 50px;

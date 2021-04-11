@@ -12,7 +12,7 @@ function ProductItem({product, isAdmin, deleteProduct, handleCheck}) {
             <img src={product.images.url} alt="" />
 
             <div className="product_box">
-                <h2 title={product.title}>{product.title}</h2>
+                <p title={product.title}>{product.title}</p>
             </div>
 
             

@@ -1,9 +1,9 @@
 .products {
-  width: 100%;
+  width: 92%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   justify-items: center;
-  margin: 20vw 0;
+  margin: 20.5vw auto;
 }
 
 .hero__vid {
@@ -52,7 +52,7 @@
   font-weight: 600;
   color: #fff;
   width: 7.48vw;
-  height: 2.57vw;
+  height: 2.67vw;
   border-radius: 1.62vw;
   position: relative;
   top: 6vw;
@@ -111,7 +111,7 @@
 .ach__studyMat--innovativeStudyMat {
   position: relative;
   left: 5.8vw;
-  top: 18vw;
+  top: 18.2vw;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 2.7vw;
@@ -134,7 +134,8 @@
 .delete-all {
   position: relative;
   text-align: right;
-  margin: 20px;
+  margin-right: 5.35vw;
+  top: 20vw;
 }
 .delete-all input {
   height: 25px;
@@ -144,13 +145,15 @@
 }
 .delete-all span {
   text-transform: uppercase;
-  color: rgb(3, 165, 206);
+  color: #03a5ce;
   letter-spacing: 1.3px;
 }
 .delete-all button {
   border: 1px solid crimson;
-  padding: 10px 25px;
+  height: 50px;
+  padding: 8px 25px;
   color: crimson;
+  font-size: 1vw;
   text-transform: uppercase;
 }
 
