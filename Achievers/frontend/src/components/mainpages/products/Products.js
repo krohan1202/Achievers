@@ -138,6 +138,12 @@ function Products() {
 
         <LoadMore />
         {products.length === 0 && <Loading />}
+        
+        <div className="ach__allIndiaPart">
+            <div className="ach__allIndiaEntranceTest">
+                <p className="ach__allIndiaEntranceTest--heading">ACHIEVERS ALL INDIA ENTRANCE TEST SERIES</p>
+            </div>
+        </div>
         </>
     )
 }

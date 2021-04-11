@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   justify-items: center;
-  margin: 20.5vw auto;
+  margin: 20.5vw auto 0;
 }
 
 .hero__vid {
@@ -126,6 +126,20 @@
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.61vw;
+}
+.ach__allIndiaPart {
+  position: relative;
+}
+.ach__allIndiaEntranceTest {
+  position: relative;
+  height: 485px;
+  width: 50%;
+  top: 2.3vw;
+  background-color: #010e26;
+}
+.ach__allIndiaEntranceTest--heading {
+  position: relative;
+  color: #fff;
 }
 
 /* ----------- Product Item ----------------- */
