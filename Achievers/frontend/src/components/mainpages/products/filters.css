@@ -10,8 +10,8 @@
   background-color: #010e26;
   outline: none;
   width: 51.5vw;
-  height: 40px;
-  padding: 0 12px;
+  height: 2.6vw;
+  padding: 0 0.78vw;
   position: relative;
   border: none;
   border-bottom: 2px solid #fff;
@@ -24,8 +24,8 @@
 }
 .nav__searchIcon {
   position: relative;
-  width: 22px;
-  top: 8px;
+  width: 1.43vw;
+  top: 0.52vw;
   left: -2.05vw;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 0.65vw;
 }

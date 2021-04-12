@@ -60,22 +60,22 @@
   left: 74.7vw;
   width: 100px;
   height: 33px;
-  padding-left: 5px;
+  padding-left: 0.32vw;
 }
 .cart-icon span {
   background: crimson;
   border-radius: 50%;
   color: white;
   position: absolute;
-  top: 12px;
+  top: 0.78vw;
   left: 0;
-  padding: 4px 6px;
-  font-size: 10px;
+  padding: 0.26vw 0.39vw;
+  font-size: 0.65vw;
 }
 .nav__cart {
   color: #fff;
   position: absolute;
-  top: 0vw;
+  top: 0;
   left: 3vw;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -85,7 +85,7 @@
   position: absolute;
   top: 4.6vw;
   left: 85.1vw;
-  width: 31px;
+  width: 2.01vw;
 }
 .nav__login {
   color: #fff;
@@ -116,7 +116,7 @@
   left: 73.5vw;
 }
 .smallNav {
-  height: 50px;
+  height: 3.25vw;
   position: relative;
   margin-top: -1px;
   background-color: #0b1d3e;

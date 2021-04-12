@@ -45,7 +45,8 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.hero__card--btn {
+.hero__card--btn,
+.ach__allIndiacard--btn {
   background-color: #ff4e53;
   font-family: "Montserrat", sans-serif;
   font-size: 1vw;
@@ -129,17 +130,91 @@
 }
 .ach__allIndiaPart {
   position: relative;
+  margin-top: 2.3vw;
+  display: flex;
+  justify-content: center;
+}
+.ach__allIndiaVid {
+  margin-left: 1vw;
+  position: relative;
+  height: 31.57vw;
+  width: 39%;
+  background-color: #5d6168;
 }
 .ach__allIndiaEntranceTest {
+  margin-left: 2.3vw;
   position: relative;
-  height: 485px;
-  width: 50%;
-  top: 2.3vw;
+  height: 31.57vw;
+  width: 49%;
   background-color: #010e26;
 }
-.ach__allIndiaEntranceTest--heading {
+.ach__allIndiaEntranceTest--heading,
+.ach__allIndiaEntranceTest--description {
   position: relative;
   color: #fff;
+  width: 60%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 2.5vw;
+  text-align: center;
+  top: 2.7vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ach__allIndiaEntranceTest--underline {
+  width: 87%;
+  border: none;
+  border-bottom: 2.5px solid #fff;
+  margin: 0 auto;
+  position: relative;
+  top: 4.5vw;
+}
+.ach__allIndiaEntranceTest--description {
+  width: 89.5%;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1.1vw;
+  top: 6vw;
+}
+.ach__allIndiacard--btn {
+  background-color: #68c938;
+  top: 6.5vw;
+  left: 2.7vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.15vw;
+  width: 9.4vw;
+  height: 3vw;
+  margin: 0.71vw 2.5vw;
+  text-align: center;
+  padding-top: 0.32vw;
+  padding-right: 2.27vw;
+  padding-bottom: 0;
+}
+.ach__allIndiaArrow {
+  position: absolute;
+  width: 1.43vw;
+  margin-left: 0.52vw;
+  top: 0.78vw;
+  left: 6.31vw;
+}
+.ach__allIndiacard--btnNeet,
+.ach__allIndiacard--btnKVPY,
+.ach__allIndiacard--btnViewAll {
+  padding-top: 0.78vw;
+}
+.ach__allIndiacard--btnBHU,
+.ach__allIndiacard--btnCSIR {
+  font-size: 1.06vw;
+}
+.ach__allIndiaIITJEEMainAdv,
+.ach__allIndiaIITJAMCrash,
+.ach__allIndiaCuDu,
+.ach__allIndiaTIRFEntr {
+  font-size: 0.75vw;
+  text-align: center;
+  position: relative;
+  display: block;
+  top: -2px;
 }
 
 /* ----------- Product Item ----------------- */
@@ -164,8 +239,8 @@
 }
 .delete-all button {
   border: 1px solid crimson;
-  height: 50px;
-  padding: 8px 25px;
+  height: 3.25vw;
+  padding: 0.52vw 1.62vw;
   color: crimson;
   font-size: 1vw;
   text-transform: uppercase;
@@ -176,8 +251,8 @@
   text-align: center;
 }
 .load_more button {
-  padding: 10px 25px;
-  margin-bottom: 20px;
+  padding: 0.65vw 1.62vw;
+  margin-bottom: 1.3vw;
   border: 1px solid #555;
   text-transform: capitalize;
 }
