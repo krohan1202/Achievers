@@ -87,13 +87,15 @@
   font-weight: 700;
   color: #f30007;
 }
+
 .ach__studyMat--underline {
   width: 46vw;
   border: none;
   border-bottom: 3px solid #f30007;
   margin-top: 0.4vw;
 }
-.ach__studyMat--exploreBtn {
+.ach__studyMat--exploreBtn,
+.ach__popularEntranceCourses--viewAllBtn {
   background-color: #68c938;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5vw;
@@ -255,4 +257,55 @@
   margin-bottom: 1.3vw;
   border: 1px solid #555;
   text-transform: capitalize;
+}
+.ach__popularEntranceCourses--heading,
+.ach__popularEntranceCourses--underline {
+  margin-top: 5vw;
+  margin-left: 5.8vw;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.18vw;
+  font-weight: 700;
+  color: #f30007;
+}
+.ach__popularEntranceCourses--underline {
+  width: 64.5vw;
+  border: none;
+  border-bottom: 3px solid #f30007;
+  margin-top: 0.4vw;
+}
+.ach__popularEntranceCourses--viewAllBtn {
+  background-color: #fc2b32;
+  position: absolute;
+  top: 148vw;
+}
+.ach__popularEntranceCourses--description {
+  margin-top: 3vw;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.3vw;
+  letter-spacing: 0.6px;
+  line-height: 1.75vw;
+  padding: 0 8vw;
+  margin-bottom: 3vw;
+}
+.popularEntranceProducts {
+  width: 92%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+  margin: 3vw auto 0;
+}
+.ach__popularEntranceCourses--vid {
+  position: relative;
+  display: block;
+  width: 85vw;
+  margin: 2vw auto 3.5vw;
+}
+.ach__hallOfFame--heading,
+.ach__hallOfFame--underline {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.18vw;
+  font-weight: 700;
 }

@@ -6,7 +6,8 @@ import axios from 'axios'
 import LoadMore from './LoadMore'
 
 //Assets
-import HeroVid from "../../../assets/Pics/Home/Hero/Video Part.png";
+import HeroVid from "../../../assets/Pics/Home/2-Hero/Video Part.png";
+import PopularEntranceCoursesVid from "../../../assets/Pics/Home/4-Popular Entrance Courses/Video Part.png";
 
 
 function Products() {
@@ -49,6 +50,8 @@ function Products() {
             product.checked = !isCheck
         })
         setProducts([...products])
+        console.log(products);
+        console.log(setProducts);
         setIsCheck(!isCheck)
     }
 
@@ -57,10 +60,21 @@ function Products() {
             if(product.checked) deleteProduct(product._id, product.images.public_id)
         })
     }
+    
+    const statey = useContext(GlobalState)
+    const [categories] = state.categoriesAPI.categories
 
-    const redirect = () => {
-        window.location.href = ("/hehe")
-      }
+    const [category, setCategory] = state.productsAPI.category
+    console.log(category)
+    const [sort, setSort] = state.productsAPI.sort
+    const [search, setSearch] = state.productsAPI.search
+
+    const handleCategory = e => {
+        e.target.value=("category=6072d07e701dad2404938ae6");
+        setCategory(e.target.value);
+        console.log(e.target.value);
+        setSearch('')
+    }
 
     if(loading) return <div><Loading /></div>
     return (
@@ -128,8 +142,21 @@ function Products() {
         }
 
         <div className="products">
+
+                <select name="category" value={category} onChange={handleCategory} >
+                    <option value={"category=" + "6072d07e701dad2404938ae6"}>All Products</option>
+                    {
+                        categories.map(category => (
+                            <span value={"category=" + "6072d07e701dad2404938ae6"} key={category._id}>
+                                {}
+                            </span>
+                        ))
+                    }
+                </select>
+
             {
                 products.map(product => {
+                    console.log(product);
                     return <ProductItem key={product._id} product={product}
                     isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} />
                 })
@@ -203,6 +230,52 @@ function Products() {
                     </svg>
                 </a>
             </div>
+        </div>
+
+        {/* Achievers Popular Entrance Courses */}
+        <div>
+            <h1 className="ach__popularEntranceCourses--heading">ACHIEVERS POPULAR ENTRANCE COURSES</h1>
+            <hr className="ach__popularEntranceCourses--underline"></hr>
+            <a className="ach__popularEntranceCourses--viewAllBtn" href="#">VIEW ALL</a>
+        
+            <p className="ach__popularEntranceCourses--description">Achievers provides comprehensive test preparatory services for students preparing for medical, engineering and various All-India entrance
+                examinations for Class 11, 12 as well as college students. We provide our services through classroom-based coaching and digital and distance
+                learning, which supplement our classroom courses and allow students to engage in self-paced learning, which supplement our classroom courses and
+                allow students in self-paced learning. We also offer short-term classroom courses to prepare students for their upcoming examinations.
+            </p>
+
+            <div className="popularEntranceProducts">
+
+                <select name="category" value={category} onChange={handleCategory} >
+                    <option value={"category=" + "6072d07e701dad2404938ae6"}>All Products</option>
+                    {
+                        categories.map(category => (
+                            <span value={"category=" + "6072d07e701dad2404938ae6"} key={category._id}>
+                                {}
+                            </span>
+                        ))
+                    }
+                </select>
+
+            {
+                products.map(product => {
+                    console.log(product);
+                    return <ProductItem key={product._id} product={product}
+                    isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} />
+                })
+            } 
+        </div>
+
+        <LoadMore />
+        {products.length === 0 && <Loading />}
+
+        <img className="ach__popularEntranceCourses--vid" src={PopularEntranceCoursesVid} />
+        </div>
+
+        {/* Achievers Hall of Fame */}
+        <div className="ach__hallOfFame">
+            <h1 className="ach__hallOfFame--heading">ACHIEVER'S HALL OF FAME</h1>
+            <hr className="ach__hallOfFame--underline"></hr>
         </div>
         </>
     )
