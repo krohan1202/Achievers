@@ -299,7 +299,7 @@
 .ach__popularEntranceCourses--vid {
   position: relative;
   display: block;
-  width: 85vw;
+  width: 88vw;
   margin: 2vw auto 3.5vw;
 }
 .ach__hallOfFame--heading,
@@ -319,7 +319,7 @@
   margin-bottom: 3.4vw;
 }
 .ach__hallOfFame--vidCards {
-  width: 90vw;
+  width: 87.5vw;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -339,4 +339,77 @@
 .ach__hallOfFame--vidCardLink {
   width: 19.8vw;
   height: 11vw;
+}
+.ach__whyAch {
+  position: relative;
+  width: 52vw;
+}
+.ach__whyAch--heading,
+.ach__whyAch--underline {
+  left: 5.8vw;
+  width: 26.5vw;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.78vw;
+  font-weight: 600;
+  color: #1d85ff;
+  top: 2.2vw;
+}
+.ach__whyAch--underline {
+  border: none;
+  border-bottom: 3px solid #1d85ff;
+  margin-top: 0.37vw;
+}
+.ach__whyAch--starredTexts {
+  position: relative;
+  top: 4.5vw;
+  left: 5.8vw;
+  width: 44.4vw;
+}
+.ach__generalEnquiry {
+  position: relative;
+  width: 48vw;
+  background-color: #010e26;
+}
+.ach__generalEnquiry--heading,
+.ach__generalEnquiry--underline {
+  position: relative;
+  width: 28.5vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.78vw;
+  font-weight: 600;
+  color: #fc2b32;
+  left: 3.8vw;
+  top: 2.2vw;
+}
+.ach__generalEnquiry--underline {
+  border: none;
+  border-bottom: 3px solid #fc2b32;
+  margin-top: 0.37vw;
+}
+.ach_whyAch-generalEnq {
+  display: flex;
+  justify-content: center;
+  height: 415px;
+}
+.ach__generalEnquiry--firstName,
+.ach__generalEnquiry--lastName,
+.ach__generalEnquiry--email,
+.ach__generalEnquiry--phone {
+  margin: 1.2vw 1.5vw;
+  top: 3vw;
+  left: 2vw;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.05vw;
+  padding: 0.8vw 1vw;
+  width: 18vw;
+}
+.ach__generalEnquiry--submit {
+  top: 5vw;
+  left: 3.5vw;
+  position: relative;
+  width: 10vw;
+  height: 3vw;
+  background-color: #fc2b32;
 }

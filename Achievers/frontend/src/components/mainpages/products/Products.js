@@ -8,7 +8,7 @@ import LoadMore from './LoadMore'
 //Assets
 import HeroVid from "../../../assets/Pics/Home/2-Hero/Video Part.png";
 import PopularEntranceCoursesVid from "../../../assets/Pics/Home/4-Popular Entrance Courses/Video Part.png";
-
+import WhyAchStarredTexts from "../../../assets/Pics/Home/5-Why Achievers/Starred Texts.png";
 
 function Products() {
     const state = useContext(GlobalState)
@@ -295,6 +295,28 @@ function Products() {
                     <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                 </span>
             </div>    
+        </div>
+        
+        {/* Why Achievers */}
+        <div className="ach_whyAch-generalEnq">
+        <span className="ach__whyAch">
+            <h1 className="ach__whyAch--heading">WHY ACHIEVERS?</h1>
+            <hr className="ach__whyAch--underline"></hr>
+            <img className="ach__whyAch--starredTexts" src={WhyAchStarredTexts} />
+        </span>
+
+        {/* General Enquiry */}
+        <span className="ach__generalEnquiry">
+            <h1 className="ach__generalEnquiry--heading">GENERAL ENQUIRY</h1>
+            <hr className="ach__generalEnquiry--underline"></hr>
+
+            <input className="ach__generalEnquiry--firstName" type="text" placeholder="Enter First Name"/>
+            <input className="ach__generalEnquiry--lastName" type="text" placeholder="Enter Last Name"/>
+            <input className="ach__generalEnquiry--email" type="email" placeholder="Enter Email"/>
+            <input className="ach__generalEnquiry--phone" type="text" placeholder="Enter Phone No."/>
+            
+            <button className="ach__generalEnquiry--submit" type="submit" value="Submit">Submit</button>
+        </span>
         </div>
         </>
     )
