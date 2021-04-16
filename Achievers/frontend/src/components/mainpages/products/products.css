@@ -318,13 +318,23 @@
   margin-top: 0.4vw;
   margin-bottom: 3.4vw;
 }
-.ach__hallOfFame--vidCardHeading {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 1vw;
+.ach__hallOfFame--vidCards {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 .ach__hallOfFame--vidCard {
   height: 17vw;
+  width: 19.8vw;
+}
+.ach__hallOfFame--vidCardHeading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.88vw;
+  width: 19.8vw;
+  margin-bottom: 1.7vw;
+  text-align: center;
 }
 .ach__hallOfFame--vidCardLink {
   width: 19.8vw;

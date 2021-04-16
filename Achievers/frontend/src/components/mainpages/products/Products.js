@@ -277,10 +277,24 @@ function Products() {
             <h1 className="ach__hallOfFame--heading">ACHIEVER'S HALL OF FAME</h1>
             <hr className="ach__hallOfFame--underline"></hr>
 
-            <span className="ach__hallOfFame--vidCard">
-                <p className="ach__hallOfFame--vidCardHeading">Just testing itJust testing itJust testing itJust testing itJust testing itJust testing it</p>
-                <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-            </span>
+            <div className="ach__hallOfFame--vidCards">
+                <span className="ach__hallOfFame--vidCard">
+                    <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
+                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </span>
+                <span className="ach__hallOfFame--vidCard">
+                    <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
+                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </span>
+                <span className="ach__hallOfFame--vidCard">
+                    <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
+                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </span>
+                <span className="ach__hallOfFame--vidCard">
+                    <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
+                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </span>
+            </div>    
         </div>
         </>
     )
