@@ -4,6 +4,7 @@ import ProductItem from '../utils/productItem/ProductItem';
 import Loading from '../utils/loading/Loading';
 import axios from 'axios';
 import LoadMore from './LoadMore';
+import Header from "../../headers/Header";
 import Footer from "../../footers/footer";
 
 //Assets
@@ -81,6 +82,7 @@ function Products() {
     if(loading) return <div><Loading /></div>
     return (
         <>
+        <Header />
         <img src={HeroVid} className="hero__vid" />
         
         <span className="hero__card1">

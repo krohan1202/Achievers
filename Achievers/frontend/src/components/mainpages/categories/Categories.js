@@ -1,6 +1,8 @@
 import React, {useState, useContext} from 'react'
 import {GlobalState} from '../../../GlobalState'
-import axios from 'axios'
+import axios from 'axios';
+import Header from "../../headers/Header";
+import Footer from "../../footers/footer";
 
 function Categories() {
     const state = useContext(GlobalState)
@@ -54,6 +56,7 @@ function Categories() {
 
     return (
         <div className="categories">
+            <Header />
             <form onSubmit={createCategory}>
                 <label htmlFor="category">Category</label>
                 <input type="text" name="category" value={category} required
@@ -75,6 +78,7 @@ function Categories() {
                     ))
                 }
             </div>
+            <Footer />
         </div>
     )
 }

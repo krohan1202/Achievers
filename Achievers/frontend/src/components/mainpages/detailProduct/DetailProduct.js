@@ -2,6 +2,8 @@ import React, {useContext, useState, useEffect} from 'react'
 import {useParams, Link} from 'react-router-dom'
 import {GlobalState} from '../../../GlobalState'
 import ProductItem from '../utils/productItem/ProductItem'
+import Header from "../../headers/Header";
+import Footer from "../../footers/footer";
 
 
 function DetailProduct() {
@@ -24,27 +26,33 @@ function DetailProduct() {
 
     return (
         <>
+        <Header />
             <div className="detail">
                 <img src={detailProduct.images.url} alt="" />
                 <div className="box-detail">
                     <div className="row">
                         <h2>{detailProduct.title}</h2>
-                        <h6>#id: {detailProduct.product_id}</h6>
                     </div>
-                    <span>$ {detailProduct.price}</span>
-                    <p>{detailProduct.description}</p>
-                    <p>{detailProduct.content}</p>
-                    <p>Sold: {detailProduct.sold}</p>
+                    
+                    <hr className="lineUnderTitle"></hr> 
+                    <span className="price">Rs. {detailProduct.price}</span>
+                    <p className="content">{detailProduct.content}</p>
+                    {/* <p>Sold: {detailProduct.sold}</p> */}
                     <Link to="/cart" className="cart"
                     onClick={() => addCart(detailProduct)}>
                         Buy Now
                     </Link>
                 </div>
             </div>
-
+            <div className="description">
+                <p className="description--heading">Description</p>
+                <hr className="description--line1"></hr> 
+                <p className="description--description">{detailProduct.description}</p>
+                <hr className="description--line2"></hr> 
+            </div>
             <div>
-                <h2>Related products</h2>
-                <div className="products">
+                <h2 className="relatedProducts">Related products</h2>
+                <div className="relatedProducts--products">
                     {
                         products.map(product => {
                             return product.category === detailProduct.category 
@@ -53,6 +61,7 @@ function DetailProduct() {
                     }
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

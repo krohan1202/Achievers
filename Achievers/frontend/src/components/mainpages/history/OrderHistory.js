@@ -2,6 +2,8 @@ import React, {useContext, useEffect} from 'react'
 import {GlobalState} from '../../../GlobalState'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
+import Header from "../../headers/Header";
+import Footer from "../../footers/footer";
 
 function OrderHistory() {
     const state = useContext(GlobalState)
@@ -31,6 +33,7 @@ function OrderHistory() {
 
     return (
         <div className="history-page">
+            <Header />
             <h2>History</h2>
 
             <h4>You have {history.length} ordered</h4>
@@ -55,6 +58,7 @@ function OrderHistory() {
                     }
                 </tbody>
             </table>
+            <Footer />
         </div>
     )
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router} from 'react-router-dom'
 import {DataProvider} from './GlobalState'
 import Header from './components/headers/Header'
+import Footer from './components/footers/footer'
 import MainPages from './components/mainpages/Pages'
 
 
@@ -10,7 +11,6 @@ function App() {
     <DataProvider>
       <Router>
         <div className="App">
-          <Header />
           <MainPages />
         </div>
       </Router>
