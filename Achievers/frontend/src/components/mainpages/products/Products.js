@@ -1,14 +1,16 @@
-import React, {useContext, useState} from 'react'
-import {GlobalState} from '../../../GlobalState'
-import ProductItem from '../utils/productItem/ProductItem'
-import Loading from '../utils/loading/Loading'
-import axios from 'axios'
-import LoadMore from './LoadMore'
+import React, {useContext, useState} from 'react';
+import {GlobalState} from '../../../GlobalState';
+import ProductItem from '../utils/productItem/ProductItem';
+import Loading from '../utils/loading/Loading';
+import axios from 'axios';
+import LoadMore from './LoadMore';
+import Footer from "../../footers/footer";
 
 //Assets
 import HeroVid from "../../../assets/Pics/Home/2-Hero/Video Part.png";
 import PopularEntranceCoursesVid from "../../../assets/Pics/Home/4-Popular Entrance Courses/Video Part.png";
 import WhyAchStarredTexts from "../../../assets/Pics/Home/5-Why Achievers/Starred Texts.png";
+import TopperMoreInfo from "../../../assets/Pics/Home/6-Topper Fav/Topper & More info.png";
 
 function Products() {
     const state = useContext(GlobalState)
@@ -316,10 +318,15 @@ function Products() {
             <input className="ach__generalEnquiry--phone" type="text" placeholder="Enter Phone No."/>
             
             <button className="ach__generalEnquiry--submit" type="submit" value="Submit">Submit</button>
+            <a className="ach__generalEnquiry--faq" href="#">FAQs</a>
         </span>
         </div>
+
+        <img className="ach__topperFavPic" src={TopperMoreInfo} />
+
+        <Footer />
         </>
     )
 }
 
-export default Products
+export default Products;

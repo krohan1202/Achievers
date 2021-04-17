@@ -1,0 +1,119 @@
+.ach__footer--ul {
+  width: 10vw;
+}
+.ach__footer {
+  background-color: #010e26;
+  position: relative;
+  width: 100vw;
+  height: 36vw;
+}
+.ach__footer--aboutPart {
+  position: relative;
+  left: 5.3vw;
+  top: 3.5vw;
+  width: 10vw;
+}
+.ach__footer--policyPart {
+  position: absolute;
+  top: 3.5vw;
+  left: 25.2vw;
+}
+.ach__footer--aboutPart--li,
+.ach__footer--policyPart--li {
+  margin: 0.7vw 0;
+  width: 10vw;
+}
+.ach__footer--aboutPart--heading,
+.ach__footer--policyPart--heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.41vw;
+  color: #fff;
+  width: 5.5vw;
+}
+.ach__footer--aboutPart--links,
+.ach__footer--policyPart--links {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
+  font-size: 1.2vw;
+  color: #cdcdcd;
+  position: relative;
+  text-align: left;
+}
+.ach__footer--verticalLine {
+  position: absolute;
+  left: 39vw;
+  top: 4vw;
+  height: 13.5vw;
+  border: none;
+  border-left: 3px solid #565656;
+}
+.ach__footer--horizontalLine {
+  position: relative;
+  top: 6.3vw;
+  width: 90vw;
+  border: none;
+  border-bottom: 3.3px solid #565656;
+  display: block;
+  margin: 0 auto;
+}
+.ach__footer--addressPart {
+  position: absolute;
+  top: 6.2vw;
+  left: 61.9vw;
+  height: 12vw;
+}
+.ach__footer--map {
+  position: absolute;
+  width: 12.5vw;
+  height: 12.5vw;
+  border: 0;
+  top: 4.7vw;
+  left: 44.4vw;
+  border-radius: 50%;
+}
+.ach__footer--addressPart--heading,
+.ach__footer--addressPart--campus,
+.ach__footer--addressPart--campusAddress {
+  width: 6.5vw;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.35vw;
+}
+.ach__footer--addressPart--campus,
+.ach__footer--addressPart--campusAddress {
+  width: 32vw;
+  font-size: 1.11vw;
+  margin: 1.8vw 0;
+}
+.ach__footer--logo {
+  position: relative;
+  width: 31vw;
+  top: 8.8vw;
+  left: 5.3vw;
+}
+.ach__footer--social--heading {
+  width: 6.5vw;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.4vw;
+  position: relative;
+  left: 87.7vw;
+  top: 2vw;
+  margin-bottom: 2vw;
+}
+.ach__footer--social--icons {
+  position: relative;
+  left: 77.9vw;
+  top: 2vw;
+}
+.ach__footer--social--icons-yt,
+.ach__footer--social--icons-Play,
+.ach__footer--social--icons-wp,
+.ach__footer--social--icons-insta,
+.ach__footer--social--icons-fb {
+  width: 2vw;
+  margin: 0 0.5vw;
+}
