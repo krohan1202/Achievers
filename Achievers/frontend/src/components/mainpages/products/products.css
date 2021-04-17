@@ -224,24 +224,31 @@
 /* ----------- Product Item ----------------- */
 @import url("../utils/productItem/productItem.css");
 
-.delete-all {
+.delete-all,
+.delete-all--popularEntranceCourses {
   position: relative;
   text-align: right;
   margin-right: 5.35vw;
   top: 20vw;
 }
-.delete-all input {
+.delete-all--popularEntranceCourses {
+  top: 0;
+}
+.delete-all input,
+.delete-all--popularEntranceCourses input {
   height: 25px;
   width: 25px;
   transform: translateY(5px);
   margin: 0 15px;
 }
-.delete-all span {
+.delete-all span,
+.delete-all--popularEntranceCourses span {
   text-transform: uppercase;
   color: #03a5ce;
   letter-spacing: 1.3px;
 }
-.delete-all button {
+.delete-all button,
+.delete-all--popularEntranceCourses button {
   border: 1px solid crimson;
   height: 3.25vw;
   padding: 0.52vw 1.62vw;
@@ -278,7 +285,7 @@
 .ach__popularEntranceCourses--viewAllBtn {
   background-color: #fc2b32;
   position: absolute;
-  top: 148vw;
+  top: 148.5vw;
 }
 .ach__popularEntranceCourses--description {
   margin-top: 3vw;
@@ -390,6 +397,7 @@
   margin-top: 0.37vw;
 }
 .ach_whyAch-generalEnq {
+  margin-top: 1.2vw;
   display: flex;
   justify-content: center;
   height: 27.01vw;

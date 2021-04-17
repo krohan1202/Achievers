@@ -147,12 +147,12 @@ function Products() {
 
         <div className="products">
             {
-                        products.map(product => {
-                            console.log(product);
-                            return product.category === "6072d07e701dad2404938ae6"
-                                ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
-                        })
-                    }
+                products.map(product => {
+                    console.log(product);
+                    return product.category === "6072d07e701dad2404938ae6"
+                        ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
+                })
+            }
         </div>
 
         <LoadMore />
@@ -229,33 +229,31 @@ function Products() {
             <h1 className="ach__popularEntranceCourses--heading">ACHIEVERS POPULAR ENTRANCE COURSES</h1>
             <hr className="ach__popularEntranceCourses--underline"></hr>
             <a className="ach__popularEntranceCourses--viewAllBtn" href="#">VIEW ALL</a>
-        
+
             <p className="ach__popularEntranceCourses--description">Achievers provides comprehensive test preparatory services for students preparing for medical, engineering and various All-India entrance
                 examinations for Class 11, 12 as well as college students. We provide our services through classroom-based coaching and digital and distance
                 learning, which supplement our classroom courses and allow students to engage in self-paced learning, which supplement our classroom courses and
                 allow students in self-paced learning. We also offer short-term classroom courses to prepare students for their upcoming examinations.
             </p>
 
-            <div className="popularEntranceProducts">
+            {
+            isAdmin && 
+                <div className="delete-all--popularEntranceCourses">
+                    <span>Select all</span>
+                    <input type="checkbox" checked={isCheck} onChange={checkAll} />
+                    <button onClick={deleteAll}>Delete ALL</button>
+                </div>
+             }
 
-                <select name="category" value={category} onChange={handleCategory} >
-                    <option value={"category=" + "6072d07e701dad2404938ae6"}>All Products</option>
-                    {
-                        categories.map(category => (
-                            <span value={"category=" + "6072d07e701dad2404938ae6"} key={category._id}>
-                                {}
-                            </span>
-                        ))
-                    }
-                </select>
+            <div className="popularEntranceProducts">
 
             {
                 products.map(product => {
                     console.log(product);
-                    return <ProductItem key={product._id} product={product}
-                    isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} />
+                    return product.category === "607b2055483a9217507846cf"
+                        ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
                 })
-            } 
+            }
         </div>
 
         <LoadMore />

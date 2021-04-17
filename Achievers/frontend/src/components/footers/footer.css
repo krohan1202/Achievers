@@ -106,7 +106,7 @@
 }
 .ach__footer--social--icons {
   position: relative;
-  left: 77.9vw;
+  left: 77.5vw;
   top: 2vw;
 }
 .ach__footer--social--icons-yt,
@@ -114,6 +114,6 @@
 .ach__footer--social--icons-wp,
 .ach__footer--social--icons-insta,
 .ach__footer--social--icons-fb {
-  width: 2vw;
-  margin: 0 0.5vw;
+  width: 1.9vw;
+  margin: 0 0.6vw;
 }
