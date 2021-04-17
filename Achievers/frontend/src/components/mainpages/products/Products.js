@@ -146,25 +146,13 @@ function Products() {
         }
 
         <div className="products">
-
-                <select name="category" value={category} onChange={handleCategory} >
-                    <option value={"category=" + "6072d07e701dad2404938ae6"}>All Products</option>
-                    {
-                        categories.map(category => (
-                            <span value={"category=" + "6072d07e701dad2404938ae6"} key={category._id}>
-                                {}
-                            </span>
-                        ))
-                    }
-                </select>
-
             {
-                products.map(product => {
-                    console.log(product);
-                    return <ProductItem key={product._id} product={product}
-                    isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} />
-                })
-            } 
+                        products.map(product => {
+                            console.log(product);
+                            return product.category === "6072d07e701dad2404938ae6"
+                                ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
+                        })
+                    }
         </div>
 
         <LoadMore />
