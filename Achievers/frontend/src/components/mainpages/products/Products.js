@@ -53,8 +53,8 @@ function Products() {
             product.checked = !isCheck
         })
         setProducts([...products])
-        console.log(products);
-        console.log(setProducts);
+        // console.log(products);
+        // console.log(setProducts);
         setIsCheck(!isCheck)
     }
 
@@ -68,15 +68,22 @@ function Products() {
     const [categories] = state.categoriesAPI.categories
 
     const [category, setCategory] = state.productsAPI.category
-    console.log(category)
+    // console.log(category)
     const [sort, setSort] = state.productsAPI.sort
     const [search, setSearch] = state.productsAPI.search
 
-    const handleCategory = e => {
-        e.target.value=("category=6072d07e701dad2404938ae6");
-        setCategory(e.target.value);
-        console.log(e.target.value);
-        setSearch('')
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        await axios.post('/api/', {firstName: firstName, lastName: lastName, email: email, phone: phone})
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setPhone("");
     }
 
     if(loading) return <div><Loading /></div>
@@ -141,14 +148,14 @@ function Products() {
             <div className="delete-all">
                 <span>Select all</span>
                 <input type="checkbox" checked={isCheck} onChange={checkAll} />
-                <button onClick={deleteAll}>Delete ALL</button>
+                <button onClick={deleteAll}>DELETE ALL</button>
             </div>
         }
 
         <div className="products">
             {
                 products.map(product => {
-                    console.log(product);
+                    // console.log(product);
                     return product.category === "6072d07e701dad2404938ae6"
                         ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
                 })
@@ -249,7 +256,7 @@ function Products() {
 
             {
                 products.map(product => {
-                    console.log(product);
+                    // console.log(product);
                     return product.category === "607b2055483a9217507846cf"
                         ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
                 })
@@ -300,12 +307,14 @@ function Products() {
             <h1 className="ach__generalEnquiry--heading">GENERAL ENQUIRY</h1>
             <hr className="ach__generalEnquiry--underline"></hr>
 
-            <input className="ach__generalEnquiry--firstName" type="text" placeholder="Enter First Name"/>
-            <input className="ach__generalEnquiry--lastName" type="text" placeholder="Enter Last Name"/>
-            <input className="ach__generalEnquiry--email" type="email" placeholder="Enter Email"/>
-            <input className="ach__generalEnquiry--phone" type="text" placeholder="Enter Phone No."/>
+            <form className="ach__generalEnquiry--form" onSubmit={handleSubmit}>
+            <input value={firstName} onChange = {(e) => {setFirstName(e.target.value); console.log(firstName);}} className="ach__generalEnquiry--firstName" type="text" placeholder="Enter First Name"/>
+            <input value={lastName} onChange = {(e) => {setLastName(e.target.value); console.log(lastName);}} className="ach__generalEnquiry--lastName" type="text" placeholder="Enter Last Name"/>
+            <input value={email} onChange = {(e) => {setEmail(e.target.value); console.log(email);}}  className="ach__generalEnquiry--email" type="email" placeholder="Enter Email"/>
+            <input value={phone} onChange = {(e) => {setPhone(e.target.value); console.log(phone);}} className="ach__generalEnquiry--phone" type="text" placeholder="Enter Phone No."/>
             
             <button className="ach__generalEnquiry--submit" type="submit" value="Submit">Submit</button>
+            </form>
             <a className="ach__generalEnquiry--faq" href="#">FAQs</a>
         </span>
         </div>

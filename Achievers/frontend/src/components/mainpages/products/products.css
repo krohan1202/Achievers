@@ -402,6 +402,9 @@
   justify-content: center;
   height: 27.01vw;
 }
+.ach__generalEnquiry--form {
+  height: 20vw;
+}
 .ach__generalEnquiry--firstName,
 .ach__generalEnquiry--lastName,
 .ach__generalEnquiry--email,
@@ -431,8 +434,9 @@
   background-color: #fc2b32;
 }
 .ach__generalEnquiry--faq {
+  top: -3vw;
   padding: 0.8vw 3vw;
-  margin-left: 4vw;
+  margin-left: 15vw;
   background-color: #1d85ff;
 }
 .ach__topperFavPic {
