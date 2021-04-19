@@ -27,7 +27,7 @@ function Cart() {
             headers: {Authorization: token}
         })
     }
-
+console.log(total);
 
     const increment = (id) =>{
         cart.forEach(item => {
@@ -76,6 +76,62 @@ function Cart() {
         alert("You have successfully placed an order.")
     }
 
+    //Razorpay integration
+    function loadScript(src) {
+        return new Promise((resolve) => {
+            const script = document.createElement('script')
+            script.src = src
+            script.onload = () => {
+                resolve(true)
+            }
+            script.onerror = () => {
+                resolve(false)
+            }
+            document.body.appendChild(script)
+        })
+    }
+    
+    const __DEV__ = document.domain === 'localhost'
+    
+        const [name, setName] = useState('Mehul')
+    
+        async function displayRazorpay() {
+            const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
+    
+            if (!res) {
+                alert('Razorpay SDK failed to load. Are you online?')
+                return
+            }
+    
+            const data = await fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) =>
+                t.json()
+            )
+    
+            console.log(data)
+    
+            const options = {
+                key: __DEV__ ? 'rzp_test_QqUGL3lXO9J3fl' : 'PRODUCTION_KEY',
+                currency: data.currency,
+                amount: data.amount.toString(),
+                order_id: data.id,
+                name: 'Donation',
+                description: 'Thank you for nothing. Please give us some money',
+                // image: 'http://localhost:1337/logo.svg',
+                handler: function (response) {
+                    alert(response.razorpay_payment_id)
+                    alert(response.razorpay_order_id)
+                    alert(response.razorpay_signature)
+                },
+                prefill: {
+                    name,
+                    email: 'sdfdsjfh2@ndsfdf.com',
+                    phone_number: '9899999999'
+                }
+            }
+            const paymentObject = new window.Razorpay(options)
+            paymentObject.open()
+        }
+    
 
     if(cart.length === 0) 
         return <h2 style={{textAlign: "center", fontSize: "5rem"}}>Cart Empty</h2> 
@@ -111,6 +167,14 @@ function Cart() {
 
             <div className="total">
                 <h3>Total: $ {total}</h3>
+                <a
+					className="App-link"
+					onClick={displayRazorpay}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Donate $5
+				</a>
                 <PaypalButton
                 total={total}
                 tranSuccess={tranSuccess} />
