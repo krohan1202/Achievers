@@ -38,7 +38,7 @@ function DetailProduct() {
                     <span className="price">Rs. {detailProduct.price}</span>
                     <p className="content">{detailProduct.content}</p>
                     {/* <p>Sold: {detailProduct.sold}</p> */}
-                    <Link to="/cart" className="cart"
+                    <Link to="/cart" className="cart" style={{width: "11.2vw"}}
                     onClick={() => addCart(detailProduct)}>
                         Buy Now
                     </Link>

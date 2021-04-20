@@ -112,7 +112,7 @@ function Header() {
         </div>
 
         <ul className="smallNav">
-            <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">Home</a></li>
+            <li className="nav__smallNav--li"><a className="nav__smallNav" href="/">Home</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">About Us</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">Our Courses</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">Result</a></li>

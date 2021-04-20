@@ -1,7 +1,8 @@
 import React, {useContext, useState, useEffect} from 'react'
 import {GlobalState} from '../../../GlobalState'
 import axios from 'axios'
-import PaypalButton from './PaypalButton'
+import Header from '../../headers/Header'
+import Footer from '../../footers/footer'
 
 function Cart() {
     const state = useContext(GlobalState)
@@ -93,7 +94,7 @@ console.log(total);
     
     const __DEV__ = document.domain === 'localhost'
     
-        const [name, setName] = useState('Mehul')
+        const [name, setName] = useState('Rohan')
     
         async function displayRazorpay() {
             const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
@@ -114,13 +115,16 @@ console.log(total);
                 currency: data.currency,
                 amount: data.amount.toString(),
                 order_id: data.id,
-                name: 'Donation',
-                description: 'Thank you for nothing. Please give us some money',
+                name: 'Checkout',
+                description: 'Make your payment',
                 // image: 'http://localhost:1337/logo.svg',
                 handler: function (response) {
                     alert(response.razorpay_payment_id)
                     alert(response.razorpay_order_id)
                     alert(response.razorpay_signature)
+                    alert("You have successfully placed an order.")
+                    setCart([])
+                    addToCart([])
                 },
                 prefill: {
                     name,
@@ -138,6 +142,7 @@ console.log(total);
 
     return (
         <div>
+           <Header />
             {
                 cart.map(product => (
                     <div className="detail cart" key={product._id}>
@@ -146,7 +151,7 @@ console.log(total);
                         <div className="box-detail">
                             <h2>{product.title}</h2>
 
-                            <h3>$ {product.price * product.quantity}</h3>
+                            <h3>Rs. {product.price * product.quantity}</h3>
                             <p>{product.description}</p>
                             <p>{product.content}</p>
 
@@ -166,19 +171,18 @@ console.log(total);
             }
 
             <div className="total">
-                <h3>Total: $ {total}</h3>
+                <h1 className="total--checkout">Checkout</h1>
+                <h2>Total: Rs. {total}</h2>
                 <a
-					className="App-link"
+					className="checkout-btn"
 					onClick={displayRazorpay}
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Donate $5
+					Proceed to Buy
 				</a>
-                <PaypalButton
-                total={total}
-                tranSuccess={tranSuccess} />
             </div>
+            <Footer />
         </div>
     )
 }
