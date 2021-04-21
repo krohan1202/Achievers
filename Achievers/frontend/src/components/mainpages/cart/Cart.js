@@ -65,18 +65,6 @@ console.log(total);
         }
     }
 
-    const tranSuccess = async(payment) => {
-        const {paymentID, address} = payment;
-
-        await axios.post('/api/payment', {cart, paymentID, address}, {
-            headers: {Authorization: token}
-        })
-
-        setCart([])
-        addToCart([])
-        alert("You have successfully placed an order.")
-    }
-
     //Razorpay integration
     function loadScript(src) {
         return new Promise((resolve) => {
@@ -98,22 +86,28 @@ console.log(total);
     
         async function displayRazorpay() {
             const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
-    
+            
             if (!res) {
                 alert('Razorpay SDK failed to load. Are you online?')
                 return
             }
-    
-            const data = await fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) =>
+            // console.log(cart);
+            // axios.post(`/api/cart`, cart)
+            // .then(res => {
+            //     console.log(res);
+            //     console.log(res.data);
+            // })
+
+            const data =  fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) =>
                 t.json()
             )
-    
-            console.log(data)
+            data.amount = total
+            const am = data.amount;
     
             const options = {
                 key: __DEV__ ? 'rzp_test_QqUGL3lXO9J3fl' : 'PRODUCTION_KEY',
                 currency: data.currency,
-                amount: data.amount.toString(),
+                amount: (am*100),
                 order_id: data.id,
                 name: 'Checkout',
                 description: 'Make your payment',
@@ -128,7 +122,7 @@ console.log(total);
                 },
                 prefill: {
                     name,
-                    email: 'sdfdsjfh2@ndsfdf.com',
+                    email: 'user@email.com',
                     phone_number: '9899999999'
                 }
             }
@@ -140,6 +134,7 @@ console.log(total);
     if(cart.length === 0) 
         return <h2 style={{textAlign: "center", fontSize: "5rem"}}>Cart Empty</h2> 
 
+        console.log(cart);
     return (
         <div>
            <Header />
@@ -168,6 +163,7 @@ console.log(total);
                         </div>
                     </div>
                 ))
+                
             }
 
             <div className="total">
