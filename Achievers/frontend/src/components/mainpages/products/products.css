@@ -267,11 +267,11 @@
   font-size: 1vw;
 }
 .load_more button {
-  /* padding: 2vw 1.62vw; */
+  font-size: 1vw;
   width: 10vw;
   height: 3vw;
   margin-bottom: 1.3vw;
-  border: 1px solid #555;
+  border: 0.065vw solid #555;
   text-transform: capitalize;
 }
 .ach__popularEntranceCourses--heading,
@@ -613,7 +613,7 @@
   top: 1.7vw;
 }
 .courses__experienceTheBest {
-  height: 29.5vw;
+  height: 30vw;
   width: 85vw;
   margin: 1vw auto;
   border-top: 2px solid rgb(99, 99, 99);
@@ -669,4 +669,71 @@
   font-size: 0.95vw;
   width: 20.5vw;
   top: 2.8vw;
+}
+.courses__hearFromStudents--headingPart {
+  width: 100vw;
+  display: block;
+  margin: 1vw auto 2vw;
+  height: 7vw;
+  position: relative;
+}
+.courses__hearFromStudents--headingPic {
+  position: absolute;
+  width: 7vw;
+  top: 0;
+  left: 24.5vw;
+}
+.courses__hearFromStudents--headingPicGirl {
+  left: 68.5vw;
+}
+.courses__hearFromStudents--heading {
+  width: 38vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.1vw;
+  position: relative;
+  top: 2.5vw;
+  display: block;
+  margin: 0 auto;
+  color: rgb(99, 99, 99);
+}
+.courses__hearFromStudents--studentCards {
+  margin: 0 auto 5vw;
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+}
+.courses__studentCards {
+  position: relative;
+  width: 30vw;
+}
+.courses__studentPics {
+  width: 8vw;
+}
+.courses__studentNames {
+  position: absolute;
+  top: 1vw;
+  margin-left: 1vw;
+  width: 15vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.8vw;
+  color: rgb(99, 99, 99);
+}
+.courses__studentAch {
+  position: absolute;
+  top: 6vw;
+  margin-left: 1vw;
+  width: 17.3vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.05vw;
+  color: #fc2b32;
+}
+.courses__studentReview {
+  margin-top: 1vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.05vw;
+  width: 25vw;
 }

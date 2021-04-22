@@ -6,7 +6,8 @@ import axios from 'axios';
 import LoadMore from './LoadMore';
 import Header from "../../headers/Header";
 import Footer from "../../footers/footer";
-import Filters from './Filters'
+import StudentCards from "./StudentCards";
+import students from "./students";
 
 //Assets
 import TopBanner from "../../../assets/Pics/Our Courses/Top Banner.png";
@@ -23,6 +24,8 @@ import PersonalizedDetailedAnalysis from "../../../assets/Pics/Our Courses/Exper
 import LiveTest from "../../../assets/Pics/Our Courses/Experience the Best Section/Live test.png";
 import CommunityForLearning from "../../../assets/Pics/Our Courses/Experience the Best Section/Community for learning.png";
 import GraphicPresentation from "../../../assets/Pics/Our Courses/Experience the Best Section/Graphic presentation.png";
+import BoyLeft from "../../../assets/Pics/Our Courses/Hear it directly Section/Boy Left.png";
+import GirlRight from "../../../assets/Pics/Our Courses/Hear it directly Section/Girl Right.png";
 
 
 function OurCourses() {
@@ -89,6 +92,19 @@ function OurCourses() {
         setCategory(e.target.value)
         setSearch('')
     }
+
+    // StudentCards
+    function createEntry(students) {
+        return (
+          <StudentCards
+            key={students.id}
+            pic={students.pic}
+            name={students.name}
+            achievements={students.achievements}
+            review={students.review}
+          />
+        );
+      }
 
     return (
         <>
@@ -223,6 +239,16 @@ function OurCourses() {
                         <p className="courses__experienceTheBest--description">We put focus on accurate representation, as intricate topics can be best interpreted with the assistance of correct visual aids.</p>
                     </div>
                 </div>
+            </div>
+
+            {/* Hear it directly from our Students */}
+            <div className="courses__hearFromStudents">
+                <div className="courses__hearFromStudents--headingPart">
+                    <img  className="courses__hearFromStudents--headingPic"src={BoyLeft} />
+                    <span className="courses__hearFromStudents--heading">Hear it directly from our Students</span>
+                    <img className="courses__hearFromStudents--headingPic courses__hearFromStudents--headingPicGirl" src={GirlRight} />
+                </div>
+                <div className="courses__hearFromStudents--studentCards">{students.map(createEntry)}</div>
             </div>
         </div>
 
