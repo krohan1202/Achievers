@@ -17,6 +17,12 @@ import SmallBanner3 from "../../../assets/Pics/Our Courses/Everything you need S
 import SmallBanner4 from "../../../assets/Pics/Our Courses/Everything you need Section/small banner 4.png";
 import SmallBanner5 from "../../../assets/Pics/Our Courses/Everything you need Section/small banner 5.png";
 import SmallBanner6 from "../../../assets/Pics/Our Courses/Everything you need Section/small banner 6.png";
+import ExpTeachers from "../../../assets/Pics/Our Courses/Experience the Best Section/Experienced teachers Pic.png";
+import TopQualityQuestions from "../../../assets/Pics/Our Courses/Experience the Best Section/Top quality questions.png";
+import PersonalizedDetailedAnalysis from "../../../assets/Pics/Our Courses/Experience the Best Section/Personalized detailed analysis.png";
+import LiveTest from "../../../assets/Pics/Our Courses/Experience the Best Section/Live test.png";
+import CommunityForLearning from "../../../assets/Pics/Our Courses/Experience the Best Section/Community for learning.png";
+import GraphicPresentation from "../../../assets/Pics/Our Courses/Experience the Best Section/Graphic presentation.png";
 
 
 function OurCourses() {
@@ -155,7 +161,7 @@ function OurCourses() {
         
                 {
                     isAdmin && 
-                    <div className="delete-all">
+                    <div className="courses__delete-all">
                         <span>Select all</span>
                         <input type="checkbox" checked={isCheck} onChange={checkAll} />
                         <button onClick={deleteAll}>Delete ALL</button>
@@ -170,9 +176,53 @@ function OurCourses() {
                         })
                     } 
                 </div>
-
+                
                 <LoadMore />
                 {products.length === 0 && <Loading />}
+            </div>
+            
+            {/* Experience the Best */}
+            <div className="courses__experienceTheBest">
+                    <span className="courses__experienceTheBest--heading">Experience the Best at </span>
+                    <span className="courses__experienceTheBest--heading courses__experienceTheBest--heading--A">A</span>
+                    <span className="courses__experienceTheBest--heading courses__experienceTheBest--heading--CHIEVERS">CHIEVERS</span>
+                    
+
+                <div className="courses__experienceTheBest--Row">    
+                    <div className="courses__experienceTheBest--Row1Card">
+                        <img className="courses__experienceTheBest--Pic" src={ExpTeachers} />
+                        <p className="courses__experienceTheBest--Heading">Experienced Teachers</p>
+                        <p className="courses__experienceTheBest--description">Learn with India's Best Faculty with a total experience of more than 20 years, having taught more than 5000+ students.</p>
+                    </div>
+                    <div className="courses__experienceTheBest--Row1Card">
+                        <img className="courses__experienceTheBest--Pic" src={TopQualityQuestions} />
+                        <p className="courses__experienceTheBest--Heading">Top Quality Questions</p>
+                        <p className="courses__experienceTheBest--description">All questions and solutions, designed by top exam experts, based on latest patterns and actual exam level</p>
+                    </div>
+                    <div className="courses__experienceTheBest--Row1Card">
+                        <img className="courses__experienceTheBest--Pic" src={PersonalizedDetailedAnalysis} />
+                        <p className="courses__experienceTheBest--Heading">Personalized, detailed Analysis</p>
+                        <p className="courses__experienceTheBest--description">Know your weaknesses, strengths and everything else that you need to know to improve your score and rank.</p>
+                    </div>
+                </div>
+
+                <div className="courses__experienceTheBest--Row">    
+                    <div className="courses__experienceTheBest--Row2Card">
+                        <img className="courses__experienceTheBest--Pic" src={LiveTest} />
+                        <p className="courses__experienceTheBest--Heading">Live Tests for Real Exam Experience</p>
+                        <p className="courses__experienceTheBest--description">Get your All-India Rank and feel the thrill of a real-exam. Groom your pressure handling and time management skills</p>
+                    </div>
+                    <div className="courses__experienceTheBest--Row2Card">
+                        <img className="courses__experienceTheBest--Pic" src={CommunityForLearning} />
+                        <p className="courses__experienceTheBest--Heading">Community for Learning</p>
+                        <p className="courses__experienceTheBest--description">Clear all your queries and doubts on our discussion platform. Directly interact with experts, teachers and your peers.</p>
+                    </div>
+                    <div className="courses__experienceTheBest--Row2Card">
+                        <img className="courses__experienceTheBest--Pic" src={GraphicPresentation} />
+                        <p className="courses__experienceTheBest--Heading">Graphic Presentations</p>
+                        <p className="courses__experienceTheBest--description">We put focus on accurate representation, as intricate topics can be best interpreted with the assistance of correct visual aids.</p>
+                    </div>
+                </div>
             </div>
         </div>
 

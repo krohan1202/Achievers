@@ -1,7 +1,7 @@
 .products {
   width: 92%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(6, minmax(100px, 1fr));
   justify-items: flex-start;
   margin: 20.5vw auto 0;
   position: relative;
@@ -225,7 +225,8 @@
 @import url("../utils/productItem/productItem.css");
 
 .delete-all,
-.delete-all--popularEntranceCourses {
+.delete-all--popularEntranceCourses,
+.courses__delete-all {
   position: relative;
   text-align: right;
   margin-right: 5.35vw;
@@ -235,20 +236,23 @@
   top: 0;
 }
 .delete-all input,
-.delete-all--popularEntranceCourses input {
+.delete-all--popularEntranceCourses input,
+.courses__delete-all input {
   height: 25px;
   width: 25px;
   transform: translateY(5px);
   margin: 0 15px;
 }
 .delete-all span,
-.delete-all--popularEntranceCourses span {
+.delete-all--popularEntranceCourses span,
+.courses__delete-all span {
   text-transform: uppercase;
   color: #03a5ce;
   letter-spacing: 1.3px;
 }
 .delete-all button,
-.delete-all--popularEntranceCourses button {
+.delete-all--popularEntranceCourses button,
+.courses__delete-all button {
   border: 1px solid crimson;
   height: 3.25vw;
   padding: 0.52vw 1.62vw;
@@ -260,9 +264,12 @@
 /* -------------------- Load More --------------- */
 .load_more {
   text-align: center;
+  font-size: 1vw;
 }
 .load_more button {
-  padding: 0.65vw 1.62vw;
+  /* padding: 2vw 1.62vw; */
+  width: 10vw;
+  height: 3vw;
   margin-bottom: 1.3vw;
   border: 1px solid #555;
   text-transform: capitalize;
@@ -593,10 +600,73 @@
   width: 13vw;
   padding: 1vw 0.5vw;
   margin-left: 0.7vw;
-  left: 81vw;
+  left: 80.5vw;
   padding: 0vw;
   position: absolute;
 }
 .courses__products {
   margin-top: 2vw;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  justify-items: center;
+}
+.courses__delete-all {
+  top: 1.7vw;
+}
+.courses__experienceTheBest {
+  height: 29.5vw;
+  width: 85vw;
+  margin: 1vw auto;
+  border-top: 2px solid rgb(99, 99, 99);
+  border-bottom: 2px solid rgb(99, 99, 99);
+}
+.courses__experienceTheBest--Row {
+  height: 13vw;
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+}
+.courses__experienceTheBest--heading {
+  position: relative;
+  top: 3.5vw;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
+  font-size: 2.1vw;
+  margin: 1.1vw 0;
+  color: rgb(99, 99, 99);
+}
+.courses__experienceTheBest--heading--A {
+  color: #1d85ff;
+  font-size: 2.4vw;
+}
+.courses__experienceTheBest--heading--CHIEVERS {
+  color: #f92b32;
+  font-size: 2.4vw;
+}
+.courses__experienceTheBest--Row1Card,
+.courses__experienceTheBest--Row2Card {
+  top: 6vw;
+  width: 28vw;
+  height: 7vw;
+  position: relative;
+}
+.courses__experienceTheBest--Row2Card {
+  top: 2vw;
+}
+.courses__experienceTheBest--Pic {
+  width: 5vw;
+}
+.courses__experienceTheBest--Heading,
+.courses__experienceTheBest--description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2vw;
+  width: 25vw;
+  position: absolute;
+  top: 0.5vw;
+  left: 20%;
+}
+.courses__experienceTheBest--description {
+  font-size: 0.95vw;
+  width: 20.5vw;
+  top: 2.8vw;
 }
