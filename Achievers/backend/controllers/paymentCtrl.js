@@ -15,6 +15,7 @@ const paymentCtrl = {
     createPayment: async(req, res) => {
         try {
             const user = await Users.findById(req.user.id).select('name email')
+            console.log(req.user.id);
             if(!user) return res.status(400).json({msg: "User does not exist."})
 
             const {cart, paymentID, address} = req.body;
@@ -31,7 +32,7 @@ const paymentCtrl = {
 
             
             await newPayment.save()
-            res.json({msg: "Payment Succes!"})
+            res.json({msg: "Payment Success!"})
             
         } catch (err) {
             return res.status(500).json({msg: err.message})

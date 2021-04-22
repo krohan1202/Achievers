@@ -25,7 +25,6 @@ app.use('/api', require('./routes/productRouter'))
 app.use('/api', require('./routes/paymentRouter'))
 
 
-
 // Connect to mongodb
 const URI = process.env.MONGODB_URL
 mongoose.connect(URI, {
@@ -58,7 +57,7 @@ app.post('/verification', (req, res) => {
 	// do a validation
 	const secret = '12345678'
 
-	console.log(req.body)
+	// console.log(req.body)
 
 	const crypto = require('crypto')
 
@@ -71,7 +70,7 @@ app.post('/verification', (req, res) => {
 	if (digest === req.headers['x-razorpay-signature']) {
 		console.log('request is legit')
 		// process it
-		require('fs').writeFileSync('payment1.json', JSON.stringify(req.body, null, 4))
+		require('fs')
 	} else {
 		// pass it
 	}
@@ -79,8 +78,9 @@ app.post('/verification', (req, res) => {
 })
 
 app.post('/razorpay', async (req, res) => {
+
 	const payment_capture = 1
-	const amount = 599
+	const amount = 10
 	const currency = 'INR'
 
 	const options = {
