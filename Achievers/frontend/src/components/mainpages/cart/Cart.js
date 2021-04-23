@@ -5,11 +5,13 @@ import Header from '../../headers/Header'
 import Footer from '../../footers/footer'
 
 function Cart() {
+    const email= localStorage.getItem('email')
+    console.log(email);
     const state = useContext(GlobalState)
     const [cart, setCart] = state.userAPI.cart
     const [token] = state.token
     const [total, setTotal] = useState(0)
-
+    console.log(state.token)
     useEffect(() =>{
         const getTotal = () =>{
             const total = cart.reduce((prev, item) => {
@@ -29,6 +31,7 @@ function Cart() {
         })
     }
 console.log(total);
+
 
     const increment = (id) =>{
         cart.forEach(item => {
@@ -91,12 +94,7 @@ console.log(total);
                 alert('Razorpay SDK failed to load. Are you online?')
                 return
             }
-            // console.log(cart);
-            // axios.post(`/api/cart`, cart)
-            // .then(res => {
-            //     console.log(res);
-            //     console.log(res.data);
-            // })
+            console.log(cart);
 
             const data =  fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) =>
                 t.json()
@@ -117,12 +115,13 @@ console.log(total);
                     alert(response.razorpay_order_id)
                     alert(response.razorpay_signature)
                     alert("You have successfully placed an order.")
+                    axios.post(`/api/razorpay_payment`, {email:email, cart: cart})
                     setCart([])
                     addToCart([])
                 },
                 prefill: {
                     name,
-                    email: 'user@email.com',
+                    email: email,
                     phone_number: '9899999999'
                 }
             }

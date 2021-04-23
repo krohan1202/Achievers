@@ -1,29 +1,34 @@
-import React, {useState} from 'react'
+import React, {createContext,useContext,useState} from 'react'
+import {GlobalState} from '../../../GlobalState'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 
 function Login() {
+    const state = useContext(GlobalState)
     const [user, setUser] = useState({
         email:'', password: ''
     })
+    
 
     const onChangeInput = e =>{
         const {name, value} = e.target;
         setUser({...user, [name]:value})
     }
 
+    // console.log({...user}.email)
     const loginSubmit = async e =>{
         e.preventDefault()
         try {
             await axios.post('/user/login', {...user})
 
             localStorage.setItem('firstLogin', true)
-            
+            localStorage.setItem('email', {...user}.email)
             window.location.href = "/";
         } catch (err) {
             alert(err.response.data.msg)
         }
     }
+
 
     return (
         <div className="login-page">
