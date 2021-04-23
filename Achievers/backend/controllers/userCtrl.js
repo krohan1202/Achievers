@@ -44,7 +44,7 @@ const userCtrl = {
             const {email, password} = req.body;
 
             const user = await Users.findOne({email})
-            if(!user) return res.status(400).json({msg: "User does not exist."})
+            if(!user) return res.status(400).json({msg: "User does not exist.."})
 
             const isMatch = await bcrypt.compare(password, user.password)
             if(!isMatch) return res.status(400).json({msg: "Incorrect password."})
@@ -103,7 +103,7 @@ const userCtrl = {
     },
     addCart: async (req, res) =>{
         try {
-            const user = await Users.findById(req.user.id)
+            const user = Users.findById(req.user.id)
             if(!user) return res.status(400).json({msg: "User does not exist."})
 
             await Users.findOneAndUpdate({_id: req.user.id}, {

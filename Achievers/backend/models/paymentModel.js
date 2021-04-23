@@ -1,18 +1,23 @@
 const mongoose = require('mongoose')
-
+const { ObjectId } = mongoose.Schema;
 
 const paymentSchema = new mongoose.Schema({
     user_id: {
         type: String,
-        // required: true
+        required: true
     },
     name:{
         type: String,
-        required: true
+        // required: true
     },
     email:{
         type: String,
-        required: true
+        // required: true
+    },
+    updated: Date,
+    user: {
+      type: ObjectId,
+      ref: "Users",
     },
     // paymentID:{
     //     type: String,
@@ -21,11 +26,11 @@ const paymentSchema = new mongoose.Schema({
     cart:{
         type: Array,
         default: []
-    },
-    status:{
-        type: Boolean,
-        default: false
     }
+    // status:{
+    //     type: Boolean,
+    //     default: false
+    // }
 }, {
     timestamps: true
 })

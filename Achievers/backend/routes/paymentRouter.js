@@ -4,9 +4,9 @@ const auth = require('../middleware/auth')
 const authAdmin = require('../middleware/authAdmin')
 
 
-router.route('/payment')
+router.route('/razorpay_payment')
     .get(auth, authAdmin, paymentCtrl.getPayments)
-    .post(auth, paymentCtrl.createPayment)
+    .post(paymentCtrl.createPayment)
 
 
 module.exports = router

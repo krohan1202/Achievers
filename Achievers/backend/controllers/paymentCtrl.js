@@ -14,27 +14,33 @@ const paymentCtrl = {
     },
     createPayment: async(req, res) => {
         try {
-            const user = await Users.findById(req.user.id).select('name email')
-            console.log(req.user.id);
-            if(!user) return res.status(400).json({msg: "User does not exist."})
+            // console.log(res);
+            console.log(req.body);
+            console.log(req.headers);
+            const {email, cart} = req.body;
+            const user = await Users.findOne({email})
+            
+            if(!user) return res.status(400).json({msg: "User does not exist!!"})
 
-            const {cart, paymentID, address} = req.body;
-
-            const {_id, name, email} = user;
-
+            const {_id, name} = user;
+            
             const newPayment = new Payments({
-                user_id: _id, name, email, cart, paymentID, address
+                user_id: _id, name, email, cart
             })
-
-            cart.filter(item => {
-                return sold(item._id, item.quantity, item.sold)
-            })
+            
+            await newPayment.save((err, newPayment) => {
+                if (err) {
+                  return res.status(400).json({
+                    error: "Failed to save order in DB.",
+                  });
+                }
+                res.json({msg: "Payment Success!"})
+                console.log(newPayment)
+              });
 
             
-            await newPayment.save()
-            res.json({msg: "Payment Success!"})
-            
-        } catch (err) {
+        }
+        catch (err) {
             return res.status(500).json({msg: err.message})
         }
     }
