@@ -11,6 +11,7 @@ import Cart from './cart/Cart'
 import NotFound from './utils/not_found/NotFound'
 import Categories from './categories/Categories'
 import CreateProduct from './createProduct/CreateProduct'
+import Careers from './career/Careers';
 
 import {GlobalState} from '../../GlobalState'
 
@@ -39,6 +40,7 @@ function Pages() {
 
             <Route path="/cart" exact component={Cart} />
 
+            <Route path="/careers" exact component={Careers} />
 
             <Route path="*" exact component={NotFound} />
         </Switch>

@@ -63,7 +63,6 @@ function Products() {
         })
     }
     
-    const statey = useContext(GlobalState)
     const [categories] = state.categoriesAPI.categories
 
     const [category, setCategory] = state.productsAPI.category

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./footer.css";
 import Logo from "../../assets/Pics/Home/1-Navbar/Logo.png";
 

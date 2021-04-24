@@ -1,5 +1,4 @@
-import React, {useContext} from "react";
-import {GlobalState} from '../../../GlobalState';
+import React from "react";
 
 function StudentCards(props) {
   return (

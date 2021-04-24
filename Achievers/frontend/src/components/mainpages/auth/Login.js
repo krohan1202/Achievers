@@ -1,10 +1,8 @@
-import React, {createContext,useContext,useState} from 'react'
-import {GlobalState} from '../../../GlobalState'
+import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 
 function Login() {
-    const state = useContext(GlobalState)
     const [user, setUser] = useState({
         email:'', password: ''
     })
