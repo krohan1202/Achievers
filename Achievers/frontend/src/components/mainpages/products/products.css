@@ -451,7 +451,7 @@
   position: relative;
 }
 
-/* Our Courses Section */
+/* Our Courses Page */
 .courses__goBackLink {
   height: 4vw;
   background-color: rgb(248, 248, 248);
@@ -634,11 +634,13 @@
   margin: 1.1vw 0;
   color: rgb(99, 99, 99);
 }
-.courses__experienceTheBest--heading--A {
+.courses__experienceTheBest--heading--A,
+.careers__joinAch--heading--A {
   color: #1d85ff;
   font-size: 2.4vw;
 }
-.courses__experienceTheBest--heading--CHIEVERS {
+.courses__experienceTheBest--heading--CHIEVERS,
+.careers__joinAch--heading--CHIEVERS {
   color: #f92b32;
   font-size: 2.4vw;
 }
@@ -656,7 +658,8 @@
   width: 5vw;
 }
 .courses__experienceTheBest--Heading,
-.courses__experienceTheBest--description {
+.courses__experienceTheBest--description,
+.careers__joinAch--heading {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.2vw;
@@ -736,4 +739,162 @@
   font-weight: 400;
   font-size: 1.05vw;
   width: 25vw;
+}
+
+/* Careers Page */
+.careers__joinAch {
+  position: relative;
+  width: 100vw;
+}
+.careers__joinAch--topBanner {
+  position: relative;
+  width: 100vw;
+  height: 30vw;
+}
+.careers__joinAch--whiteBox {
+  position: absolute;
+  background-color: #fff;
+  width: 49vw;
+  height: 14vw;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+.careers__joinAch--heading {
+  left: 11.7%;
+  transform: translateX(-50%);
+  position: relative;
+  font-size: 2.7vw;
+  width: 30vw;
+  top: 1.9vw;
+}
+.careers__joinAch--links {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32vw;
+  top: 4.5vw;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.careers__joinAch--viewPositionsBtn,
+.careers__joinAch--aboutUsBtn {
+  background-color: #b20000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.1vw;
+  position: relative;
+  padding: 1vw 2.5vw;
+  border-radius: 25px;
+}
+.careers__joinAch--aboutUsBtn {
+  padding: 1vw 3.7vw;
+}
+.careers__joinAch--aboutUsBtn {
+  background-color: #010e26;
+}
+.careers__statsUnderTopBanner {
+  position: relative;
+  width: 84vw;
+  height: 6vw;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid rgb(99, 99, 99);
+  margin-bottom: 1vw;
+  display: flex;
+  justify-content: space-between;
+}
+.careers__statsUnderTopBanner--stat {
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  width: 23.5vw;
+}
+.careers__statsUnderTopBanner--statImg {
+  width: 3.6vw;
+  position: relative;
+  top: 1.1vw;
+}
+.careers__statsUnderTopBanner--statNumber,
+.careers__statsUnderTopBanner--statDescription {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.7vw;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 1vw;
+}
+.careers__statsUnderTopBanner--statDescription {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.1vw;
+  margin-left: 6vw;
+}
+.careers__welcomeToAch {
+  position: relative;
+}
+.careers__welcomeToAch--headingWelcomeTo {
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
+  font-size: 3.6vw;
+  left: 7.5vw;
+  margin-top: 1.5vw;
+  width: 21vw;
+}
+.careers__welcomeToAch--heading--A {
+  position: relative;
+  left: 7.5vw;
+  color: #1d85ff;
+  font-size: 3.7vw;
+}
+.careers__welcomeToAch--heading--CHIEVERS {
+  position: relative;
+  left: 7.5vw;
+  color: #f92b32;
+  font-size: 3.7vw;
+}
+.careers__welcomeToAch--description1,
+.careers__welcomeToAch--description2 {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2vw;
+  left: 7.5vw;
+  width: 53vw;
+  margin-top: 1.5vw;
+  text-align: justify;
+  line-height: 30px;
+}
+.careers__welcomeToAch--description2 {
+  margin-top: 2vw;
+}
+.careers__welcomeToAch--president {
+  position: absolute;
+  top: 3vw;
+  width: 27vw;
+  height: 24vw;
+  left: 64vw;
+  z-index: 1;
+}
+.careers__welcomeToAch--vicePresidentCard {
+  position: relative;
+  width: 19vw;
+}
+.careers__welcomeToAch--vicePresidentCardImg {
+  position: relative;
+  width: 17vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.careers__welcomeToAch--vicePresidentCardName {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2vw;
 }
