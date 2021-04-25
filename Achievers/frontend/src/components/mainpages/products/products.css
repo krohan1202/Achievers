@@ -955,3 +955,59 @@
   text-align: center;
   line-height: 25px;
 }
+.careers__ourTeam--Heading {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.7vw;
+  left: 7vw;
+  width: 36vw;
+  margin-top: 5vw;
+}
+.careers__ourTeam--academicCoordinators {
+  position: relative;
+  width: 24vw;
+  margin-top: 2vw;
+}
+.careers__ourTeam--academicCoordinatorsHeading {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.3vw;
+  text-align: center;
+}
+.careers__ourTeam--TeamCards {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 88vw;
+  margin-bottom: 3vw;
+}
+.careers__ourTeam--academicCoordinatorsCard {
+  position: relative;
+  margin-top: 1.5vw;
+}
+.careers__ourTeam--academicCoordinatorsCardImg {
+  position: relative;
+  width: 6.1vw;
+  left: 2.1vw;
+}
+.careers__ourTeam--academicCoordinatorsCardName,
+.careers__ourTeam--academicCoordinatorsCardDesignation {
+  position: absolute;
+  margin-left: 3vw;
+  top: 1vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.1vw;
+  color: #0b1d3e;
+}
+.careers__ourTeam--academicCoordinatorsCardDesignation {
+  top: 2.6vw;
+  font-size: 0.93vw;
+  color: #000;
+  width: 12vw;
+  line-height: 20px;
+}

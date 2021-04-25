@@ -77,6 +77,60 @@ function Careers() {
                         <p className="careers__welcomeToAch--textParawithImg--text">Achievers takes immense pride in being recognized as a front-runner amongst aspiring students owing to high standards of teaching and dynamic discipline. We have flourished from a humble beginning in 1999 to being one of the largest tuition centres providing education to over 3000 students in every academic session. As we see more students getting associated with Achievers, we envision ourselves offering more bachelor degree courses. We endorse and nurture diversity in our institution, hence we boast a family of individuals from all walks of life.Our academic programs reflect diversified ideas rendering an excellent reputation to the centre</p>
                         <img className="careers__welcomeToAch--textParawithImg--Img2" src={Picy} />
                     </div>
+
+                    {/* OUR ADMINISTRATIVE TEAM SECTION */}
+
+                        <p className="careers__ourTeam--Heading">Our Administrative Team</p>
+                        <div className="careers__ourTeam--TeamCards">
+                        {/* Academic Coordinators */}
+                        <div className="careers__ourTeam--academicCoordinators">
+                            <p className="careers__ourTeam--academicCoordinatorsHeading">ACADEMIC COORDINATORS</p>
+                            <div className="careers__ourTeam--academicCoordinatorsCard">
+                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} />
+                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
+                            </div>
+
+                            <div className="careers__ourTeam--academicCoordinatorsCard">
+                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} />
+                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
+                            </div>
+                        </div>
+
+                        {/* Administrative Department */}
+                        <div className="careers__ourTeam--academicCoordinators">
+                            <p className="careers__ourTeam--academicCoordinatorsHeading">ACADEMIC COORDINATORS</p>
+                            <div className="careers__ourTeam--academicCoordinatorsCard">
+                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} />
+                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
+                            </div>
+
+                            <div className="careers__ourTeam--academicCoordinatorsCard">
+                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} />
+                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
+                            </div>
+                        </div>
+
+                        {/* Executive Officers */}
+                        <div className="careers__ourTeam--academicCoordinators">
+                            <p className="careers__ourTeam--academicCoordinatorsHeading">ACADEMIC COORDINATORS</p>
+                            <div className="careers__ourTeam--academicCoordinatorsCard">
+                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} />
+                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
+                            </div>
+
+                            <div className="careers__ourTeam--academicCoordinatorsCard">
+                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} />
+                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
+                            </div>
+                        </div>
+                        </div>
+                    
                 </div>
             </div>
             <Footer />
