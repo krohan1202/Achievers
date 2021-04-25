@@ -872,17 +872,25 @@
 .careers__welcomeToAch--description2 {
   margin-top: 2vw;
 }
+.careers__welcomeToAch--vicePresidents {
+  position: relative;
+  width: 79vw;
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .careers__welcomeToAch--president {
   position: absolute;
   top: 3vw;
   width: 27vw;
   height: 24vw;
   left: 64vw;
-  z-index: 1;
 }
 .careers__welcomeToAch--vicePresidentCard {
   position: relative;
   width: 19vw;
+  margin-top: 4vw;
 }
 .careers__welcomeToAch--vicePresidentCardImg {
   position: relative;
@@ -890,11 +898,60 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.careers__welcomeToAch--vicePresidentCardName {
+.careers__welcomeToAch--vicePresidentCardName,
+.careers__welcomeToAch--vicePresidentCardDesignation,
+.careers__welcomeToAch--vicePresidentCardDesignation2 {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.25vw;
+  text-align: center;
+  margin: 0.5vw 0;
+}
+.careers__welcomeToAch--vicePresidentCardDesignation,
+.careers__welcomeToAch--vicePresidentCardDesignation2 {
+  width: 14.5vw;
   font-weight: 600;
-  font-size: 1.2vw;
+  font-size: 0.93vw;
+  line-height: 22px;
+}
+.careers__welcomeToAch--vicePresidentCardDesignation2 {
+  width: 16vw;
+}
+.careers__welcomeToAch--textPara {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.06vw;
+  width: 85vw;
+  text-align: justify;
+  margin: 2vw 0;
+  line-height: 25px;
+}
+.careers__welcomeToAch--textParawithImg {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85vw;
+  margin-top: 4vw;
+}
+.careers__welcomeToAch--textParawithImg--Img1,
+.careers__welcomeToAch--textParawithImg--Img2 {
+  position: relative;
+  width: 16vw;
+}
+.careers__welcomeToAch--textParawithImg--text {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.17vw;
+  width: 43vw;
+  text-align: center;
+  line-height: 25px;
 }
