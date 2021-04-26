@@ -36,7 +36,7 @@ function Careers() {
                             <span className="careers__joinAch--heading">family</span>
 
                             <div className="careers__joinAch--links">
-                                <a href="#" className="careers__joinAch--viewPositionsBtn">View Open Positions</a>
+                                <a href="#viewOpenPositions" className="careers__joinAch--viewPositionsBtn">View Open Positions</a>
                                 <a href="#" className="careers__joinAch--aboutUsBtn">About Us</a>
                             </div>
                     </div>
@@ -149,7 +149,7 @@ function Careers() {
                         </div>
                     
                     {/* Job Opportunities */}
-                    <div className="careers__jobs">
+                    <div id="viewOpenPositions" className="careers__jobs">
                         <p className="careers__jobs--heading">We are looking for interested individuals!</p>
                         <div className="careers__jobCards">{jobs.map(createJobs)}</div>
                     </div>

@@ -11,7 +11,7 @@ function Footer() {
                 <li className="ach__footer--aboutPart--li"><p className="ach__footer--aboutPart--heading">ABOUT</p></li>
                 <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="#">Contact Us</a></li>
                 <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="#">About Us</a></li>
-                <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="#">Careers</a></li>
+                <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="/careers">Careers</a></li>
                 <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="#">Achiever Stories</a></li>
                 <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="#">Press</a></li>
                 </ul>
