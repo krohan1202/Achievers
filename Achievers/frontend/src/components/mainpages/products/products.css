@@ -1021,19 +1021,19 @@
   width: 49vw;
   margin: 2.5vw 0 3vw;
 }
-.courses__jobCards {
+.careers__jobCards {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   width: 84vw;
 }
-.courses__jobCards--leftSide {
-  height: 16.5vw;
+.careers__jobCards--leftSide {
+  height: 16vw;
   width: 25vw;
 }
-.courses__jobCards--jobTitle,
-.courses__jobCards--jobHighlightsHeading,
-.courses__jobCards--jobRequirements {
+.careers__jobCards--jobTitle,
+.careers__jobCards--jobHighlightsHeading,
+.careers__jobCards--jobRequirements {
   position: relative;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -1041,16 +1041,16 @@
   width: 23.5vw;
   color: #004aad;
 }
-.courses__jobCards--jobHighlightsHeading {
+.careers__jobCards--jobHighlightsHeading {
   font-size: 1.1vw;
   margin-top: 1vw;
 }
-.courses__jobCards--jobRequirements {
+.careers__jobCards--jobRequirements {
   font-size: 0.9vw;
   font-weight: 600;
   margin-top: 0.8vw;
 }
-.courses__jobCards--applyBtn {
+.careers__jobCards--applyBtn {
   position: relative;
   color: #000;
   padding: 0.75vw 2vw;
@@ -1061,14 +1061,14 @@
   border-radius: 25px;
   top: 2vw;
 }
-.courses__jobCards--RightSide {
+.careers__jobCards--RightSide {
   width: 45vw;
   position: absolute;
   top: 0.5vw;
   left: 44vw;
 }
-.courses__jobCards--jobDescription,
-.courses__jobCards--rolesAndResponsibilitiesHeading,
+.careers__jobCards--jobDescription,
+.careers__jobCards--rolesAndResponsibilitiesHeading,
 .careers__jobCards-bulletPoints {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -1076,7 +1076,7 @@
   font-size: 1.1vw;
   width: 23.5vw;
 }
-.courses__jobCards--rolesAndResponsibilitiesHeading {
+.careers__jobCards--rolesAndResponsibilitiesHeading {
   font-size: 0.97vw;
   margin: 1.5vw 0 0.65vw;
 }

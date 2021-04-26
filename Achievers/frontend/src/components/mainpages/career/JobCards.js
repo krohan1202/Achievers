@@ -7,17 +7,17 @@ function JobCards(props) {
         );
 
     return (
-      <div className="courses__jobCards">
-          <div className="courses__jobCards--leftSide">
-            <p className="courses__jobCards--jobTitle">{props.jobTitle}</p>
-            <p className="courses__jobCards--jobHighlightsHeading">Job Highlights</p>
-            <p className="courses__jobCards--jobRequirements">{props.jobRequirements}</p>
-            <a href={props.link} className="courses__jobCards--applyBtn">Apply Now</a>
+      <div className="careers__jobCards">
+          <div className="careers__jobCards--leftSide">
+            <p className="careers__jobCards--jobTitle">{props.jobTitle}</p>
+            <p className="careers__jobCards--jobHighlightsHeading">Job Highlights</p>
+            <p className="careers__jobCards--jobRequirements">{props.jobRequirements}</p>
+            <a href={props.link} className="careers__jobCards--applyBtn">Apply Now</a>
           </div>
 
-          <div className="courses__jobCards--RightSide">
-            <p className="courses__jobCards--jobDescription">Job Description</p>
-            <p className="courses__jobCards--rolesAndResponsibilitiesHeading">Roles And Responsibilities</p>
+          <div className="careers__jobCards--RightSide">
+            <p className="careers__jobCards--jobDescription">Job Description</p>
+            <p className="careers__jobCards--rolesAndResponsibilitiesHeading">Roles And Responsibilities</p>
             {rolesAndResponsibilities}
           </div>  
          
