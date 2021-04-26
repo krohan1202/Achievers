@@ -1,12 +1,29 @@
 import React from "react";
 import Header from "../../headers/Header";
 import Footer from "../../footers/footer";
+import JobCards from "./JobCards";
+import jobs from "./jobs";
 
 // Assets
 import TopBanner from "../../../assets/Pics/Careers/Top Banner.png";
 import Picy from "../../../assets/Pics/Careers/Picy.png";
 
 function Careers() {
+
+    // JobCards
+    function createJobs(jobs) {
+        return (
+          <JobCards
+            key={jobs.id}
+            jobTitle={jobs.jobTitle}
+            jobRequirements={jobs.jobRequirements}
+            rolesAndResponsibilities={jobs.rolesAndResponsibilities}
+            link={jobs.link}
+          />
+        );
+      }
+
+
     return (
         <>
             <Header />
@@ -131,6 +148,11 @@ function Careers() {
                         </div>
                         </div>
                     
+                    {/* Job Opportunities */}
+                    <div className="careers__jobs">
+                        <p className="careers__jobs--heading">We are looking for interested individuals!</p>
+                        <div className="careers__jobCards">{jobs.map(createJobs)}</div>
+                    </div>
                 </div>
             </div>
             <Footer />
