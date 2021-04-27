@@ -40,21 +40,21 @@ function Careers() {
                                 <a href="#" className="careers__joinAch--aboutUsBtn">About Us</a>
                             </div>
                     </div>
-                    <img className="careers__joinAch--topBanner" src={TopBanner} />
+                    <img className="careers__joinAch--topBanner" src={TopBanner} alt="Top Banner" />
                 </div>
                 <div className="careers__statsUnderTopBanner">
                     <div className="careers__statsUnderTopBanner--stat">
-                        <img className="careers__statsUnderTopBanner--statImg" src={Picy} />
+                        <img className="careers__statsUnderTopBanner--statImg" src={Picy} alt="Stats"/>
                         <span className="careers__statsUnderTopBanner--statNumber">2K+</span>
                         <span className="careers__statsUnderTopBanner--statDescription">&nbsp;&nbsp;Website monthly views</span>
                     </div>
                     <div className="careers__statsUnderTopBanner--stat">
-                        <img className="careers__statsUnderTopBanner--statImg" src={Picy} />
+                        <img className="careers__statsUnderTopBanner--statImg" src={Picy} alt="Stats"/>
                         <span className="careers__statsUnderTopBanner--statNumber">21K+</span>
                         <span className="careers__statsUnderTopBanner--statDescription"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Happy students</span>
                     </div>
                     <div className="careers__statsUnderTopBanner--stat">
-                        <img className="careers__statsUnderTopBanner--statImg" src={Picy} />
+                        <img className="careers__statsUnderTopBanner--statImg" src={Picy} alt="Stats"/>
                         <span className="careers__statsUnderTopBanner--statNumber">1K+</span>
                         <span className="careers__statsUnderTopBanner--statDescription">App Downloads</span>
                     </div>
@@ -66,21 +66,23 @@ function Careers() {
 
                     <p className="careers__welcomeToAch--description1">Welcome to ACHIEVERS! We are delighted that you have chosen to join our organization and hope that you will enjoy a long and successful career with us. As you become familiar with our culture and mission, we hope you will take advantage of opportunities to enhance your career and further ACHIEVERS’ goals. </p>
                     <p className="careers__welcomeToAch--description2">You are joining an organization that has a reputation for outstanding leadership, innovation, and expertise. With your active involvement, creativity, and support, ACHIEVERS will continue to achieve its goals. We sincerely hope you will take pride in being an important part of ACHIEVERS' success.</p>
-                    <img className="careers__welcomeToAch--president" src={Picy} />
+                    <img className="careers__welcomeToAch--president" src={Picy} alt="President"/>
+                    <p className="careers__welcomeToAch--presidentName">Dr. Sujoy Roy Chowdhury (SRC)</p>
+                    <p className="careers__welcomeToAch--presidentDesignation">President, Founder and CEO</p>
 
                     <div className="careers__welcomeToAch--vicePresidents">
                         <div className="careers__welcomeToAch--vicePresidentCard">
-                            <img className="careers__welcomeToAch--vicePresidentCardImg" src={Picy} />
+                            <img className="careers__welcomeToAch--vicePresidentCardImg" src={Picy} alt="Vice President"/>
                             <p className="careers__welcomeToAch--vicePresidentCardName">Prof.Anindya Das (AD)</p>
                             <p className="careers__welcomeToAch--vicePresidentCardDesignation">Vice President (Academic) and Controller of Examination</p>
                         </div>
                         <div className="careers__welcomeToAch--vicePresidentCard">
-                            <img className="careers__welcomeToAch--vicePresidentCardImg" src={Picy} />
+                            <img className="careers__welcomeToAch--vicePresidentCardImg" src={Picy} alt="Vice President"/>
                             <p className="careers__welcomeToAch--vicePresidentCardName">Mr. Debdut Gangopadhyay</p>
                             <p className="careers__welcomeToAch--vicePresidentCardDesignation2">Vice President (Administration) and Operations Head</p>
                         </div>
                         <div className="careers__welcomeToAch--vicePresidentCard">
-                            <img className="careers__welcomeToAch--vicePresidentCardImg" src={Picy} />
+                            <img className="careers__welcomeToAch--vicePresidentCardImg" src={Picy} alt="Vice President"/>
                             <p className="careers__welcomeToAch--vicePresidentCardName">Dr. Sayan Roy Chowdhury</p>
                             <p className="careers__welcomeToAch--vicePresidentCardDesignation">Vice President (Academic) and Dean of Science</p>
                         </div>
@@ -90,9 +92,9 @@ function Careers() {
                     <p className="careers__welcomeToAch--textPara">Our students have been successful not only in University Exams but also in various National-level entrance exams and they have been the guiding force for our various programs. Over the past years, Achievers has been in the forefront in evaluating various needs of the students and contributing for their success at these highly competitive exams. Our academic program is of the highest caliber because we believe in the transformative power of ideas and concise and easy way to understand. Our faculty and our diverse student body from different social walks of life all come together to contribute the same purpose: to maintain Achievers' excellent reputation in education.</p>
                 
                     <div className="careers__welcomeToAch--textParawithImg">
-                        <img className="careers__welcomeToAch--textParawithImg--Img1" src={Picy} />
+                        <img className="careers__welcomeToAch--textParawithImg--Img1" src={Picy} alt="Left illustration"/>
                         <p className="careers__welcomeToAch--textParawithImg--text">Achievers takes immense pride in being recognized as a front-runner amongst aspiring students owing to high standards of teaching and dynamic discipline. We have flourished from a humble beginning in 1999 to being one of the largest tuition centres providing education to over 3000 students in every academic session. As we see more students getting associated with Achievers, we envision ourselves offering more bachelor degree courses. We endorse and nurture diversity in our institution, hence we boast a family of individuals from all walks of life.Our academic programs reflect diversified ideas rendering an excellent reputation to the centre</p>
-                        <img className="careers__welcomeToAch--textParawithImg--Img2" src={Picy} />
+                        <img className="careers__welcomeToAch--textParawithImg--Img2" src={Picy} alt="Right illustration"/>
                     </div>
 
                     {/* OUR ADMINISTRATIVE TEAM SECTION */}
@@ -103,13 +105,13 @@ function Careers() {
                         <div className="careers__ourTeam--academicCoordinators">
                             <p className="careers__ourTeam--academicCoordinatorsHeading">ACADEMIC COORDINATORS</p>
                             <div className="careers__ourTeam--academicCoordinatorsCard">
-                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} />
+                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} alt="Academic Coordinators"/>
                                 <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
                                 <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
                             </div>
 
                             <div className="careers__ourTeam--academicCoordinatorsCard">
-                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} />
+                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} alt="Academic Coordinators"/>
                                 <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
                                 <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
                             </div>
@@ -119,13 +121,13 @@ function Careers() {
                         <div className="careers__ourTeam--academicCoordinators">
                             <p className="careers__ourTeam--academicCoordinatorsHeading">ACADEMIC COORDINATORS</p>
                             <div className="careers__ourTeam--academicCoordinatorsCard">
-                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} />
+                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} alt="Administrative Department"/>
                                 <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
                                 <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
                             </div>
 
                             <div className="careers__ourTeam--academicCoordinatorsCard">
-                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} />
+                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} alt="Administrative Department"/>
                                 <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
                                 <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
                             </div>
@@ -135,13 +137,13 @@ function Careers() {
                         <div className="careers__ourTeam--academicCoordinators">
                             <p className="careers__ourTeam--academicCoordinatorsHeading">ACADEMIC COORDINATORS</p>
                             <div className="careers__ourTeam--academicCoordinatorsCard">
-                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} />
+                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} alt="Executive Officers"/>
                                 <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
                                 <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
                             </div>
 
                             <div className="careers__ourTeam--academicCoordinatorsCard">
-                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} />
+                                <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} alt="Executive Officers"/>
                                 <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
                                 <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
                             </div>

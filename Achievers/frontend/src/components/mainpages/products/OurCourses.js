@@ -115,10 +115,10 @@ function OurCourses() {
                 <a className="courses__goBackLink--a" href="/our_courses">Our Courses /</a>
                 <a className="courses__goBackLink--a courses__goBackLink--a--ourCourses" href="#"> Achievers Products</a>
             </div>
-            <img className="courses__topBanner" src={TopBanner} />
+            <img className="courses__topBanner" src={TopBanner} alt="Top Banner"/>
 
             <div className="courses__joinCommunity">
-                <img className="courses__joinCommunity--tickIcon" src={TickIcon} />
+                <img className="courses__joinCommunity--tickIcon" src={TickIcon} alt="Tick icon"/>
                 <p className="courses__joinCommunity--trustedBy">Trusted by</p>
                 <p className="courses__joinCommunity--sixThousandStudents">6,000+ students</p>
                 <hr className="courses__joinCommunity--verticalLine"></hr>
@@ -132,14 +132,14 @@ function OurCourses() {
                 <p className="courses__everythingYouNeed--description">Online Courses, Practice Question Bank, Mock Test Series, Rankers' Test Series, Study Materials. Doubt Clearing Sessions and more....</p>
 
                 <div className="courses__everythingYouNeed--RowPics">
-                    <img className="courses__everythingYouNeed--RowPics--smallBanners" src={SmallBanner1} />
-                    <img className="courses__everythingYouNeed--RowPics--smallBanners" src={SmallBanner2} />
-                    <img className="courses__everythingYouNeed--RowPics--smallBanners" src={SmallBanner3} />
+                    <img className="courses__everythingYouNeed--RowPics--smallBanners" src={SmallBanner1} alt="Card"/>
+                    <img className="courses__everythingYouNeed--RowPics--smallBanners" src={SmallBanner2} alt="Card"/>
+                    <img className="courses__everythingYouNeed--RowPics--smallBanners" src={SmallBanner3} alt="Card"/>
                 </div>
                 <div className="courses__everythingYouNeed--RowPics">
-                    <img className="courses__everythingYouNeed--RowPics--smallBanners" src={SmallBanner4} />
-                    <img className="courses__everythingYouNeed--RowPics--smallBanners" src={SmallBanner5} />
-                    <img className="courses__everythingYouNeed--RowPics--smallBanners" src={SmallBanner6} />
+                    <img className="courses__everythingYouNeed--RowPics--smallBanners" src={SmallBanner4} alt="Card"/>
+                    <img className="courses__everythingYouNeed--RowPics--smallBanners" src={SmallBanner5} alt="Card"/>
+                    <img className="courses__everythingYouNeed--RowPics--smallBanners" src={SmallBanner6} alt="Card"/>
                 </div>
             </div>
 
@@ -206,17 +206,17 @@ function OurCourses() {
 
                 <div className="courses__experienceTheBest--Row">    
                     <div className="courses__experienceTheBest--Row1Card">
-                        <img className="courses__experienceTheBest--Pic" src={ExpTeachers} />
+                        <img className="courses__experienceTheBest--Pic" src={ExpTeachers} alt="Icon"/>
                         <p className="courses__experienceTheBest--Heading">Experienced Teachers</p>
                         <p className="courses__experienceTheBest--description">Learn with India's Best Faculty with a total experience of more than 20 years, having taught more than 5000+ students.</p>
                     </div>
                     <div className="courses__experienceTheBest--Row1Card">
-                        <img className="courses__experienceTheBest--Pic" src={TopQualityQuestions} />
+                        <img className="courses__experienceTheBest--Pic" src={TopQualityQuestions} alt="Icon"/>
                         <p className="courses__experienceTheBest--Heading">Top Quality Questions</p>
                         <p className="courses__experienceTheBest--description">All questions and solutions, designed by top exam experts, based on latest patterns and actual exam level</p>
                     </div>
                     <div className="courses__experienceTheBest--Row1Card">
-                        <img className="courses__experienceTheBest--Pic" src={PersonalizedDetailedAnalysis} />
+                        <img className="courses__experienceTheBest--Pic" src={PersonalizedDetailedAnalysis} alt="Icon"/>
                         <p className="courses__experienceTheBest--Heading">Personalized, detailed Analysis</p>
                         <p className="courses__experienceTheBest--description">Know your weaknesses, strengths and everything else that you need to know to improve your score and rank.</p>
                     </div>
@@ -224,17 +224,17 @@ function OurCourses() {
 
                 <div className="courses__experienceTheBest--Row">    
                     <div className="courses__experienceTheBest--Row2Card">
-                        <img className="courses__experienceTheBest--Pic" src={LiveTest} />
+                        <img className="courses__experienceTheBest--Pic" src={LiveTest} alt="Icon"/>
                         <p className="courses__experienceTheBest--Heading">Live Tests for Real Exam Experience</p>
                         <p className="courses__experienceTheBest--description">Get your All-India Rank and feel the thrill of a real-exam. Groom your pressure handling and time management skills</p>
                     </div>
                     <div className="courses__experienceTheBest--Row2Card">
-                        <img className="courses__experienceTheBest--Pic" src={CommunityForLearning} />
+                        <img className="courses__experienceTheBest--Pic" src={CommunityForLearning} alt="Icon"/>
                         <p className="courses__experienceTheBest--Heading">Community for Learning</p>
                         <p className="courses__experienceTheBest--description">Clear all your queries and doubts on our discussion platform. Directly interact with experts, teachers and your peers.</p>
                     </div>
                     <div className="courses__experienceTheBest--Row2Card">
-                        <img className="courses__experienceTheBest--Pic" src={GraphicPresentation} />
+                        <img className="courses__experienceTheBest--Pic" src={GraphicPresentation} alt="Icon"/>
                         <p className="courses__experienceTheBest--Heading">Graphic Presentations</p>
                         <p className="courses__experienceTheBest--description">We put focus on accurate representation, as intricate topics can be best interpreted with the assistance of correct visual aids.</p>
                     </div>
@@ -244,9 +244,9 @@ function OurCourses() {
             {/* Hear it directly from our Students */}
             <div className="courses__hearFromStudents">
                 <div className="courses__hearFromStudents--headingPart">
-                    <img  className="courses__hearFromStudents--headingPic"src={BoyLeft} />
+                    <img  className="courses__hearFromStudents--headingPic"src={BoyLeft} alt="Boy"/>
                     <span className="courses__hearFromStudents--heading">Hear it directly from our Students</span>
-                    <img className="courses__hearFromStudents--headingPic courses__hearFromStudents--headingPicGirl" src={GirlRight} />
+                    <img className="courses__hearFromStudents--headingPic courses__hearFromStudents--headingPicGirl" src={GirlRight} alt="Girl"/>
                 </div>
                 <div className="courses__hearFromStudents--studentCards">{students.map(createEntry)}</div>
             </div>

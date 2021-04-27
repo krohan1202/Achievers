@@ -8,9 +8,10 @@ import Footer from "../../footers/footer";
 
 //Assets
 import HeroVid from "../../../assets/Pics/Home/2-Hero/Video Part.png";
-import PopularEntranceCoursesVid from "../../../assets/Pics/Home/4-Popular Entrance Courses/Video Part.png";
-import WhyAchStarredTexts from "../../../assets/Pics/Home/5-Why Achievers/Starred Texts.png";
-import TopperMoreInfo from "../../../assets/Pics/Home/6-Topper Fav/Topper & More info.png";
+import StudyMatStarredTexts from "../../../assets/Pics/Home/3-Study Materials/Starred Texts.png";
+import PopularEntranceCoursesVid from "../../../assets/Pics/Home/5-Popular Entrance Courses/Video Part.png";
+import WhyAchStarredTexts from "../../../assets/Pics/Home/6-Why Achievers/Starred Texts.png";
+import TopperMoreInfo from "../../../assets/Pics/Home/7-Topper Fav/Topper & More info.png";
 
 function Products() {
     const state = useContext(GlobalState)
@@ -52,8 +53,6 @@ function Products() {
             product.checked = !isCheck
         })
         setProducts([...products])
-        // console.log(products);
-        // console.log(setProducts);
         setIsCheck(!isCheck)
     }
 
@@ -88,7 +87,7 @@ function Products() {
     return (
         <>
         <Header />
-        <img src={HeroVid} className="hero__vid" />
+        <img src={HeroVid} alt="Hero Picture" className="hero__vid" />
         
         <span className="hero__card1">
             <p className="hero__card1--heading">ACHIEVERS SCHOOL PROGRAM</p>
@@ -138,6 +137,7 @@ function Products() {
             <span>
                 <span className="ach__studyMat--innovativeStudyMat">Innovative</span>
                 <span className="ach__studyMat--innovativeStudyMat ach__studyMat--studyMat"> Study Materials</span>
+                <img className="ach__studyMat--starredTexts" src={StudyMatStarredTexts} alt="Benefits" />
             </span>
             <p className="ach__stdyMat--carefully">Carefully prepared by the experts at Achievers</p>
 
@@ -262,7 +262,7 @@ function Products() {
 
         {products.length === 0 && <Loading />}
 
-        <img className="ach__popularEntranceCourses--vid" src={PopularEntranceCoursesVid} />
+        <img className="ach__popularEntranceCourses--vid" src={PopularEntranceCoursesVid} alt="Popular Entrance Courses"/>
         </div>
 
         {/* Achievers Hall of Fame */}
@@ -295,7 +295,7 @@ function Products() {
         <span className="ach__whyAch">
             <h1 className="ach__whyAch--heading">WHY ACHIEVERS?</h1>
             <hr className="ach__whyAch--underline"></hr>
-            <img className="ach__whyAch--starredTexts" src={WhyAchStarredTexts} />
+            <img className="ach__whyAch--starredTexts" src={WhyAchStarredTexts} alt="Benefits" />
         </span>
 
         {/* General Enquiry */}
@@ -315,7 +315,7 @@ function Products() {
         </span>
         </div>
 
-        <img className="ach__topperFavPic" src={TopperMoreInfo} />
+        <img className="ach__topperFavPic" src={TopperMoreInfo} alt="Topper's Favorite"/>
 
         <Footer />
         </>
