@@ -38,8 +38,8 @@ function Register() {
 
                 <div className="row">
                     <button type="submit">Register</button>
-                    <Link to="/login">Login</Link>
                 </div>
+                <div className="newUserPart">Already a user? Click here to <Link to="/login">Login</Link></div>
             </form>
         </div>
     )

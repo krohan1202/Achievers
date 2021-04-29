@@ -13,7 +13,6 @@ function Login() {
         setUser({...user, [name]:value})
     }
 
-    // console.log({...user}.email)
     const loginSubmit = async e =>{
         e.preventDefault()
         try {
@@ -31,7 +30,7 @@ function Login() {
     return (
         <div className="login-page">
             <form onSubmit={loginSubmit}>
-                <h2>Login</h2>
+                <h2 className="loginHeading">Login</h2>
                 <input type="email" name="email" required
                 placeholder="Email" value={user.email} onChange={onChangeInput} />
 
@@ -40,8 +39,8 @@ function Login() {
 
                 <div className="row">
                     <button type="submit">Login</button>
-                    <Link to="/register">Register</Link>
                 </div>
+                <div className="newUserPart">New user? Click here to <Link to="/register">Register</Link></div>
             </form>
         </div>
     )
