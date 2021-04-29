@@ -37,7 +37,7 @@ function Careers() {
 
                             <div className="careers__joinAch--links">
                                 <a href="#viewOpenPositions" className="careers__joinAch--viewPositionsBtn">View Open Positions</a>
-                                <a href="#" className="careers__joinAch--aboutUsBtn">About Us</a>
+                                <a href="#careers__welcomeToAch" className="careers__joinAch--aboutUsBtn">About Us</a>
                             </div>
                     </div>
                     <img className="careers__joinAch--topBanner" src={TopBanner} alt="Top Banner" />
@@ -59,7 +59,7 @@ function Careers() {
                         <span className="careers__statsUnderTopBanner--statDescription">App Downloads</span>
                     </div>
                 </div>
-                <div className="careers__welcomeToAch">
+                <div id="careers__welcomeToAch" className="careers__welcomeToAch">
                     <p className="careers__welcomeToAch--headingWelcomeTo">Welcome to</p>
                     <span className="careers__welcomeToAch--heading--A">A</span>
                     <span className="careers__welcomeToAch--heading--CHIEVERS">CHIEVERS</span>
@@ -112,40 +112,40 @@ function Careers() {
 
                             <div className="careers__ourTeam--academicCoordinatorsCard">
                                 <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} alt="Academic Coordinators"/>
-                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
-                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Rashbehari Choudhury</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation--Rashbehari">Administrative Associate</span>
                             </div>
                         </div>
 
                         {/* Administrative Department */}
                         <div className="careers__ourTeam--academicCoordinators">
-                            <p className="careers__ourTeam--academicCoordinatorsHeading">ACADEMIC COORDINATORS</p>
+                            <p className="careers__ourTeam--academicCoordinatorsHeading">ADMINISTRATIVE DEPARTMENT</p>
                             <div className="careers__ourTeam--academicCoordinatorsCard">
                                 <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} alt="Administrative Department"/>
-                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
-                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Anandarup Das</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Administrative Service Officer</span>
                             </div>
 
                             <div className="careers__ourTeam--academicCoordinatorsCard">
                                 <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} alt="Administrative Department"/>
-                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
-                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardName">Ms. Simantini Debnath</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation--Simantini">Academic and Administrative Coordinator</span>
                             </div>
                         </div>
 
                         {/* Executive Officers */}
                         <div className="careers__ourTeam--academicCoordinators">
-                            <p className="careers__ourTeam--academicCoordinatorsHeading">ACADEMIC COORDINATORS</p>
+                            <p className="careers__ourTeam--academicCoordinatorsHeading">EXECUTIVE OFFICERS</p>
                             <div className="careers__ourTeam--academicCoordinatorsCard">
                                 <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} alt="Executive Officers"/>
-                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
-                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Amir Hossai Molla</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Senior Office Executive</span>
                             </div>
 
                             <div className="careers__ourTeam--academicCoordinatorsCard">
                                 <img className="careers__ourTeam--academicCoordinatorsCardImg" src={Picy} alt="Executive Officers"/>
-                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
-                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardName">Mr. Swapan Ghosh</span>
+                                <span className="careers__ourTeam--academicCoordinatorsCardDesignation">Senior Office Executive</span>
                             </div>
                         </div>
                         </div>
