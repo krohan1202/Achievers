@@ -755,7 +755,6 @@
 .careers__joinAch--topBanner {
   position: relative;
   width: 100vw;
-  height: 30vw;
 }
 .careers__joinAch--whiteBox {
   position: absolute;
@@ -799,7 +798,7 @@
   padding: 1vw 3.7vw;
 }
 .careers__joinAch--aboutUsBtn {
-  background-color: #010e26;
+  background-color: #0b1d3e;
 }
 .careers__statsUnderTopBanner {
   position: relative;
@@ -880,24 +879,24 @@
 }
 .careers__welcomeToAch--president {
   position: absolute;
-  top: 3vw;
-  width: 27vw;
-  height: 24vw;
-  left: 64vw;
+  top: 3.5vw;
+  width: 25vw;
+  left: 66vw;
 }
 .careers__welcomeToAch--presidentName,
 .careers__welcomeToAch--presidentDesignation {
   position: relative;
-  top: -2.3vw;
+  width: 25vw;
+  top: -3.4vw;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.15vw;
-  left: 64vw;
+  left: 66vw;
   color: #fc2b32;
 }
 .careers__welcomeToAch--presidentDesignation {
   font-size: 1.05vw;
-  top: -1.8vw;
+  top: -3vw;
   color: #000;
 }
 .careers__welcomeToAch--vicePresidents {
@@ -911,13 +910,14 @@
 .careers__welcomeToAch--vicePresidentCard {
   position: relative;
   width: 19vw;
-  margin-top: 4vw;
+  margin-top: 3vw;
 }
 .careers__welcomeToAch--vicePresidentCardImg {
   position: relative;
   width: 17vw;
   left: 50%;
   transform: translateX(-50%);
+  margin-bottom: 0.4vw;
 }
 .careers__welcomeToAch--vicePresidentCardName,
 .careers__welcomeToAch--vicePresidentCardDesignation,
@@ -961,13 +961,13 @@
   justify-content: space-between;
   left: 50%;
   transform: translateX(-50%);
-  width: 85vw;
+  width: 84vw;
   margin-top: 4vw;
 }
 .careers__welcomeToAch--textParawithImg--Img1,
 .careers__welcomeToAch--textParawithImg--Img2 {
   position: relative;
-  width: 16vw;
+  width: 17vw;
 }
 .careers__welcomeToAch--textParawithImg--text {
   position: relative;
