@@ -3,7 +3,16 @@
   display: grid;
   grid-template-columns: repeat(6, minmax(100px, 1fr));
   justify-items: flex-start;
-  margin: 20.5vw auto 0;
+  /* margin: 20.5vw auto 0; */
+  position: relative;
+  left: 1vw;
+}
+.ach__studyMat--products {
+  top: 20.5vw;
+  width: 92%;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(100px, 1fr));
+  justify-items: flex-start;
   position: relative;
   left: 1vw;
 }
@@ -160,7 +169,7 @@
 }
 .ach__allIndiaPart {
   position: relative;
-  margin-top: 2.3vw;
+  margin-top: 22.5vw;
   display: flex;
   justify-content: center;
 }

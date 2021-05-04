@@ -157,8 +157,9 @@ function Products() {
                 <button onClick={deleteAll}>DELETE ALL</button>
             </div>
         }
-
+        <Carousel breakPoints={breakPoints}>
         <div className="products">
+        {/* <Carousel breakPoints={breakPoints}> */}
             {
                 products.map(product => {
                     // console.log(product);
@@ -166,7 +167,9 @@ function Products() {
                         ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
                 })
             }
+        {/* </Carousel> */}
         </div>
+        </Carousel>
 
         {products.length === 0 && <Loading />}
         
