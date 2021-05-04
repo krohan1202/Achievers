@@ -1,5 +1,6 @@
 import React, {useContext, useState} from 'react';
 import {GlobalState} from '../../../GlobalState';
+import Carousel from "react-elastic-carousel";
 import ProductItem from '../utils/productItem/ProductItem';
 import Loading from '../utils/loading/Loading';
 import axios from 'axios';
@@ -12,6 +13,13 @@ import StudyMatStarredTexts from "../../../assets/Pics/Home/3-Study Materials/St
 import PopularEntranceCoursesVid from "../../../assets/Pics/Home/5-Popular Entrance Courses/Video Part.png";
 import WhyAchStarredTexts from "../../../assets/Pics/Home/6-Why Achievers/Starred Texts.png";
 import TopperMoreInfo from "../../../assets/Pics/Home/7-Topper Fav/Topper & More info.png";
+
+const breakPoints = [
+    { width: 1, itemsToShow: 3 },
+    { width: 550, itemsToShow: 4 },
+    { width: 768, itemsToShow: 5 },
+    { width: 1200, itemsToShow: 6 },
+  ];
 
 function Products() {
     const state = useContext(GlobalState)
@@ -250,7 +258,7 @@ function Products() {
              }
 
             <div className="popularEntranceProducts">
-
+            <Carousel breakPoints={breakPoints}>
             {
                 products.map(product => {
                     // console.log(product);
@@ -258,6 +266,7 @@ function Products() {
                         ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
                 })
             }
+            </Carousel>
         </div>
 
         {products.length === 0 && <Loading />}
