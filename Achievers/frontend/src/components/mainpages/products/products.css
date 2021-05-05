@@ -7,15 +7,6 @@
   position: relative;
   left: 1vw;
 }
-.ach__studyMat--products {
-  top: 20.5vw;
-  width: 92%;
-  display: grid;
-  grid-template-columns: repeat(6, minmax(100px, 1fr));
-  justify-items: flex-start;
-  position: relative;
-  left: 1vw;
-}
 
 /* React Elastic Carousel Slider css */
 .rec.rec-arrow {
@@ -34,6 +25,11 @@
 .bSWeAW {
   font-size: 2vw;
   background-color: red;
+}
+.ach__studyMat--productsCarousel {
+  position: relative;
+  top: 21vw;
+  padding: 0 4vw;
 }
 
 /* Home Page */
@@ -118,7 +114,6 @@
   font-weight: 700;
   color: #f30007;
 }
-
 .ach__studyMat--underline {
   width: 46vw;
   border: none;
@@ -145,7 +140,7 @@
 .ach__studyMat--innovativeStudyMat {
   position: relative;
   left: 5.8vw;
-  top: 18.2vw;
+  top: 17.5vw;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 2.7vw;
@@ -156,7 +151,7 @@
 .ach__stdyMat--carefully {
   position: relative;
   left: 5.8vw;
-  top: 19.4vw;
+  top: 18.7vw;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.61vw;
@@ -167,9 +162,18 @@
   left: 43vw;
   margin-top: 17vw;
 }
+.ach__studyMat--products {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  font-size: 4em;
+  width: 92%;
+}
 .ach__allIndiaPart {
   position: relative;
-  margin-top: 22.5vw;
+  margin-top: 23vw;
   display: flex;
   justify-content: center;
 }
@@ -327,7 +331,7 @@
 .ach__popularEntranceCourses--viewAllBtn {
   background-color: #fc2b32;
   position: absolute;
-  top: 148.5vw;
+  top: 150vw;
 }
 .ach__popularEntranceCourses--description {
   margin-top: 3vw;

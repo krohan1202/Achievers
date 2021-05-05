@@ -157,8 +157,8 @@ function Products() {
                 <button onClick={deleteAll}>DELETE ALL</button>
             </div>
         }
-        <Carousel breakPoints={breakPoints}>
-        <div className="products">
+        <Carousel className="ach__studyMat--productsCarousel" breakPoints={breakPoints}>
+        <div className="ach__studyMat--products">
         {/* <Carousel breakPoints={breakPoints}> */}
             {
                 products.map(product => {
