@@ -1,5 +1,6 @@
 import React, {createContext, useState, useEffect} from 'react'
 import ProductsAPI from './api/ProductsAPI'
+import HomeProductsAPI from './api/HomeProductsAPI'
 import UserAPI from './api/UserAPI'
 import CategoriesAPI from './api/CategoriesAPI'
 
@@ -33,6 +34,7 @@ export const DataProvider = ({children}) =>{
     const state = {
         token: [token, setToken],
         productsAPI: ProductsAPI(),
+        HomeProductsAPI: HomeProductsAPI(),
         userAPI: UserAPI(token),
         categoriesAPI: CategoriesAPI()
     }

@@ -23,7 +23,7 @@ const breakPoints = [
 
 function Products() {
     const state = useContext(GlobalState)
-    const [products, setProducts] = state.productsAPI.products
+    const [products, setProducts] = state.HomeProductsAPI.products
     const [isAdmin] = state.userAPI.isAdmin
     const [token] = state.token
     const [callback, setCallback] = state.productsAPI.callback
@@ -157,18 +157,18 @@ function Products() {
                 <button onClick={deleteAll}>DELETE ALL</button>
             </div>
         }
+
         <Carousel className="ach__studyMat--productsCarousel" breakPoints={breakPoints}>
-        <div className="ach__studyMat--products">
-        {/* <Carousel breakPoints={breakPoints}> */}
-            {
-                products.map(product => {
-                    // console.log(product);
-                    return product.category === "6072d07e701dad2404938ae6"
-                        ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
-                })
-            }
-        {/* </Carousel> */}
-        </div>
+            <div className="ach__studyMat--products">
+        
+                {
+                    products.map(product => {
+                        // console.log(product);
+                        return product.category === "6072d07e701dad2404938ae6"
+                            ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
+                    })
+                }
+            </div>
         </Carousel>
 
         {products.length === 0 && <Loading />}
