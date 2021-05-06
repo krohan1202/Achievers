@@ -158,8 +158,9 @@ function Products() {
             </div>
         }
 
-        <Carousel className="ach__studyMat--productsCarousel" breakPoints={breakPoints}>
+        {/* <Carousel className="ach__studyMat--productsCarousel" breakPoints={breakPoints}> */}
             <div className="ach__studyMat--products">
+            <Carousel className="ach__studyMat--productsCarousel" breakPoints={breakPoints}>
         
                 {
                     products.map(product => {
@@ -168,8 +169,9 @@ function Products() {
                             ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
                     })
                 }
+                </Carousel>
             </div>
-        </Carousel>
+        {/* </Carousel> */}
 
         {products.length === 0 && <Loading />}
         
