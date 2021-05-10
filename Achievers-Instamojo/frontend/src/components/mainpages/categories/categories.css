@@ -1,0 +1,48 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.categories form {
+  width: 21vw;
+  margin-bottom: 3vw;
+}
+.categories label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.7vw;
+  margin: 3vw 0;
+}
+.categories input,
+button {
+  height: 35px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #555;
+}
+.categories input {
+  width: 15vw;
+}
+.categories button {
+  width: 70px;
+  background: #555;
+  color: white;
+  margin-left: 1.1vw;
+}
+.categories .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65vw 1vw;
+  margin: 1.3vw 0;
+  border: 1px solid #ccc;
+}
+.categories .row:nth-child(1) {
+  margin-top: 3vw;
+}
+.categories .row:last-of-type {
+  margin-bottom: 7vw;
+}

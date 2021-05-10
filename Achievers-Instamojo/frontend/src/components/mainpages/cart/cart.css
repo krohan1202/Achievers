@@ -1,0 +1,57 @@
+.cart {
+  position: relative;
+  width: 70vw;
+  border: 1px solid #ccc;
+  transform: scaleY(0.98);
+}
+.cart img {
+  margin: 0;
+  width: 14vw;
+  height: 15vw;
+}
+.amount span {
+  color: crimson;
+  padding: 0 20px;
+}
+.amount button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #777;
+}
+.delete {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: crimson;
+  font-weight: 900;
+  cursor: pointer;
+}
+.total {
+  position: absolute;
+  top: 20vw;
+  right: 3vw;
+  width: 23vw;
+  height: 15vw;
+  border: 1px solid #000;
+}
+.total--checkout {
+  margin-top: 1vw;
+  text-align: center;
+  font-size: 2vw;
+}
+.total h2 {
+  margin: 1.5vw 0 0.5vw;
+  text-align: center;
+  color: crimson;
+}
+
+.checkout-btn {
+  padding: 0.7vw 0.9vw;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  margin: 2.3vw auto 0;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}

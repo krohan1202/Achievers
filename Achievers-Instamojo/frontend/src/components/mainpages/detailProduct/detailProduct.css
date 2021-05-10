@@ -1,0 +1,100 @@
+.detail {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+  font-size: 150%;
+}
+.detail img {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+}
+.box-detail {
+  max-width: 500px;
+  width: 100%;
+  margin: 5px 20px;
+}
+.box-detail .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-detail h2 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 2rem;
+}
+.box-detail p {
+  line-height: 1.5;
+  margin: 10px 0;
+  opacity: 0.8;
+}
+.box-detail .cart {
+  background: #fc2b32;
+  color: white;
+  border-radius: 28px;
+  margin-top: 10px;
+  padding: 10px 25px;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+.lineUnderTitle {
+  margin: 0.8vw auto;
+  width: 70vw;
+  border: none;
+  border-bottom: 3px solid grey;
+}
+.price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2vw;
+  color: #fc2b32;
+}
+.description--heading,
+.relatedProducts {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.4vw;
+  position: relative;
+  left: 8vw;
+}
+.description--line1,
+.description--line2 {
+  display: block;
+  margin: 1.1vw auto 0;
+  width: 90vw;
+  border: none;
+  border-bottom: 3px solid grey;
+}
+.description--line2 {
+  margin-top: 2vw;
+}
+.description--description,
+.content {
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  font-size: 1.5vw;
+  left: 8vw;
+  margin-top: 2vw;
+  width: 83vw;
+}
+.content {
+  left: 0;
+}
+.relatedProducts {
+  margin-top: 2vw;
+}
+.relatedProducts--products {
+  width: 85vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: flex-start;
+  margin: 0.5vw auto 2vw;
+}

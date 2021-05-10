@@ -1,0 +1,136 @@
+.navbar {
+  position: relative;
+  background-color: #010e26;
+  height: 12.6vw;
+  width: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.logo {
+  position: relative;
+  width: 32.55vw;
+  left: 2.8vw;
+  top: 1vw;
+}
+.nav__phoneIcon,
+.nav__emailIcon {
+  position: relative;
+  top: -7vw;
+  left: 9.3vw;
+  width: 1.17vw;
+}
+.nav__emailIcon {
+  top: -9.87vw;
+  left: 80.25vw;
+  width: 1.3vw;
+}
+.nav__helpLine,
+.nav__email {
+  position: relative;
+  top: -8.6vw;
+  left: 43.9vw;
+  color: #8fd0ff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.91vw;
+  font-weight: 700;
+}
+.nav__email {
+  top: -11.3vw;
+  left: 82.5vw;
+}
+.nav__createProduct {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 4.8vw;
+  left: 70vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.21vw;
+}
+.menu {
+  display: none;
+}
+.cart-icon {
+  position: absolute;
+  top: 4.65vw;
+  left: 74.7vw;
+  width: 100px;
+  height: 33px;
+  padding-left: 0.32vw;
+}
+.cart-icon span {
+  background: crimson;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: 0.78vw;
+  left: 0;
+  padding: 0.26vw 0.39vw;
+  font-size: 0.65vw;
+}
+.nav__cart {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 3vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.2vw;
+}
+.nav__loginIcon {
+  position: absolute;
+  top: 4.6vw;
+  left: 85.1vw;
+  width: 2.01vw;
+}
+.nav__login {
+  color: #fff;
+  width: 87vw;
+  position: absolute;
+  top: 4.8vw;
+  left: 88vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.2vw;
+}
+.nav__logout,
+.nav__createProduct,
+.nav__category {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 4.8vw;
+  left: 88vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.21vw;
+}
+.nav__createProduct {
+  left: 60vw;
+}
+.nav__category {
+  left: 73.5vw;
+}
+.smallNav {
+  height: 3.25vw;
+  position: relative;
+  margin-top: -1px;
+  background-color: #0b1d3e;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__smallNav--li {
+  display: flex;
+  align-items: center;
+  margin: 0 2.9vw;
+}
+.nav__smallNav {
+  color: #fff;
+  font-size: 1vw;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
+}
