@@ -4,7 +4,7 @@ const auth = (req, res, next) =>{
     try {
         
         // console.log(req.body.email)
-        console.log(req.headers.authorization)
+        // console.log(req.headers.authorization)
         const token = req.headers.authorization
         
         if(!token) return res.status(400).json({msg: "Invalid Authentication"})
@@ -13,7 +13,7 @@ const auth = (req, res, next) =>{
             if(err) return res.status(400).json({err})
 
             req.user = user
-            console.log(user);
+            // console.log(user);
             next()
         })
     } catch (err) {

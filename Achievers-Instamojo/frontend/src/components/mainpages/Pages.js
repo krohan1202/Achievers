@@ -42,7 +42,7 @@ function Pages() {
 
             <Route path="/careers" exact component={Careers} />
 
-            <Route path="*" exact component={NotFound} />
+            {/* <Route path="*" exact component={NotFound} /> */}
         </Switch>
     )
 }

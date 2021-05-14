@@ -68,70 +68,21 @@ console.log(total);
         }
     }
 
-    //Razorpay integration
-    function loadScript(src) {
-        return new Promise((resolve) => {
-            const script = document.createElement('script')
-            script.src = src
-            script.onload = () => {
-                resolve(true)
-            }
-            script.onerror = () => {
-                resolve(false)
-            }
-            document.body.appendChild(script)
-        })
-    }
-    
-    const __DEV__ = document.domain === 'localhost'
-    
-        const [name, setName] = useState('Rohan')
-    
-        async function displayRazorpay() {
-            const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
-            
-            if (!res) {
-                alert('Razorpay SDK failed to load. Are you online?')
-                return
-            }
-            console.log(cart);
+    function displayInstamojo() {
+        axios.post(`/api/cart`, {email:email, cart: cart, amount:total})
+        setCart([])
+        addToCart([])
+        alert("Order ready to be placed. Please check your email to pay the amount and confirm your order")
+    }    
 
-            const data =  fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) =>
-                t.json()
-            )
-            data.amount = total
-            const am = data.amount;
-    
-            const options = {
-                key: __DEV__ ? 'rzp_test_QqUGL3lXO9J3fl' : 'PRODUCTION_KEY',
-                currency: data.currency,
-                amount: (am*100),
-                order_id: data.id,
-                name: 'Checkout',
-                description: 'Make your payment',
-                // image: 'http://localhost:1337/logo.svg',
-                handler: function (response) {
-                    alert(response.razorpay_payment_id)
-                    alert(response.razorpay_order_id)
-                    alert(response.razorpay_signature)
-                    alert("You have successfully placed an order.")
-                    axios.post(`/api/razorpay_payment`, {email:email, cart: cart})
-                    setCart([])
-                    addToCart([])
-                },
-                prefill: {
-                    name,
-                    email: email,
-                    phone_number: '9899999999'
-                }
-            }
-            const paymentObject = new window.Razorpay(options)
-            paymentObject.open()
-        }
-    
-
-    if(cart.length === 0) 
-        return <h2 style={{textAlign: "center", fontSize: "5rem"}}>Cart Empty</h2> 
+    if(cart.length === 0) {
+        return (
+            <>
+        <Header />
+        <h2 style={{textAlign: "center", fontSize: "5rem", margin: "5.5vw auto"}}>Cart Empty</h2>
+        <Footer />
+        </>
+        )}
 
         console.log(cart);
     return (
@@ -170,7 +121,7 @@ console.log(total);
                 <h2>Total: Rs. {total}</h2>
                 <a
 					className="checkout-btn"
-					onClick={displayRazorpay}
+					onClick={displayInstamojo}
 					target="_blank"
 					rel="noopener noreferrer"
 				>
