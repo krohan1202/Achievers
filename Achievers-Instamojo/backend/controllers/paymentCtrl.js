@@ -3,8 +3,8 @@ const Users = require('../models/userModel')
 const Products = require('../models/productModel')
 const Insta = require('instamojo-nodejs');
 
-const API_KEY = 'test_28610661ed14c8244e5a1873400';
-const AUTH_KEY = 'test_6ad6b9c3753f0f206aebef4a992';
+const API_KEY = process.env.PAYMENT_API_KEY;
+const AUTH_KEY = process.env.PAYMENT_AUTH_KEY;
 
 Insta.setKeys(API_KEY, AUTH_KEY);
 Insta.isSandboxMode(true);
@@ -48,8 +48,6 @@ const paymentCtrl = {
             });
             // console.log(res);
             // console.log(req.body);
-            // console.log(req.headers);
-            // const {email, cart} = req.body;
             const user = await Users.findOne({email})
             
             if(!user) return res.status(400).json({msg: "User does not exist!!"})
@@ -67,7 +65,7 @@ const paymentCtrl = {
                   });
                 }
                 res.json({msg: "Payment Success!"})
-                console.log(newPayment)
+                // console.log(newPayment)
               });
 
             
@@ -75,10 +73,6 @@ const paymentCtrl = {
         catch (err) {
             return res.status(500).json({msg: err.message})
         }
-
-        // app.get("/success", (req, res) => {
-        //     res.send("Payment successful! Check mail for confirmation")
-        // })
     }
 }
 
