@@ -3,12 +3,14 @@ const Users = require('../models/userModel')
 const Products = require('../models/productModel')
 const Insta = require('instamojo-nodejs');
 
+// Payment Keys
 const API_KEY = process.env.PAYMENT_API_KEY;
 const AUTH_KEY = process.env.PAYMENT_AUTH_KEY;
 
 Insta.setKeys(API_KEY, AUTH_KEY);
 Insta.isSandboxMode(true);
 
+// Functions
 const paymentCtrl = {
     getPayments: async(req, res) =>{
         try {
@@ -27,6 +29,18 @@ const paymentCtrl = {
             console.log(email);
             console.log(amount);
 
+            const user = await Users.findOne({email})
+            
+            if(!user) return res.status(400).json({msg: "User does not exist!!"})
+
+            const {_id, name} = user;
+            
+            const newPayment = new Payments({
+                user_id: _id, name, email, cart
+            })
+            console.log({name})
+
+            // Instamojo Integration
             var data = new Insta.PaymentData();
 
             const REDIRECT_URL = "http://localhost:3000/success";
@@ -36,6 +50,7 @@ const paymentCtrl = {
             data.purpose = "Payment Capture Test"; // REQUIRED
             data.amount = amount;
             data.email = email;
+            data.buyer_name = name;
 
             Insta.createPayment(data, function (error, response) {
                 if (error) {
@@ -46,18 +61,8 @@ const paymentCtrl = {
                 //   res.send("Please check your email to make payment")
                 }
             });
-            // console.log(res);
-            // console.log(req.body);
-            const user = await Users.findOne({email})
-            
-            if(!user) return res.status(400).json({msg: "User does not exist!!"})
 
-            const {_id, name} = user;
-            
-            const newPayment = new Payments({
-                user_id: _id, name, email, cart
-            })
-            
+            // Adding Cart Products to DB
             await newPayment.save((err, newPayment) => {
                 if (err) {
                   return res.status(400).json({
@@ -67,8 +72,6 @@ const paymentCtrl = {
                 res.json({msg: "Payment Success!"})
                 // console.log(newPayment)
               });
-
-            
         }
         catch (err) {
             return res.status(500).json({msg: err.message})
