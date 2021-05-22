@@ -30,7 +30,7 @@ function OrderHistory() {
             getHistory()
         }
     },[token, isAdmin, setHistory])
-
+    console.log(history);
     return (
         <div className="history-page">
             <Header />

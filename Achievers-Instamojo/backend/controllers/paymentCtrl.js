@@ -51,12 +51,12 @@ const paymentCtrl = {
             data.amount = amount;
             data.email = email;
             data.buyer_name = name;
-
+            
             Insta.createPayment(data, function (error, response) {
                 if (error) {
                 // some error
                 } else {
-                    console.log(response)
+                    console.log(response);
                 // Payment redirection link at response.payment_request.longurl
                 //   res.send("Please check your email to make payment")
                 }

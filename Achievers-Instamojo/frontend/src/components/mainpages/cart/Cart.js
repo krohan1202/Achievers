@@ -6,13 +6,14 @@ import Footer from '../../footers/footer'
 
 function Cart() {
     const email= localStorage.getItem('email')
-    console.log(email);
+    // console.log(email);
+
     const state = useContext(GlobalState)
     const [cart, setCart] = state.userAPI.cart
     const [token] = state.token
     const [total, setTotal] = useState(0)
     console.log(state.token)
-    useEffect(() =>{
+    useEffect(() => {
         const getTotal = () =>{
             const total = cart.reduce((prev, item) => {
                 return prev + (item.price * item.quantity)
