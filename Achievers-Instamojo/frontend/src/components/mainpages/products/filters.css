@@ -16,6 +16,10 @@
   border: none;
   border-bottom: 2px solid #fff;
 }
+.nav__searchBar[type="text"] {
+  color: white;
+  font-size: 1.07vw;
+}
 .nav__searchBar::placeholder {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
