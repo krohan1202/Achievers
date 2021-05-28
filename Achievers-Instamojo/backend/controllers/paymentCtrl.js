@@ -43,9 +43,9 @@ const paymentCtrl = {
             // Instamojo Integration
             var data = new Insta.PaymentData();
 
-            // const REDIRECT_URL = "http://localhost:3000/success";
+            const REDIRECT_URL = "http://localhost:3000/success";
 
-            // data.setRedirectUrl(REDIRECT_URL);
+            data.setRedirectUrl(REDIRECT_URL);
             data.send_email = "True";
             data.purpose = "Payment Capture Test"; // REQUIRED
             data.amount = amount;
@@ -57,21 +57,27 @@ const paymentCtrl = {
                 // some error
                 } else {
                     console.log(response);
-                // Payment redirection link at response.payment_request.longurl
-                //   res.send("Please check your email to make payment")
+                    const responseData = JSON.parse(response);
+                    const redirectUrl = responseData.payment_request.longurl;
+                    console.log(responseData);
+                    console.log(redirectUrl);
+                    console.log(responseData.success);
+
+                    if (responseData.success) {
+                        // Adding Cart Products to DB
+                        newPayment.save((err, newPayment) => {
+                            if (err) {
+                            return res.status(400).json({
+                                error: "Failed to save order in DB.",
+                            });
+                            }
+                            res.status(200).json({msg: "Payment Success!", redirectUrl: redirectUrl, success: responseData.success})
+                            // res.status(200).json(redirectUrl);
+                            // console.log(newPayment)
+                        });
+                    }
                 }
             });
-
-            // Adding Cart Products to DB
-            await newPayment.save((err, newPayment) => {
-                if (err) {
-                  return res.status(400).json({
-                    error: "Failed to save order in DB.",
-                  });
-                }
-                res.json({msg: "Payment Success!"})
-                // console.log(newPayment)
-              });
         }
         catch (err) {
             return res.status(500).json({msg: err.message})

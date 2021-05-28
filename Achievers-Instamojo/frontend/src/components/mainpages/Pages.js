@@ -1,26 +1,26 @@
-import React, {useContext} from 'react'
-import {Switch, Route} from 'react-router-dom'
-import Products from './products/Products'
-import OurCourses from './products/OurCourses'
-import DetailProduct from './detailProduct/DetailProduct'
-import Login from './auth/Login'
-import Register from './auth/Register'
-import OrderHistory from './history/OrderHistory'
-import OrderDetails from './history/OrderDetails'
-import Cart from './cart/Cart'
-import NotFound from './utils/not_found/NotFound'
-import Categories from './categories/Categories'
-import CreateProduct from './createProduct/CreateProduct'
+import React, {useContext} from 'react';
+import {Switch, Route} from 'react-router-dom';
+import Products from './products/Products';
+import OurCourses from './products/OurCourses';
+import DetailProduct from './detailProduct/DetailProduct';
+import Login from './auth/Login';
+import Register from './auth/Register';
+import OrderHistory from './history/OrderHistory';
+import OrderDetails from './history/OrderDetails';
+import Cart from './cart/Cart';
+import PaySuccess from './cart/PaySuccess';
+import NotFound from './utils/not_found/NotFound';
+import Categories from './categories/Categories';
+import CreateProduct from './createProduct/CreateProduct';
 import Careers from './career/Careers';
 
-import {GlobalState} from '../../GlobalState'
+import {GlobalState} from '../../GlobalState';
 
 
 function Pages() {
     const state = useContext(GlobalState)
     const [isLogged] = state.userAPI.isLogged
     const [isAdmin] = state.userAPI.isAdmin
-
 
     return (
         <Switch>
@@ -39,10 +39,11 @@ function Pages() {
             <Route path="/history/:id" exact component={isLogged ? OrderDetails : NotFound} />
 
             <Route path="/cart" exact component={Cart} />
+            <Route path="/success" exact component={isLogged ? PaySuccess : NotFound} />
 
             <Route path="/careers" exact component={Careers} />
-
-            {/* <Route path="*" exact component={NotFound} /> */}
+            
+            <Route path="*" exact component={NotFound} />
         </Switch>
     )
 }

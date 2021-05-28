@@ -12,7 +12,7 @@ function Cart() {
     const [cart, setCart] = state.userAPI.cart
     const [token] = state.token
     const [total, setTotal] = useState(0)
-    console.log(state.token)
+    // console.log(state.token)
     useEffect(() => {
         const getTotal = () =>{
             const total = cart.reduce((prev, item) => {
@@ -71,18 +71,23 @@ console.log(total);
 
     function displayInstamojo() {
         axios.post(`/api/cart`, {email:email, cart: cart, amount:total})
+            .then(response => {
+                console.log('resp', response.data);
+                console.log('resp', response);
+                // window.location.href = response.data.redirectUrl;
+            })
+            .catch(err => {console.log(err);})
         setCart([])
         addToCart([])
-        alert("Order ready to be placed. Please check your email to pay the amount and confirm your order")
-    }    
+    }
 
     if(cart.length === 0) {
         return (
             <>
-        <Header />
-        <h2 style={{textAlign: "center", fontSize: "5rem", margin: "5.5vw auto"}}>Cart Empty</h2>
-        <Footer />
-        </>
+            <Header />
+            <h2 style={{textAlign: "center", fontSize: "5rem", margin: "5.5vw auto"}}>Cart Empty</h2>
+            <Footer />
+            </>
         )}
 
         console.log(cart);
