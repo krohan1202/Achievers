@@ -25,9 +25,9 @@ const paymentCtrl = {
             const cart = req.body.cart;
             const email = req.body.email;
             const amount = req.body.amount;
-            console.log(cart);
-            console.log(email);
-            console.log(amount);
+            // console.log(cart);
+            // console.log(email);
+            // console.log(amount);
 
             const user = await Users.findOne({email})
             
@@ -46,7 +46,7 @@ const paymentCtrl = {
             const REDIRECT_URL = "http://localhost:3000/success";
 
             data.setRedirectUrl(REDIRECT_URL);
-            data.send_email = "True";
+            // data.send_email = "True";
             data.purpose = "Payment Capture Test"; // REQUIRED
             data.amount = amount;
             data.email = email;
@@ -56,12 +56,26 @@ const paymentCtrl = {
                 if (error) {
                 // some error
                 } else {
-                    console.log(response);
+                    // console.log(response);
                     const responseData = JSON.parse(response);
                     const redirectUrl = responseData.payment_request.longurl;
-                    console.log(responseData);
-                    console.log(redirectUrl);
+                    // console.log(responseData);
+                    // console.log(redirectUrl);
                     console.log(responseData.success);
+
+                    const paymentSuccessResponseUrl = "https://www.instamojo.com/api/1.1/payment-requests/" + responseData.payment_request.id
+                    console.log(paymentSuccessResponseUrl);
+                    
+                    // var request= require('request');
+                    // var headers = { 'X-Api-Key': API_KEY, 'X-Auth-Token': AUTH_KEY}
+                    // request.get(paymentSuccessResponseUrl, {headers: headers}, function(error, response, body){
+                    //     console.log(error);
+                    //     console.log(response);
+                    //     console.log(body);
+                    // if(!error && response.statusCode == 200){
+                    //     console.log(body);
+                    // }
+                    // })
 
                     if (responseData.success) {
                         // Adding Cart Products to DB
