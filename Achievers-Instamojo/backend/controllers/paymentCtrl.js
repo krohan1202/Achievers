@@ -56,26 +56,25 @@ const paymentCtrl = {
                 if (error) {
                 // some error
                 } else {
-                    // console.log(response);
+                    console.log(response);
                     const responseData = JSON.parse(response);
                     const redirectUrl = responseData.payment_request.longurl;
                     // console.log(responseData);
                     // console.log(redirectUrl);
                     console.log(responseData.success);
-
-                    const paymentSuccessResponseUrl = "https://www.instamojo.com/api/1.1/payment-requests/" + responseData.payment_request.id
-                    console.log(paymentSuccessResponseUrl);
                     
-                    // var request= require('request');
-                    // var headers = { 'X-Api-Key': API_KEY, 'X-Auth-Token': AUTH_KEY}
-                    // request.get(paymentSuccessResponseUrl, {headers: headers}, function(error, response, body){
-                    //     console.log(error);
-                    //     console.log(response);
-                    //     console.log(body);
-                    // if(!error && response.statusCode == 200){
-                    //     console.log(body);
-                    // }
-                    // })
+                   if (responseData) {
+                        const paymentSuccessResponseUrl = "https://www.instamojo.com/api/1.1/payment-requests/" + responseData.payment_request.id;
+                        
+                        var request= require('request');
+                        var headers = { 'X-Api-Key': API_KEY, 'X-Auth-Token': AUTH_KEY}
+                        request.get(JSON.stringify(paymentSuccessResponseUrl), {headers: headers}, function(error, response, body){
+                            console.log(body);
+                            if(!error && response.statusCode == 200){
+                                console.log(body);
+                            }
+                        })
+                   }
 
                     if (responseData.success) {
                         // Adding Cart Products to DB
