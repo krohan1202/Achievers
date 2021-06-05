@@ -1,6 +1,6 @@
-const Payments = require('../models/paymentModel')
-const Users = require('../models/userModel')
-const Products = require('../models/productModel')
+const Payments = require('../models/paymentModel');
+const Users = require('../models/userModel');
+const Products = require('../models/productModel');
 const Insta = require('instamojo-nodejs');
 
 // Payment Keys
@@ -15,7 +15,7 @@ const paymentCtrl = {
     getPayments: async(req, res) =>{
         try {
             const payments = await Payments.find()
-            res.json(payments)
+            res.json(payments);
         } catch (err) {
             return res.status(500).json({msg: err.message})
         }

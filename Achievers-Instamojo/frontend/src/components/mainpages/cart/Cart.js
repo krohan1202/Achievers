@@ -74,7 +74,7 @@ console.log(total);
             .then(response => {
                 console.log('resp', response.data);
                 console.log('resp', response);
-                // window.location.href = response.data.redirectUrl;
+                window.location.href = response.data.redirectUrl;
             })
             .catch(err => {console.log(err);})
         setCart([])

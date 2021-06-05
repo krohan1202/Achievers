@@ -1,8 +1,8 @@
-const router = require('express').Router()
-const cloudinary = require('cloudinary')
-const auth = require('../middleware/auth')
-const authAdmin = require('../middleware/authAdmin')
-const fs = require('fs')
+const router = require('express').Router();
+const cloudinary = require('cloudinary');
+const auth = require('../middleware/auth');
+const authAdmin = require('../middleware/authAdmin');
+const fs = require('fs');
 
 
 // we will upload image on cloudinary
@@ -68,4 +68,4 @@ const removeTmp = (path) =>{
     })
 }
 
-module.exports = router
+module.exports = router;

@@ -158,20 +158,18 @@ function Products() {
             </div>
         }
 
-        {/* <Carousel className="ach__studyMat--productsCarousel" breakPoints={breakPoints}> */}
-            <div className="ach__studyMat--products">
-            <Carousel className="ach__studyMat--productsCarousel" breakPoints={breakPoints}>
-        
-                {
-                    products.map(product => {
-                        // console.log(product);
-                        return product.category === "6072d07e701dad2404938ae6"
-                            ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
-                    })
-                }
-                </Carousel>
-            </div>
-        {/* </Carousel> */}
+        <div className="ach__studyMat--products">
+        <Carousel className="ach__studyMat--productsCarousel" breakPoints={breakPoints}>
+    
+            {
+                products.map(product => {
+                    // console.log(product);
+                    return product.category === "6072d07e701dad2404938ae6"
+                        ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
+                })
+            }
+            </Carousel>
+        </div>
 
         {products.length === 0 && <Loading />}
         

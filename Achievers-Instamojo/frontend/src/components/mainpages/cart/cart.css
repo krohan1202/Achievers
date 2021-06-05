@@ -55,3 +55,9 @@
   position: absolute;
   transform: translateX(-50%);
 }
+
+.ach__success {
+}
+.ach__success--heading {
+  text-align: center;
+}
