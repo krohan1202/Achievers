@@ -5,3 +5,5 @@ Ach_Instamojo
 2. <s>Cloudinary</s>
 3. <s>Instamojo Payment</s>
 4. DigitalOcean
+
+(Also check out CPanel)
