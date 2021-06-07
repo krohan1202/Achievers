@@ -222,6 +222,7 @@ function CreateProduct() {
         <div className="row">
           <label htmlFor="categories">Categories: </label>
           <select
+            id="createProduct__catDropdown"
             name="category"
             value={product.category}
             onChange={handleChangeInput}
