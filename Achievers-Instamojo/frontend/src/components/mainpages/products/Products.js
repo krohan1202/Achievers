@@ -163,9 +163,10 @@ function Products() {
     
             {
                 products.map(product => {
-                    // console.log(product);
-                    return product.category === "6072d07e701dad2404938ae6"
-                        ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
+                    console.log(product);
+                    return product.category === "60be699c7b148a49c09ec637"
+                        ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> 
+                        : <p className="ach__cat--noProducts">Stay tuned! More courses coming soon...</p>
                 })
             }
             </Carousel>
@@ -266,7 +267,8 @@ function Products() {
                 products.map(product => {
                     // console.log(product);
                     return product.category === "607b2055483a9217507846cf"
-                        ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> : null
+                        ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> 
+                        : <p className="ach__cat--noProducts">Stay tuned! More courses coming soon...</p>
                 })
             }
             </Carousel>

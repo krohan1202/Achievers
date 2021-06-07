@@ -6,7 +6,12 @@
   position: relative;
   left: 1vw;
 }
-
+.ach__cat--noProducts {
+  position: relative;
+  font-size: 2vw;
+  padding: 3vw 0;
+  vertical-align: middle;
+}
 /* React Elastic Carousel Slider css */
 .rec.rec-arrow {
   border-radius: 0;
@@ -345,7 +350,6 @@
   letter-spacing: 0.6px;
   line-height: 1.75vw;
   padding: 0 8vw;
-  margin-bottom: 3vw;
 }
 .popularEntranceProducts {
   position: relative;
