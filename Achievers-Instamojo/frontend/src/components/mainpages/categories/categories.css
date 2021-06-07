@@ -5,7 +5,9 @@
   margin: 0 auto;
 }
 .categories form {
-  width: 21vw;
+  position: relative;
+  left: 0vw;
+  width: 28vw;
   margin-bottom: 3vw;
 }
 .categories label {
@@ -18,21 +20,29 @@
 }
 .categories input,
 button {
-  height: 35px;
+  height: 40px;
   border: none;
   outline: none;
-  border-bottom: 1px solid #555;
 }
 .categories input {
   width: 15vw;
+  border-bottom: 1px solid #555;
 }
 .categories button {
-  width: 70px;
-  background: #555;
   color: white;
-  margin-left: 1.1vw;
+  margin: 0 0 0 1vw;
+  width: 125px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  background: #fc2b32;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
 }
 .categories .row {
+  font-size: 1.1vw;
+  margin-right: 2vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
