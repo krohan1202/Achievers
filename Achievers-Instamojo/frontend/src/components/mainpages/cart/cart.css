@@ -56,6 +56,11 @@
   transform: translateX(-50%);
 }
 
+.ach__successPg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
 .ach__success {
   position: relative;
   width: 100%;
@@ -78,4 +83,33 @@
   position: relative;
   font-size: 1.2vw;
   color: green;
+}
+.ach__successPg--logo {
+  position: relative;
+  width: 18.55vw;
+  left: 2.8vw;
+  top: 15vw;
+}
+.ach__success--phoneIcon,
+.ach__success--emailIcon {
+  position: relative;
+  top: -7vw;
+  left: 23.3vw;
+  width: 1.17vw;
+}
+.ach__success--emailIcon {
+  top: -9.87vw;
+  left: 80.25vw;
+  width: 1.3vw;
+}
+.ach__success--helpLine,
+.ach__success--email {
+  position: relative;
+  top: -8.6vw;
+  left: 43.9vw;
+  width: 32vw;
+  color: #8fd0ff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.91vw;
+  font-weight: 700;
 }
