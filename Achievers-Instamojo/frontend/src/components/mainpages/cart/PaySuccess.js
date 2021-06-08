@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../../assets/Pics/Home/1-Navbar/Logo.png";
+import Logo from "../../../assets/Pics/Success/successPgLogo.png";
 
 function PaySuccess() {
     return(
