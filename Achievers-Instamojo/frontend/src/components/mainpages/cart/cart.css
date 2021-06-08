@@ -57,7 +57,25 @@
 }
 
 .ach__success {
-}
-.ach__success--heading {
+  position: relative;
+  width: 100%;
+  height: 10vw;
   text-align: center;
+  margin-top: 15vw;
+}
+.ach__success--heading,
+.ach__success--thankYou {
+  font-size: 2.3vw;
+  text-align: center;
+}
+.ach__success--thankYou {
+  font-size: 1.15vw;
+  font-weight: bold;
+  margin: 1.5vw 0;
+}
+
+.ach__success--redirect {
+  position: relative;
+  font-size: 1.2vw;
+  color: green;
 }
