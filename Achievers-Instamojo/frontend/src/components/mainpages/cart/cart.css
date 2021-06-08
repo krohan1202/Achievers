@@ -64,7 +64,7 @@
 .ach__success {
   position: relative;
   width: 100%;
-  height: 10vw;
+  height: 12vw;
   text-align: center;
   margin-top: 15vw;
 }
@@ -76,40 +76,48 @@
 .ach__success--thankYou {
   font-size: 1.15vw;
   font-weight: bold;
-  margin: 1.5vw 0;
+  margin: 1.5vw 0 2.5vw;
 }
 
 .ach__success--redirect {
   position: relative;
   font-size: 1.2vw;
-  color: green;
+  background: rgb(0, 182, 0);
+  color: #fff;
+  height: 3.2vw;
+  width: 13.3vw;
 }
 .ach__successPg--logo {
   position: relative;
-  width: 18.55vw;
+  width: 20vw;
   left: 2.8vw;
-  top: 15vw;
+  top: 13vw;
 }
 .ach__success--phoneIcon,
 .ach__success--emailIcon {
   position: relative;
-  top: -7vw;
-  left: 23.3vw;
+  top: 13.2vw;
+  left: 28.95vw;
   width: 1.17vw;
 }
 .ach__success--emailIcon {
-  top: -9.87vw;
-  left: 80.25vw;
+  top: 10.5vw;
+  left: 82.85vw;
   width: 1.3vw;
 }
 .ach__success--helpLine,
 .ach__success--email {
   position: relative;
-  top: -8.6vw;
-  left: 43.9vw;
+  top: 11.65vw;
+  left: 49.5vw;
   width: 32vw;
-  color: #8fd0ff;
+  color: #0f6cd6;
   font-family: "Montserrat", sans-serif;
   font-size: 0.91vw;
   font-weight: 700;
+}
+.ach__success--email {
+  top: 9vw;
+  left: 84.9vw;
+  width: 14vw;
 }
