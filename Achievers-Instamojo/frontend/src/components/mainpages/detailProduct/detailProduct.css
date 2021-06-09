@@ -65,8 +65,7 @@
 }
 .prevPrice {
   position: relative;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.35vw;
+  font-size: 1.25vw;
   top: 0.1vw;
 }
 .description--heading,
