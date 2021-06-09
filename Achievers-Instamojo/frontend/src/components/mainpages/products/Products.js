@@ -2,6 +2,7 @@ import React, {useContext, useState} from 'react';
 import {GlobalState} from '../../../GlobalState';
 import Carousel from "react-elastic-carousel";
 import ProductItem from '../utils/productItem/ProductItem';
+import NoProducts from '../utils/productItem/NoProducts';
 import Loading from '../utils/loading/Loading';
 import axios from 'axios';
 import Header from "../../headers/Header";
@@ -90,7 +91,7 @@ function Products() {
         setEmail("");
         setPhone("");
     }
-
+    
     if(loading) return <div><Loading /></div>
     return (
         <>
@@ -163,10 +164,10 @@ function Products() {
     
             {
                 products.map(product => {
-                    console.log(product);
+                    // console.log(product);
                     return product.category === "60be699c7b148a49c09ec637"
                         ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> 
-                        : <p className="ach__cat--noProducts">Stay tuned! More courses coming soon...</p>
+                        : null
                 })
             }
             </Carousel>
@@ -266,9 +267,9 @@ function Products() {
             {
                 products.map(product => {
                     // console.log(product);
-                    return product.category === "607b2055483a9217507846cf"
+                    return product.category === "60c0c9b76beb883fb0a00dc1"
                         ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> 
-                        : <p className="ach__cat--noProducts">Stay tuned! More courses coming soon...</p>
+                        : null
                 })
             }
             </Carousel>

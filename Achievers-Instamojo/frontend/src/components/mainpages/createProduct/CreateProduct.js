@@ -8,6 +8,7 @@ const initialState = {
   product_id: "",
   title: "",
   price: 0,
+  previousPrice: 0,
   description: "Enter product description",
   content: "Enter something else",
   category: "",
@@ -192,6 +193,18 @@ function CreateProduct() {
             onChange={handleChangeInput}
           />
         </div>
+
+        <div className="row">
+          <label htmlFor="previousPrice">Previous Price</label>
+          <input
+            type="number"
+            name="previousPrice"
+            id="previousPrice"
+            required
+            value={product.previousPrice}
+            onChange={handleChangeInput}
+          />
+        </div> 
 
         <div className="row">
           <label htmlFor="description">Description</label>
