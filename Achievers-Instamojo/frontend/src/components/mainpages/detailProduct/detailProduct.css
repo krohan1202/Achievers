@@ -38,14 +38,14 @@
   background: #fc2b32;
   color: white;
   border-radius: 28px;
-  margin-top: 10px;
+  margin-top: 2vw;
   padding: 10px 25px;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
 }
 .lineUnderTitle {
-  margin: 0.8vw auto;
+  margin: 0.8vw auto 1.2vw;
   width: 70vw;
   border: none;
   border-bottom: 3px solid grey;
@@ -55,6 +55,19 @@
   font-weight: 700;
   font-size: 2.2vw;
   color: #fc2b32;
+}
+.price--inclusiveOfTaxes {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.03vw;
+  margin-left: 0.7vw;
+  top: -0.1vw;
+}
+.prevPrice {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.35vw;
+  top: 0.1vw;
 }
 .description--heading,
 .relatedProducts {
@@ -87,6 +100,7 @@
 }
 .content {
   left: 0;
+  top: 0.5vw;
 }
 .relatedProducts {
   margin-top: 2vw;
