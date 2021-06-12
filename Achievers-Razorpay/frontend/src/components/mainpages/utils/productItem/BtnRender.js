@@ -1,11 +1,11 @@
-import React, {useContext} from 'react'
-import {Link} from 'react-router-dom'
-import {GlobalState} from '../../../../GlobalState'
+import React, {useContext} from 'react';
+import {Link} from 'react-router-dom';
+import {GlobalState} from '../../../../GlobalState';
 
 function BtnRender({product, deleteProduct}) {
-    const state = useContext(GlobalState)
-    const [isAdmin] = state.userAPI.isAdmin
-    const addCart = state.userAPI.addCart
+    const state = useContext(GlobalState);
+    const [isAdmin] = state.userAPI.isAdmin;
+    const addCart = state.userAPI.addCart;
 
     
     return (
@@ -28,4 +28,4 @@ function BtnRender({product, deleteProduct}) {
     )
 }
 
-export default BtnRender
+export default BtnRender;

@@ -6,7 +6,12 @@
   position: relative;
   left: 1vw;
 }
-
+.ach__cat--noProducts {
+  position: relative;
+  font-size: 2vw;
+  padding: 3vw 0;
+  vertical-align: middle;
+}
 /* React Elastic Carousel Slider css */
 .rec.rec-arrow {
   border-radius: 0;
@@ -27,7 +32,6 @@
 }
 .ach__studyMat--productsCarousel {
   position: relative;
-  /* left: 3%; */
 }
 
 /* Home Page */
@@ -153,6 +157,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.61vw;
+  /* margin-bottom: 15vw; */
 }
 .ach__studyMat--starredTexts {
   position: absolute;
@@ -271,6 +276,8 @@
   text-align: right;
   margin-right: 5.35vw;
   top: 20vw;
+  left: 73.5vw;
+  width: 20vw;
 }
 .delete-all--popularEntranceCourses {
   top: 0;
@@ -343,7 +350,6 @@
   letter-spacing: 0.6px;
   line-height: 1.75vw;
   padding: 0 8vw;
-  margin-bottom: 3vw;
 }
 .popularEntranceProducts {
   position: relative;

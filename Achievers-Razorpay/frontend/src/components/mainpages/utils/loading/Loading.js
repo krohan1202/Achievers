@@ -1,5 +1,5 @@
-import React from 'react'
-import './loading.css'
+import React from 'react';
+import './loading.css';
 
 function Loading() {
     return (
@@ -13,4 +13,4 @@ function Loading() {
     )
 }
 
-export default Loading
+export default Loading;

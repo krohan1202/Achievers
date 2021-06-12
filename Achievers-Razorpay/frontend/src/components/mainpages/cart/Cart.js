@@ -1,8 +1,8 @@
-import React, {useContext, useState, useEffect} from 'react'
-import {GlobalState} from '../../../GlobalState'
-import axios from 'axios'
-import Header from '../../headers/Header'
-import Footer from '../../footers/footer'
+import React, {useContext, useState, useEffect} from 'react';
+import {GlobalState} from '../../../GlobalState';
+import axios from 'axios';
+import Header from '../../headers/Header';
+import Footer from '../../footers/footer';
 
 function Cart() {
     const email= localStorage.getItem('email')

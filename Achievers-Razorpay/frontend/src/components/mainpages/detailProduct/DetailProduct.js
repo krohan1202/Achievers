@@ -23,7 +23,7 @@ function DetailProduct() {
     },[params.id, products])
 
     if(detailProduct.length === 0) return null;
-
+    
     return (
         <>
         <Header />
@@ -31,11 +31,13 @@ function DetailProduct() {
                 <img src={detailProduct.images.url} alt="" />
                 <div className="box-detail">
                     <div className="row">
-                        <h2>{detailProduct.title}</h2>
+                        <h2 className="box-detail--row--h2">{detailProduct.title}</h2>
                     </div>
                     
                     <hr className="lineUnderTitle"></hr> 
-                    <span className="price">Rs. {detailProduct.price}</span>
+                    <span className="price">Rs. {detailProduct.price}.00</span>
+                    <span className="price--inclusiveOfTaxes">Inclusive of all taxes</span>
+                    <p className="prevPrice"><s>Rs. {detailProduct.previousPrice}.00</s> (Save Rs.{(detailProduct.previousPrice)-(detailProduct.price)})</p>
                     <p className="content">{detailProduct.content}</p>
                     <Link to="/cart" className="cart" style={{width: "11.2vw"}}
                     onClick={() => addCart(detailProduct)}>

@@ -1,7 +1,7 @@
 /* ------------ Filters Menu ----------------- */
 .filter_menu {
   position: absolute;
-  width: 100%;
+  width: 52.5%;
   top: 8vw;
   left: 44.3vw;
   z-index: 1;
@@ -16,16 +16,23 @@
   border: none;
   border-bottom: 2px solid #fff;
 }
+.nav__searchBar[type="text"] {
+  color: white;
+  font-size: 1.07vw;
+}
 .nav__searchBar::placeholder {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.07vw;
   color: #fff;
 }
+.nav__searchIcon--a,
 .nav__searchIcon {
   position: relative;
   width: 1.43vw;
-  top: 0.52vw;
-  left: -2.05vw;
-  margin: 0 0 0 0.65vw;
+  top: 0.03vw;
+  left: -0.8vw;
+}
+.nav__searchIcon {
+  position: absolute;
 }

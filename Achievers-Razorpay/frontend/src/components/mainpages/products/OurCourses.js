@@ -144,7 +144,7 @@ function OurCourses() {
             </div>
 
             {/* Achievers Products */}
-            <div className="courses__achProducts">
+            <div className="courses__achProducts" id="searchProducts">
                 <p className="courses__achProducts--heading">Achievers Products: All-India Entrance Exams</p>
                 <p className="courses__achProducts--description">Some Selected Study Material and products for various popular All India Entrance Exams like - JEE, NEET, CSIR-UGC NET (Chemical Sciences), IIT-JAM, BHU, DU, CU, HSC, IISER, IACS, PU, etc</p>
                 <div className="courses__filters">
