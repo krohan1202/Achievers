@@ -55,3 +55,73 @@
   position: absolute;
   transform: translateX(-50%);
 }
+
+.ach__successPg {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+.ach__success {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 13vw;
+  text-align: center;
+  margin-top: 15vw;
+}
+.ach__success--heading,
+.ach__success--thankYou {
+  font-size: 2.6vw;
+  text-align: center;
+}
+.ach__success--thankYou {
+  font-size: 1.15vw;
+  font-weight: bold;
+  margin: 1.5vw 0 2.5vw;
+}
+
+.ach__success--redirect {
+  position: relative;
+  font-size: 1.2vw;
+  background: rgb(0, 182, 0);
+  color: #fff;
+  height: 3.2vw;
+  width: 13.3vw;
+}
+.ach__successPg--logo {
+  position: relative;
+  width: 20vw;
+  left: 2.8vw;
+  top: 12vw;
+}
+.ach__success--phoneIcon,
+.ach__success--emailIcon {
+  position: relative;
+  top: 12.2vw;
+  left: 27.8vw;
+  width: 1.17vw;
+}
+.ach__success--emailIcon {
+  top: 9.5vw;
+  left: 82.85vw;
+  width: 1.3vw;
+}
+.ach__success--helpLine,
+.ach__success--email {
+  position: relative;
+  top: 10.68vw;
+  left: 49.5vw;
+  width: 32vw;
+  color: #0f6cd6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.91vw;
+  font-weight: 700;
+}
+.ach__success--email {
+  top: 8vw;
+  left: 84.9vw;
+  width: 14vw;
+}

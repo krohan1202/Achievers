@@ -1,5 +1,5 @@
-import {useState, useEffect} from 'react'
-import axios from 'axios'
+import {useState, useEffect} from 'react';
+import axios from 'axios';
 
 
 function ProductsAPI() {
@@ -31,4 +31,4 @@ function ProductsAPI() {
     }
 }
 
-export default ProductsAPI
+export default ProductsAPI;

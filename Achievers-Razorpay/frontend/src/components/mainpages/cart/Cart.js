@@ -6,12 +6,12 @@ import Footer from '../../footers/footer'
 
 function Cart() {
     const email= localStorage.getItem('email')
-    console.log(email);
+    // console.log(email);
     const state = useContext(GlobalState)
     const [cart, setCart] = state.userAPI.cart
     const [token] = state.token
     const [total, setTotal] = useState(0)
-    console.log(state.token)
+    // console.log(state.token)
     useEffect(() =>{
         const getTotal = () =>{
             const total = cart.reduce((prev, item) => {
@@ -85,27 +85,39 @@ console.log(total);
     
     const __DEV__ = document.domain === 'localhost'
     
-        const [name, setName] = useState('Rohan')
-    
+        const [name, setName] = useState('Your Name')
+
         async function displayRazorpay() {
+            axios.post('/sendTotal', {total: total});
+            
             const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
             
             if (!res) {
                 alert('Razorpay SDK failed to load. Are you online?')
                 return
             }
-            console.log(cart);
+            // console.log(cart);
 
-            const data =  fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) =>
-                t.json()
-            )
-            data.amount = total
-            const am = data.amount;
-    
+            const data =  fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) => {
+                t.json();
+                console.log(t);
+            })
+
+            // const data = await fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) =>
+			// t.json()
+		    // )
+            // console.log(data);
+            // console.log(data.amount);
+            // data.amount = total;
+            // console.log("DATA AMOUNT",data.amount);
+            const cartAmount = total * 100;
+            console.log("Cart Amount",cartAmount);
+
             const options = {
                 key: __DEV__ ? 'rzp_test_QqUGL3lXO9J3fl' : 'PRODUCTION_KEY',
                 currency: data.currency,
-                amount: (am*100),
+                amount: cartAmount,
+                // amount: data.amount,
                 order_id: data.id,
                 name: 'Checkout',
                 description: 'Make your payment',
@@ -130,10 +142,16 @@ console.log(total);
         }
     
 
-    if(cart.length === 0) 
-        return <h2 style={{textAlign: "center", fontSize: "5rem"}}>Cart Empty</h2> 
+        if(cart.length === 0) {
+            return (
+                <>
+                <Header />
+                <h2 style={{textAlign: "center", fontSize: "5rem", margin: "5.5vw auto"}}>Cart Empty</h2>
+                <Footer />
+                </>
+            )}
 
-        console.log(cart);
+        // console.log(cart);
     return (
         <div>
            <Header />
