@@ -1,6 +1,6 @@
-const Payments = require('../models/paymentModel')
-const Users = require('../models/userModel')
-const Products = require('../models/productModel')
+const Payments = require('../models/paymentModel');
+const Users = require('../models/userModel');
+const Products = require('../models/productModel');
 
 
 const paymentCtrl = {
@@ -52,4 +52,4 @@ const sold = async (id, quantity, oldSold) =>{
     })
 }
 
-module.exports = paymentCtrl
+module.exports = paymentCtrl;

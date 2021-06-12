@@ -72,31 +72,62 @@ app.post('/verification', (req, res) => {
 	res.json({ status: 'ok' })
 })
 
-app.post('/razorpay', async (req, res) => {
+app.post("/sendTotal", (req, res) => {
+	console.log(req.body);
+	var total = req.body.total;
+	console.log(total);
 
-	const payment_capture = 1
-	const amount = 10
-	const currency = 'INR'
-
-	const options = {
-		amount: amount * 100,
-		currency,
-		receipt: shortid.generate(),
-		payment_capture
-	}
-
-	try {
-		const response = await razorpay.orders.create(options)
-		console.log(response)
-		res.json({
-			id: response.id,
-			currency: response.currency,
-			amount: response.amount
-		})
-	} catch (error) {
-		console.log(error)
-	}
+	app.post('/razorpay', async (req, res) => {
+		const payment_capture = 1
+		// const amount = 60
+		const amount = total
+		const currency = 'INR'
+	
+		const options = {
+			amount: (amount * 100),
+			currency,
+			receipt: shortid.generate(),
+			payment_capture
+		}
+		
+		try {
+			const response = await razorpay.orders.create(options)
+			console.log(response)
+			res.json({
+				id: response.id,
+				currency: response.currency,
+				amount: response.amount
+			})
+		} catch (error) {
+			console.log(error)
+		}
+	})
 })
+
+// app.post('/razorpay', async (req, res) => {
+// 	const payment_capture = 1
+// 	const amount = 60
+// 	const currency = 'INR'
+
+// 	const options = {
+// 		amount: (amount * 100),
+// 		currency,
+// 		receipt: shortid.generate(),
+// 		payment_capture
+// 	}
+	
+// 	try {
+// 		const response = await razorpay.orders.create(options)
+// 		console.log(response)
+// 		res.json({
+// 			id: response.id,
+// 			currency: response.currency,
+// 			amount: response.amount
+// 		})
+// 	} catch (error) {
+// 		console.log(error)
+// 	}
+// })
 
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () =>{

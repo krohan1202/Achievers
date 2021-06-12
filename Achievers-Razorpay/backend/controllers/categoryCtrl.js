@@ -1,5 +1,5 @@
-const Category = require('../models/categoryModel')
-const Products = require('../models/productModel')
+const Category = require('../models/categoryModel');
+const Products = require('../models/productModel');
 
 const categoryCtrl = {
     getCategories: async(req, res) =>{
@@ -52,4 +52,4 @@ const categoryCtrl = {
 }
 
 
-module.exports = categoryCtrl
+module.exports = categoryCtrl;

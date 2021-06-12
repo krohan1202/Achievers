@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 
 const productSchema = new mongoose.Schema({
@@ -14,6 +14,11 @@ const productSchema = new mongoose.Schema({
         required: true
     },
     price:{
+        type: Number,
+        trim: true,
+        required: true
+    },
+    previousPrice: {
         type: Number,
         trim: true,
         required: true
@@ -47,4 +52,4 @@ const productSchema = new mongoose.Schema({
 })
 
 
-module.exports = mongoose.model("Products", productSchema)
+module.exports = mongoose.model("Products", productSchema);
