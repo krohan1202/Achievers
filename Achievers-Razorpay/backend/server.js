@@ -38,10 +38,12 @@ mongoose.connect(URI, {
 })
 
 // Razorpay Integration
+const KEY_ID = process.env.PAYMENT_KEY_ID;
+const KEY_SECRET = process.env.PAYMENT_KEY_SECRET;
 
 const razorpay = new Razorpay({
-	key_id: 'rzp_test_QqUGL3lXO9J3fl',
-	key_secret: 'XuUX4N7uFxBddAr2sSdPN9m0'
+	key_id: KEY_ID,
+	key_secret: KEY_SECRET
 })
 
 app.get('/logo.svg', (req, res) => {
@@ -70,7 +72,13 @@ app.post('/verification', (req, res) => {
 		// pass it
 	}
 	res.json({ status: 'ok' })
-})
+});
+
+// var request = require('request');
+// const fetchPayment = "https://" + KEY_ID + ":" + KEY_SECRET + "@api.razorpay.com/v1/payments/" + "pay_HMX0Q0tHiH969F";
+// request(fetchPayment, function (error, response, body) {
+//   console.log('Response:', body);
+// });
 
 app.post("/sendTotal", (req, res) => {
 	console.log(req.body);

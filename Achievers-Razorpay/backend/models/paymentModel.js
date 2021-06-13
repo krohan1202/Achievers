@@ -8,21 +8,25 @@ const paymentSchema = new mongoose.Schema({
     },
     name:{
         type: String,
-        // required: true
+        required: true
     },
     email:{
         type: String,
-        // required: true
+        required: true
+    },
+    phone: {
+        type: String,
+        required: true
     },
     updated: Date,
     user: {
       type: ObjectId,
       ref: "Users",
     },
-    // paymentID:{
-    //     type: String,
-    //     required: true
-    // },
+    razPayId:{
+        type: String,
+        required: true
+    },
     cart:{
         type: Array,
         default: []
