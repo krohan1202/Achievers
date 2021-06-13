@@ -22,32 +22,30 @@ const paymentCtrl = {
             var request = require('request');
             const fetchPayment = "https://" + process.env.PAYMENT_KEY_ID + ":" + process.env.PAYMENT_KEY_SECRET + "@api.razorpay.com/v1/payments/" + razPayId;
             request(fetchPayment, async function (error, response, body) {
-            console.log('Response:', body);
-                console.log("CONTACT----------", body.contact);
+                console.log('Response:', body);
                 body = JSON.parse(body);
                 console.log(body)
-                console.log(body.contact)
 
-            const user = await Users.findOne({email})
-            
-            if(!user) return res.status(400).json({msg: "User does not exist!!"})
+                const user = await Users.findOne({email})
+                
+                if(!user) return res.status(400).json({msg: "User does not exist!!"})
 
-            const {_id, name} = user;
-            
-            const newPayment = new Payments({
-                user_id: _id, name, email, phone: body.contact, razPayId, cart
-            })
+                const {_id, name} = user;
+                
+                const newPayment = new Payments({
+                    user_id: _id, name, email, phone: body.contact, razPayId, cart
+                })
 
-            await newPayment.save((err, newPayment) => {
-                if (err) {
-                    console.log(err)
-                  return res.status(400).json({
-                    error: "Failed to save order in DB.",
-                  });
-                }
-                res.json({msg: "Payment Success!"})
-                console.log(newPayment)
-              });
+                await newPayment.save((err, newPayment) => {
+                    if (err) {
+                        console.log(err)
+                    return res.status(400).json({
+                        error: "Failed to save order in DB.",
+                    });
+                    }
+                    res.json({msg: "Payment Success!"})
+                    console.log(newPayment)
+                });
             });
  
         }
