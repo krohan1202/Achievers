@@ -137,12 +137,14 @@ console.log(total);
                 description: 'Make your payment',
                 // image: 'http://localhost:1337/logo.svg',
                 handler: function (response) {
-                    // console.log(response)
+                    console.log(response)
                     alert(response.razorpay_payment_id)
                     alert(response.razorpay_order_id)
                     alert(response.razorpay_signature)
+                    const razPayId = response.razorpay_payment_id;
                     alert("You have successfully placed an order.")
-                    axios.post(`/api/razorpay_payment`, {email:email, cart: cart})
+                    axios.post(`/api/razorpay_payment`, {email:email, cart: cart, razPayId: razPayId})
+                    // window.location.href = "http://localhost:3000/success"
                     setCart([])
                     addToCart([])
                 },

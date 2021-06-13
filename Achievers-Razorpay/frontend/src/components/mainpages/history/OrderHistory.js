@@ -30,7 +30,7 @@ function OrderHistory() {
             getHistory()
         }
     },[token, isAdmin, setHistory])
-
+    
     return (
         <div className="history-page">
             <Header />
@@ -50,7 +50,7 @@ function OrderHistory() {
                     {
                         history.map(items => (
                             <tr key={items._id}>
-                                <td>{items.paymentID}</td>
+                                <td>{items._id}</td>
                                 <td>{new Date(items.createdAt).toLocaleDateString()}</td>
                                 <td><Link to={`/history/${items._id}`}>View</Link></td>
                             </tr>
