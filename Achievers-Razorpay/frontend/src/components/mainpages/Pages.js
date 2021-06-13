@@ -8,7 +8,7 @@ import Register from './auth/Register';
 import OrderHistory from './history/OrderHistory';
 import OrderDetails from './history/OrderDetails';
 import Cart from './cart/Cart';
-// import PaySuccess from './cart/PaySuccess';
+import PaySuccess from './cart/PaySuccess';
 import NotFound from './utils/not_found/NotFound';
 import Categories from './categories/Categories';
 import CreateProduct from './createProduct/CreateProduct';
@@ -18,9 +18,9 @@ import {GlobalState} from '../../GlobalState';
 
 
 function Pages() {
-    const state = useContext(GlobalState)
-    const [isLogged] = state.userAPI.isLogged
-    const [isAdmin] = state.userAPI.isAdmin
+    const state = useContext(GlobalState);
+    const [isLogged] = state.userAPI.isLogged;
+    const [isAdmin] = state.userAPI.isAdmin;
 
     return (
         <Switch>
@@ -39,7 +39,7 @@ function Pages() {
             <Route path="/history/:id" exact component={isLogged ? OrderDetails : NotFound} />
 
             <Route path="/cart" exact component={Cart} />
-            {/* <Route path="/success" exact component={isLogged ? PaySuccess : NotFound} /> */}
+            <Route path="/success" exact component={isLogged ? PaySuccess : NotFound} />
 
             <Route path="/careers" exact component={Careers} />
             

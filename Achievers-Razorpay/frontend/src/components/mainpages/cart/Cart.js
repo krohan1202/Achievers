@@ -1,6 +1,7 @@
 import React, {useContext, useState, useEffect} from 'react';
 import {GlobalState} from '../../../GlobalState';
 import axios from 'axios';
+import $ from "jquery";
 import Header from '../../headers/Header';
 import Footer from '../../footers/footer';
 
@@ -67,6 +68,19 @@ console.log(total);
             addToCart(cart)
         }
     }
+    
+    // var closesuccessMsg = $(".ach__cart--confirmContinue")
+    // function onConfirm(value) {
+    //     console.log(value);
+
+    // axios.post('/sendTotal', {total: total})
+    
+    // closesuccessMsg.css({
+    //     'transition': "0.7s ease",
+    //     'opacity': 1
+    //     // 'display': 'visible'
+    // });
+    // }
 
     //Razorpay integration
     function loadScript(src) {
@@ -88,7 +102,7 @@ console.log(total);
         const [name, setName] = useState('Your Name')
 
         async function displayRazorpay() {
-            axios.post('/sendTotal', {total: total});
+            // axios.post('/sendTotal', {total: total});
             
             const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
             
@@ -123,6 +137,7 @@ console.log(total);
                 description: 'Make your payment',
                 // image: 'http://localhost:1337/logo.svg',
                 handler: function (response) {
+                    // console.log(response)
                     alert(response.razorpay_payment_id)
                     alert(response.razorpay_order_id)
                     alert(response.razorpay_signature)
@@ -137,10 +152,9 @@ console.log(total);
                     phone_number: '9899999999'
                 }
             }
-            const paymentObject = new window.Razorpay(options)
+            const paymentObject = new window.Razorpay(options);
             paymentObject.open()
         }
-    
 
         if(cart.length === 0) {
             return (
