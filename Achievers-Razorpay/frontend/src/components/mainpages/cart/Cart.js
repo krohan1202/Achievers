@@ -1,7 +1,6 @@
 import React, {useContext, useState, useEffect} from 'react';
 import {GlobalState} from '../../../GlobalState';
 import axios from 'axios';
-import $ from "jquery";
 import Header from '../../headers/Header';
 import Footer from '../../footers/footer';
 
@@ -12,14 +11,14 @@ function Cart() {
     const [cart, setCart] = state.userAPI.cart
     const [token] = state.token
     const [total, setTotal] = useState(0)
-    // console.log(state.token)
+
     useEffect(() =>{
         const getTotal = () =>{
             const total = cart.reduce((prev, item) => {
                 return prev + (item.price * item.quantity)
             },0)
 
-            setTotal(total)
+            setTotal(total);
         }
 
         getTotal()
@@ -31,8 +30,6 @@ function Cart() {
             headers: {Authorization: token}
         })
     }
-console.log(total);
-
 
     const increment = (id) =>{
         cart.forEach(item => {
@@ -68,19 +65,6 @@ console.log(total);
             addToCart(cart)
         }
     }
-    
-    // var closesuccessMsg = $(".ach__cart--confirmContinue")
-    // function onConfirm(value) {
-    //     console.log(value);
-
-    // axios.post('/sendTotal', {total: total})
-    
-    // closesuccessMsg.css({
-    //     'transition': "0.7s ease",
-    //     'opacity': 1
-    //     // 'display': 'visible'
-    // });
-    // }
 
     //Razorpay integration
     function loadScript(src) {
@@ -101,9 +85,7 @@ console.log(total);
     
         const [name, setName] = useState('Your Name')
 
-        async function displayRazorpay() {
-            // axios.post('/sendTotal', {total: total});
-            
+        async function displayRazorpay() {            
             const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
             
             if (!res) {
@@ -114,37 +96,22 @@ console.log(total);
 
             const data =  fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) => {
                 t.json();
-                console.log(t);
             })
 
-            // const data = await fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) =>
-			// t.json()
-		    // )
-            // console.log(data);
-            // console.log(data.amount);
-            // data.amount = total;
-            // console.log("DATA AMOUNT",data.amount);
             const cartAmount = total * 100;
-            console.log("Cart Amount",cartAmount);
-
             const options = {
-                key: __DEV__ ? 'rzp_test_QqUGL3lXO9J3fl' : 'PRODUCTION_KEY',
+                key: __DEV__ ? 'rzp_test_6NWORDktzVxgNt' : 'PRODUCTION_KEY',
                 currency: data.currency,
                 amount: cartAmount,
                 // amount: data.amount,
                 order_id: data.id,
-                name: 'Checkout',
+                name: 'Achievers Pay',
                 description: 'Make your payment',
                 // image: 'http://localhost:1337/logo.svg',
                 handler: function (response) {
-                    console.log(response)
-                    alert(response.razorpay_payment_id)
-                    alert(response.razorpay_order_id)
-                    alert(response.razorpay_signature)
                     const razPayId = response.razorpay_payment_id;
-                    alert("You have successfully placed an order.")
                     axios.post(`/api/razorpay_payment`, {email:email, cart: cart, razPayId: razPayId})
-                    // window.location.href = "http://localhost:3000/success"
+                    window.location.href = "http://localhost:3000/success"
                     setCart([])
                     addToCart([])
                 },
@@ -167,7 +134,6 @@ console.log(total);
                 </>
             )}
 
-        // console.log(cart);
     return (
         <div>
            <Header />

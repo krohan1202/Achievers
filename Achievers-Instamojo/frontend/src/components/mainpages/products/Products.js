@@ -92,6 +92,22 @@ function Products() {
         setPhone("");
     }
     
+    const categoryIds = [];
+    products.map((product) => {
+        categoryIds.push(product.category);
+    })
+    console.log(categoryIds)
+    function checkCatId(cat) {
+        return (cat === "60be699c7b148a49c09ec637")
+    }
+
+    const checkProductinCat = (categoryIds.some(checkCatId));
+    // if (!categoryIds.some(checkCatId)) {
+    //     return (
+    //         <p className="ach__cat--noProducts">Stay tuned! More courses coming soon...</p>
+    //     ); 
+    // }
+
     if(loading) return <div><Loading /></div>
     return (
         <>
@@ -161,14 +177,17 @@ function Products() {
 
         <div className="ach__studyMat--products">
         <Carousel className="ach__studyMat--productsCarousel" breakPoints={breakPoints}>
-    
+        
             {
+                checkProductinCat ?
                 products.map(product => {
-                    // console.log(product);
-                    return product.category === "60be699c7b148a49c09ec637"
+                    // console.log((categoryIds.some(checkCatId)));
+                    console.log(product.category === "60be699c7b148a49c09ec637")
+                    return (product.category === "60be699c7b148a49c09ec637")
                         ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> 
                         : null
                 })
+                : <p className="ach__cat--noProducts">Stay tuned! More courses coming soon...</p>
             }
             </Carousel>
         </div>

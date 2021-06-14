@@ -34,6 +34,21 @@ mongoose.connect(URI, {
     console.log('Connected to MongoDB')
 })
 
+// const API_KEY = process.env.PAYMENT_API_KEY;
+// const AUTH_KEY = process.env.PAYMENT_AUTH_KEY;
+// var request= require('request');
+// var headers = { 'X-Api-Key': API_KEY, 'X-Auth-Token': AUTH_KEY}
+// const paymentSuccessResponseUrl = "https://www.instamojo.com/api/1.1/payment-requests/" + "229b1a3bd442449bb357e690b01fee79/";  
+
+// request.get((paymentSuccessResponseUrl), {headers: headers}, function(error, response, body){
+//     console.log(body);
+//     console.log(response);
+//     console.log(error);
+//     if(!error && response.statusCode == 200){
+//         console.log(body);
+//     }
+// })
+
 app.get("/success", (req, res) => {
 	res.send("Payment successful! Check mail for confirmation")
 })

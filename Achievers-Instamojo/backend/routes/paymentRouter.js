@@ -5,6 +5,7 @@ const authAdmin = require('../middleware/authAdmin')
 
 
 router.route('/cart')
+    .get(paymentCtrl.checkPayment)
     .get(auth, authAdmin, paymentCtrl.getPayments)
     .post(paymentCtrl.createPayment)
 

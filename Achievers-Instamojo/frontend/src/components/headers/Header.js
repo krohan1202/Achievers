@@ -59,7 +59,8 @@ function Header() {
                 <img src={Menu} alt="" width="30" />
             </div>
 
-            <img className="logo" src={Logo} alt="Logo"/>
+            
+            <img className="logo" src={Logo} />
             
             <span>
                 <svg className="nav__phoneIcon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">

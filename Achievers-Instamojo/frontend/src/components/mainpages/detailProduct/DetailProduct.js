@@ -31,7 +31,7 @@ function DetailProduct() {
                 <img src={detailProduct.images.url} alt="" />
                 <div className="box-detail">
                     <div className="row">
-                        <h2>{detailProduct.title}</h2>
+                        <h2 className="box-detail--row--h2">{detailProduct.title}</h2>
                     </div>
                     
                     <hr className="lineUnderTitle"></hr> 

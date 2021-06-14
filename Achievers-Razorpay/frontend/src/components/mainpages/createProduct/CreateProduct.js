@@ -54,7 +54,7 @@ function CreateProduct() {
     try {
       if (!isAdmin) return alert("You're not an admin");
       const file = e.target.files[0];
-      console.log(file);
+      // console.log(file);
 
       if (!file) return alert("File not exist.");
 
