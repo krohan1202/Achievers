@@ -330,6 +330,9 @@
   font-weight: 700;
   color: #f30007;
 }
+.ach__popularEntranceCourses--heading {
+  width: 66vw;
+}
 .ach__popularEntranceCourses--underline {
   width: 64.5vw;
   border: none;
@@ -338,11 +341,9 @@
 }
 .ach__popularEntranceCourses--viewAllBtn {
   background-color: #fc2b32;
-  position: absolute;
-  top: 150vw;
+  top: -4vw;
 }
 .ach__popularEntranceCourses--description {
-  margin-top: 3vw;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -654,6 +655,8 @@
   position: absolute;
 }
 .courses__products {
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: 2vw;
   grid-template-columns: repeat(4, minmax(100px, 1fr));
   justify-items: center;

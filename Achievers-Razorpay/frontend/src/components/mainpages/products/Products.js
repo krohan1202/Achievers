@@ -2,7 +2,6 @@ import React, {useContext, useState} from 'react';
 import {GlobalState} from '../../../GlobalState';
 import Carousel from "react-elastic-carousel";
 import ProductItem from '../utils/productItem/ProductItem';
-// import NoProducts from '../utils/productItem/NoProducts';
 import Loading from '../utils/loading/Loading';
 import axios from 'axios';
 import Header from "../../headers/Header";
@@ -96,17 +95,17 @@ function Products() {
     products.map((product) => {
         categoryIds.push(product.category);
     })
-    console.log(categoryIds)
-    function checkCatId(cat) {
-        return (cat === "60be699c7b148a49c09ec637")
+    
+    function checkStudyMatCatId(cat) {
+        return (cat === "60be699c7b148a49c09ec637");
     }
 
-    const checkProductinCat = (categoryIds.some(checkCatId));
-    // if (!categoryIds.some(checkCatId)) {
-    //     return (
-    //         <p className="ach__cat--noProducts">Stay tuned! More courses coming soon...</p>
-    //     ); 
-    // }
+    function checkPopularEntranceCatId(cat) {
+        return (cat === "60c0c9b76beb883fb0a00dc1");
+    }
+
+    const checkProductinStudyMatCat = (categoryIds.some(checkStudyMatCatId));
+    const checkProductinPopularEntranceCat = (categoryIds.some(checkPopularEntranceCatId));
 
     if(loading) return <div><Loading /></div>
     return (
@@ -179,7 +178,7 @@ function Products() {
         <Carousel className="ach__studyMat--productsCarousel" breakPoints={breakPoints}>
         
             {
-                checkProductinCat ?
+                checkProductinStudyMatCat ?
                 products.map(product => {
                     // console.log((categoryIds.some(checkCatId)));
                     console.log(product.category === "60be699c7b148a49c09ec637")
@@ -283,13 +282,15 @@ function Products() {
 
             <div className="popularEntranceProducts">
             <Carousel breakPoints={breakPoints}>
-            {
+            {   
+             checkProductinPopularEntranceCat ?
                 products.map(product => {
                     // console.log(product);
                     return product.category === "60c0c9b76beb883fb0a00dc1"
                         ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> 
                         : null
                 })
+                : <p className="ach__cat--noProducts">Stay tuned! More courses coming soon...</p>
             }
             </Carousel>
         </div>
