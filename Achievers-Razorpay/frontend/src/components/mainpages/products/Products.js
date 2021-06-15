@@ -22,13 +22,13 @@ const breakPoints = [
   ];
 
 function Products() {
-    const state = useContext(GlobalState)
-    const [products, setProducts] = state.HomeProductsAPI.products
-    const [isAdmin] = state.userAPI.isAdmin
-    const [token] = state.token
-    const [callback, setCallback] = state.productsAPI.callback
-    const [loading, setLoading] = useState(false)
-    const [isCheck, setIsCheck] = useState(false)
+    const state = useContext(GlobalState);
+    const [products, setProducts] = state.HomeProductsAPI.products;
+    const [isAdmin] = state.userAPI.isAdmin;
+    const [token] = state.token;
+    const [callback, setCallback] = state.productsAPI.callback;
+    const [loading, setLoading] = useState(false);
+    const [isCheck, setIsCheck] = useState(false);
 
     const handleCheck = (id) =>{
         products.forEach(product => {
@@ -69,13 +69,6 @@ function Products() {
             if(product.checked) deleteProduct(product._id, product.images.public_id)
         })
     }
-    
-    const [categories] = state.categoriesAPI.categories
-
-    const [category, setCategory] = state.productsAPI.category
-    // console.log(category)
-    const [sort, setSort] = state.productsAPI.sort
-    const [search, setSearch] = state.productsAPI.search
 
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");

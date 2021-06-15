@@ -9,11 +9,11 @@ function Footer() {
             <span className="ach__footer--aboutPart">
                 <ul>
                 <li className="ach__footer--aboutPart--li"><p className="ach__footer--aboutPart--heading">ABOUT</p></li>
-                <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="#">Contact Us</a></li>
-                <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="#">About Us</a></li>
+                <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="/contact">Contact Us</a></li>
+                <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="/about">About Us</a></li>
                 <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="/careers">Careers</a></li>
-                <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="#">Achiever Stories</a></li>
-                <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="#">Press</a></li>
+                <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="/stories">Achiever Stories</a></li>
+                <li className="ach__footer--aboutPart--li"><a className="ach__footer--aboutPart--links" href="/press">Press</a></li>
                 </ul>
             </span>
 

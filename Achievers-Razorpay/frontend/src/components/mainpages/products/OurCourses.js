@@ -113,7 +113,7 @@ function OurCourses() {
         <div>
             <div className="courses__goBackLink">
                 <a className="courses__goBackLink--a" href="/our_courses">Our Courses /</a>
-                <a className="courses__goBackLink--a courses__goBackLink--a--ourCourses" href="#"> Achievers Products</a>
+                <a className="courses__goBackLink--a courses__goBackLink--a--ourCourses" href="#searchProducts"> Achievers Products</a>
             </div>
             <img className="courses__topBanner" src={TopBanner} alt="Top Banner"/>
 
@@ -123,7 +123,7 @@ function OurCourses() {
                 <p className="courses__joinCommunity--sixThousandStudents">6,000+ students</p>
                 <hr className="courses__joinCommunity--verticalLine"></hr>
                 <p className="courses__joinCommunity--joinCommunity">Join our community</p>
-                <a className="courses__joinCommunity--contact" href="#">Contact Us</a>
+                <a className="courses__joinCommunity--contact" href="/contact">Contact Us</a>
                 <a className="courses__joinCommunity--downloadApp" href="#">Download our App</a>
             </div>
 

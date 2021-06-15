@@ -83,7 +83,7 @@ function Cart() {
     
     const __DEV__ = document.domain === 'localhost'
     
-        const [name, setName] = useState('Your Name')
+        const [name, setName] = useState('')
 
         async function displayRazorpay() {            
             const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
@@ -171,7 +171,6 @@ function Cart() {
                 <a
 					className="checkout-btn"
 					onClick={displayRazorpay}
-					target="_blank"
 					rel="noopener noreferrer"
 				>
 					Proceed to Buy
@@ -182,4 +181,4 @@ function Cart() {
     )
 }
 
-export default Cart
+export default Cart;
