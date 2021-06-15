@@ -1,28 +1,28 @@
 require('dotenv').config()
-const express = require('express')
-const mongoose = require('mongoose')
-const cors = require('cors')
-const fileUpload = require('express-fileupload')
-const cookieParser = require('cookie-parser')
-const path = require('path')
-const shortid = require('shortid')
-const Razorpay = require('razorpay')
+const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const fileUpload = require('express-fileupload');
+const cookieParser = require('cookie-parser');
+const path = require('path');
+const shortid = require('shortid');
+const Razorpay = require('razorpay');
 
-const app = express()
-app.use(express.json())
-app.use(cookieParser())
-app.use(cors())
+const app = express();
+app.use(express.json());
+app.use(cookieParser());
+app.use(cors());
 app.use(fileUpload({
     useTempFiles: true
 }))
 
 // Routes
 app.use("/api", require("./routes/newsletter"));
-app.use('/user', require('./routes/userRouter'))
-app.use('/api', require('./routes/categoryRouter'))
-app.use('/api', require('./routes/upload'))
-app.use('/api', require('./routes/productRouter'))
-app.use('/api', require('./routes/paymentRouter'))
+app.use('/user', require('./routes/userRouter'));
+app.use('/api', require('./routes/categoryRouter'));
+app.use('/api', require('./routes/upload'));
+app.use('/api', require('./routes/productRouter'));
+app.use('/api', require('./routes/paymentRouter'));
 
 
 // Connect to mongodb
@@ -52,8 +52,7 @@ app.get('/logo.svg', (req, res) => {
 
 app.post('/verification', (req, res) => {
 	// do a validation
-	const secret = '12345678'
-
+	const secret = process.env.RAZ_VALIDATION_SECRET
 	// console.log(req.body)
 
 	const crypto = require('crypto')
@@ -73,12 +72,6 @@ app.post('/verification', (req, res) => {
 	}
 	res.json({ status: 'ok' })
 });
-
-// var request = require('request');
-// const fetchPayment = "https://" + KEY_ID + ":" + KEY_SECRET + "@api.razorpay.com/v1/payments/" + "pay_HMX0Q0tHiH969F";
-// request(fetchPayment, function (error, response, body) {
-//   console.log('Response:', body);
-// });
 
 app.post("/sendTotal", (req, res) => {
 	console.log(req.body);
