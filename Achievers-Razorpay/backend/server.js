@@ -80,7 +80,6 @@ app.post("/sendTotal", (req, res) => {
 
 	app.post('/razorpay', async (req, res) => {
 		const payment_capture = 1
-		// const amount = 60
 		const amount = total
 		const currency = 'INR'
 	
@@ -131,7 +130,7 @@ app.post("/sendTotal", (req, res) => {
 // })
 
 app.get('/',(req,res) => {
-	return res.send('Hello');
+	return res.send('Route Working.');
 });
 
 const PORT = process.env.PORT || 5000
