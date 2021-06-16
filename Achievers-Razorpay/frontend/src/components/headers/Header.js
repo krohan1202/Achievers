@@ -118,7 +118,7 @@ function Header() {
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">Result</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">Testimonials</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">General Info.</a></li>
-            <li className="nav__smallNav--li"><a className="nav__smallNav" href="/careers">Jobs</a></li>
+            <li className="nav__smallNav--li"><a className="nav__smallNav" href="/careers">Careers</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">Contact Us</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">LIVE Enquiry Desk</a></li>
         </ul>
@@ -126,4 +126,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Header;

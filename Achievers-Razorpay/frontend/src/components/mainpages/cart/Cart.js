@@ -94,7 +94,7 @@ function Cart() {
             }
             // console.log(cart);
 
-            const data =  fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) => {
+            const data = fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) => {
                 t.json();
             })
             const {REACT_APP_RAZ_TEST_KEY_ID, REACT_APP_RAZ_PRODUCTION_KEY_ID} = process.env;
