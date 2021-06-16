@@ -46,9 +46,9 @@ const razorpay = new Razorpay({
 	key_secret: KEY_SECRET
 })
 
-app.get('/logo.svg', (req, res) => {
-	res.sendFile(path.join(__dirname, 'logo.svg'))
-})
+// app.get('/logo.svg', (req, res) => {
+// 	res.sendFile(path.join(__dirname, 'logo.svg'))
+// })
 
 app.post('/verification', (req, res) => {
 	// do a validation
@@ -130,7 +130,11 @@ app.post("/sendTotal", (req, res) => {
 // 	}
 // })
 
+app.get('/',(req,res) => {
+	return res.send('Hello');
+});
+
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () =>{
-    console.log('Server is running on port', PORT)
+    console.log('Server is running on port', PORT);
 })
