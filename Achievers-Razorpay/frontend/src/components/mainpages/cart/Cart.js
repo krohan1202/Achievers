@@ -97,10 +97,12 @@ function Cart() {
             const data =  fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) => {
                 t.json();
             })
+            const {REACT_APP_RAZ_TEST_KEY_ID, REACT_APP_RAZ_PRODUCTION_KEY_ID} = process.env;
+            console.log(REACT_APP_RAZ_PRODUCTION_KEY_ID)
 
             const cartAmount = total * 100;
             const options = {
-                key: __DEV__ ? 'rzp_test_6NWORDktzVxgNt' : 'PRODUCTION_KEY',
+                key: __DEV__ ? REACT_APP_RAZ_TEST_KEY_ID : REACT_APP_RAZ_PRODUCTION_KEY_ID,
                 currency: data.currency,
                 amount: cartAmount,
                 // amount: data.amount,
@@ -111,7 +113,7 @@ function Cart() {
                 handler: function (response) {
                     const razPayId = response.razorpay_payment_id;
                     axios.post(`/api/razorpay_payment`, {email:email, cart: cart, razPayId: razPayId})
-                    window.location.href = "http://localhost:3000/success"
+                    window.location.href = "/success"
                     setCart([])
                     addToCart([])
                 },
