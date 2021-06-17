@@ -60,7 +60,7 @@ function Header() {
             </div>
 
             
-            <img className="logo" src={Logo} />
+            <img className="logo" src={Logo} alt="Logo"/>
             
             <span>
                 <svg className="nav__phoneIcon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +119,7 @@ function Header() {
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">Testimonials</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">General Info.</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="/careers">Careers</a></li>
-            <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">Contact Us</a></li>
+            <li className="nav__smallNav--li"><a className="nav__smallNav" href="/about#ach__about__contactUs">Contact Us</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">LIVE Enquiry Desk</a></li>
         </ul>
         </>

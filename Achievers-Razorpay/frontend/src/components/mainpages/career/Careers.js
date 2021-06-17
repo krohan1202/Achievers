@@ -52,7 +52,7 @@ function Careers() {
 
                             <div className="careers__joinAch--links">
                                 <a href="#viewOpenPositions" className="careers__joinAch--viewPositionsBtn">View Open Positions</a>
-                                <a href="#careers__welcomeToAch" className="careers__joinAch--aboutUsBtn">About Us</a>
+                                <a href="/about" className="careers__joinAch--aboutUsBtn">About Us</a>
                             </div>
                     </div>
                     <img className="careers__joinAch--topBanner" src={TopBanner} alt="Top Banner" />
