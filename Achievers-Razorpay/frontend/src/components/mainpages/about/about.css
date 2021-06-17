@@ -56,8 +56,47 @@
   margin-top: 1vw;
 }
 .ach__about--aboutAch--pLeft {
+  /* display: inline-block; */
   width: 45vw;
   font-weight: 400;
+}
+.ach__about--study1 {
+  position: absolute;
+  left: 45vw;
+  /* position: relative; */
+  width: 36vw;
+  top: 49vw;
+}
+.ach__about--study2,
+.ach__about--study3,
+.ach__about--study4,
+.ach__about--study5,
+.ach__about--study6 {
+  position: relative;
+  width: 37vw;
+  height: 19vw;
+  object-fit: cover;
+  margin: auto;
+  margin-left: 0;
+}
+.ach__about--study6 {
+  width: 35vw;
+  height: 18vw;
+  margin-top: 1.5vw;
+}
+.ach__about--study3,
+.ach__about--study5 {
+  margin: auto;
+  width: 36vw;
+  height: 17vw;
+}
+.ach__about--whyAch--flexDiv {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.ach__about--whyAch--flexDiv--writing {
+  width: 45vw;
 }
 .ach__about--aboutAch--li {
   position: relative;
@@ -192,6 +231,7 @@
   width: 40vw;
   height: 25vw;
   display: inline-block;
+  margin: 2.5vw 0 3vw;
 }
 .ach__about__contactUs--heading {
   font-size: 2.5vw;
@@ -210,10 +250,11 @@
   font-weight: 600;
   margin: 1vw 0;
   width: 35vw;
+  line-height: 1.6vw;
 }
 .ach__about--map {
   position: relative;
   width: 44vw;
   height: 25vw;
-  margin-top: 6vw;
+  margin-bottom: 2.5vw;
 }
