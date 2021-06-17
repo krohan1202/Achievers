@@ -1,3 +1,6 @@
+.ach__about--banner {
+  width: 100%;
+}
 .ach__about {
   position: relative;
   left: 50%;
@@ -30,6 +33,7 @@
 .ach__about--subHeading--achSoFar,
 .ach__about__contactUs--corporate,
 .ach__about__contactUs--p,
+.ach__about--aboutAch--pLeft,
 .ach__about__contactUs--p--Mobile {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -41,6 +45,7 @@
   margin-top: 2vw;
 }
 .ach__about--aboutAch--p,
+.ach__about--aboutAch--pLeft,
 .ach__about--aboutAch--li,
 .ach__about--whyAch--p {
   position: relative;
@@ -49,6 +54,10 @@
   font-size: 1.1vw;
   line-height: 30px;
   margin-top: 1vw;
+}
+.ach__about--aboutAch--pLeft {
+  width: 45vw;
+  font-weight: 400;
 }
 .ach__about--aboutAch--li {
   position: relative;

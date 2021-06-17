@@ -5,6 +5,12 @@ import Footer from "../../footers/footer";
 
 //Assets
 import PresidentPic from "../../../assets/Pics/About/President.png";
+import Banner from "../../../assets/Pics/About/study/Banner.png";
+import Study2 from "../../../assets/Pics/About/study/study2.png";
+import Study3 from "../../../assets/Pics/About/study/study3.png";
+import Study4 from "../../../assets/Pics/About/study/study4.png";
+import Study5 from "../../../assets/Pics/About/study/study5.png";
+import Study6 from "../../../assets/Pics/About/study/study6.png";
 import VP1Pic from "../../../assets/Pics/About/VP/VP1.png";
 import VP2Pic from "../../../assets/Pics/About/VP/VP2.png";
 import VP3Pic from "../../../assets/Pics/About/VP/VP3.png";
@@ -19,6 +25,7 @@ export default function About() {
     return (
         <>
         <Header />
+        <img className="ach__about--banner" src={Banner} />
         <div className="ach__about">
             <h1 className="ach__about--heading--aboutAch">About 
             <span className="ach__about--heading--A"> A</span>
@@ -39,9 +46,9 @@ export default function About() {
             </span>
 
             <h3 className="ach__about--subHeading--achSoFar">Our work principle</h3>
-            <p className="ach__about--aboutAch--p">We at ACHIEVERS want to create outstanding educationalists, scientists, and technologists of the highest quality who will participate in research, design, and growth for a better India.</p>
-            <p className="ach__about--aboutAch--p">Our goal is not to become India's No. 1 Coaching Institute, but to assist India in achieving No. 1 status in several fields through our tiny contributions. In LIFE, we've shown that small but important contributions will make a big difference. We want to make such small contributions to help create a prosperous India.</p>
-            <p className="ach__about--aboutAch--p">Our mission is also to assist our country's economically deprived sectors by providing quality education and scholarships to assist them in completing their studies. We are proud to say that we have fulfilled a small portion of our vision, but we must continue to work tirelessly to become a leading organization.</p>
+            <p className="ach__about--aboutAch--pLeft">We at ACHIEVERS want to create outstanding educationalists, scientists, and technologists of the highest quality who will participate in research, design, and growth for a better India.</p>
+            <p className="ach__about--aboutAch--pLeft">Our goal is not to become India's No. 1 Coaching Institute, but to assist India in achieving No. 1 status in several fields through our tiny contributions. In LIFE, we've shown that small but important contributions will make a big difference. We want to make such small contributions to help create a prosperous India.</p>
+            <p className="ach__about--aboutAch--pLeft">Our mission is also to assist our country's economically deprived sectors by providing quality education and scholarships to assist them in completing their studies. We are proud to say that we have fulfilled a small portion of our vision, but we must continue to work tirelessly to become a leading organization.</p>
             <p className="ach__about--aboutAch--p">We have very dynamic teachers who are capable of providing high-quality education and research. For the last five years, we have been implementing initiatives to retain the best faculty while still upgrading the teaching infrastructure. We also created an environment in which our teachers and students will achieve their full potential.</p>
             <p className="ach__about--aboutAch--p">At Achievers, we conclude that “I never teach my students; I just try to create environments in which they can learn.” : Albert Einstein said it best</p>
             <p className="ach__about--aboutAch--p">That is ACHIEVERS for you – an Institution with a Purpose!</p>
