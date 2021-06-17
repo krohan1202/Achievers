@@ -960,7 +960,7 @@
 }
 .careers__welcomeToAch--vicePresidentCardImg {
   position: relative;
-  width: 17vw;
+  height: 17vw;
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 0.4vw;

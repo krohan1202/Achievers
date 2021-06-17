@@ -1,0 +1,68 @@
+.ach__about {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85vw;
+  /* height: 10vw; */
+}
+.ach__about--heading--aboutAch,
+.ach__about--heading--boardOfDirectors {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.8vw;
+  margin-top: 3.5vw;
+}
+.ach__about--heading--A {
+  color: #1d85ff;
+  font-family: "Montserrat", sans-serif;
+}
+.ach__about--heading--CHIEVERS {
+  color: #f92b32;
+  font-family: "Montserrat", sans-serif;
+}
+.ach__about--heading--StudyMat {
+  color: #b20000;
+  font-family: "Montserrat", sans-serif;
+}
+.ach__about--subHeading--corporateEstablishment,
+.ach__about--subHeading--achSoFar {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  margin-top: 1.3vw;
+}
+.ach__about--subHeadings {
+  margin-top: 2vw;
+}
+.ach__about--aboutAch--p,
+.ach__about--aboutAch--li,
+.ach__about--whyAch--p {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  /* font-weight: 600; */
+  font-size: 1.1vw;
+  line-height: 30px;
+  margin-top: 1vw;
+}
+.ach__about--aboutAch--li {
+  position: relative;
+  left: 5vw;
+  width: 79vw;
+}
+.ach__about--whyAch--li,
+.ach__about--studyMat--li {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1vw;
+  margin-top: 1vw;
+  width: 40vw;
+}
+.ach__about--studyMat--ul {
+  margin-top: 1.3vw;
+}
+.ach__about--heading--boardOfDirectors {
+  font-size: 2.6vw;
+  text-align: center;
+}
