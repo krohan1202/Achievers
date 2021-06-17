@@ -80,6 +80,28 @@
   width: 21vw;
   left: 50%;
   transform: translateX(-50%);
+  margin-bottom: 7vw;
+}
+.ach__about--presidentName,
+.ach__about--presidentDesignation,
+.ach__about--presidentContact {
+  position: relative;
+  /* width: 25vw; */
+  top: -0.5vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.15vw;
+  text-align: center;
+  color: #1d85ff;
+}
+.ach__about--presidentDesignation {
+  margin: 0.5vw 0;
+  color: #000;
+}
+.ach__about--presidentContact {
+  color: #f92b32;
+  font-weight: 600;
+  font-size: 1.03vw;
 }
 /* Academic Team */
 .ach__about__ourTeam--academicCoordinators {

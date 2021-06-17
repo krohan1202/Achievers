@@ -135,6 +135,7 @@ export default function About() {
                 <img className="ach__about--president" src={PresidentPic} alt="President"/>
                 <p className="ach__about--presidentName">Dr. Sujoy Roy Chowdhury (SRC)</p>
                 <p className="ach__about--presidentDesignation">President, Founder and CEO</p>
+                <p className="ach__about--presidentContact">9830287574 | e-mail: src@achieverscircle.org</p>
 
             {/* VPs */}
             <div className="careers__welcomeToAch--vicePresidents">
