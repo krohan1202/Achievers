@@ -161,61 +161,72 @@ export default function About() {
 
             {/* Administrative Body */}
             <p className="ach__about__ourTeam--Heading">Administrative Body</p>
-                        <div className="ach__about__ourTeam--TeamCards">
-                        {/* Academic Coordinators */}
-                        <div className="ach__about__ourTeam--academicCoordinators">
-                            {/* <p className="careers__ourTeam--academicCoordinatorsHeading">ACADEMIC COORDINATORS</p> */}
-                            <div className="ach__about__ourTeam--academicCoordinatorsCard">
-                                <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={AcademicCoordinator1} alt="Academic Coordinators"/>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardContact">8420435780 | e-mail: indranil.dalui@achieverscircle.org</span>
-                            </div>
-
-                            <div className="ach__about__ourTeam--academicCoordinatorsCard">
-                                <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={AcademicCoordinator2} alt="Academic Coordinators"/>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Rashbehari Choudhury</span>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation--Rashbehari">Administrative Associate</span>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardContact--edit">7384905704 | e-mail: rashuu.chaudhari056@gmail.com</span>
-                            </div>
+                <div className="ach__about__ourTeam--TeamCards">
+                    {/* Academic Coordinators */}
+                    <div className="ach__about__ourTeam--academicCoordinators">
+                        {/* <p className="careers__ourTeam--academicCoordinatorsHeading">ACADEMIC COORDINATORS</p> */}
+                        <div className="ach__about__ourTeam--academicCoordinatorsCard">
+                            <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={AcademicCoordinator1} alt="Academic Coordinators"/>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardContact">8420435780 | e-mail: indranil.dalui@achieverscircle.org</span>
                         </div>
 
-                        {/* Administrative Department */}
-                        <div className="ach__about__ourTeam--academicCoordinators">
-                            {/* <p className="careers__ourTeam--academicCoordinatorsHeading">ADMINISTRATIVE DEPARTMENT</p> */}
-                            <div className="ach__about__ourTeam--academicCoordinatorsCard">
-                                <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={AdministrativeDept1} alt="Administrative Department"/>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Anandarup Das</span>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation">Administrative Service Officer</span>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardContact">9830668808 | e-mail: anandarup.das@achieverscircle.org</span>
-                            </div>
+                        <div className="ach__about__ourTeam--academicCoordinatorsCard">
+                            <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={AcademicCoordinator2} alt="Academic Coordinators"/>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Rashbehari Choudhury</span>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation--Rashbehari">Administrative Associate</span>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardContact--edit">7384905704 | e-mail: rashuu.chaudhari056@gmail.com</span>
+                        </div>
+                    </div>
 
-                            <div className="ach__about__ourTeam--academicCoordinatorsCard">
-                                <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={AdministrativeDept2} alt="Administrative Department"/>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardName">Ms. Simantini Debnath</span>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation--Simantini">Academic and Administrative Coordinator</span>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardContact">9007871854 | e-mail: achieversbackoffice0303@gmail.com</span>
-                            </div>
+                    {/* Administrative Department */}
+                    <div className="ach__about__ourTeam--academicCoordinators">
+                        {/* <p className="careers__ourTeam--academicCoordinatorsHeading">ADMINISTRATIVE DEPARTMENT</p> */}
+                        <div className="ach__about__ourTeam--academicCoordinatorsCard">
+                            <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={AdministrativeDept1} alt="Administrative Department"/>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Anandarup Das</span>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation">Administrative Service Officer</span>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardContact">9830668808 | e-mail: anandarup.das@achieverscircle.org</span>
                         </div>
 
-                        {/* Executive Officers */}
-                        <div className="ach__about__ourTeam--academicCoordinators">
-                            {/* <p className="careers__ourTeam--academicCoordinatorsHeading">EXECUTIVE OFFICERS</p> */}
-                            <div className="ach__about__ourTeam--academicCoordinatorsCard">
-                                <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={ExecutiveOfficer1} alt="Executive Officers"/>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Amir Hossai Molla</span>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation">Senior Office Executive</span>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardContact--edit">9831721417</span>
-                            </div>
+                        <div className="ach__about__ourTeam--academicCoordinatorsCard">
+                            <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={AdministrativeDept2} alt="Administrative Department"/>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardName">Ms. Simantini Debnath</span>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation--Simantini">Academic and Administrative Coordinator</span>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardContact">9007871854 | e-mail: achieversbackoffice0303@gmail.com</span>
+                        </div>
+                    </div>
 
-                            <div className="ach__about__ourTeam--academicCoordinatorsCard">
-                                <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={ExecutiveOfficer2} alt="Executive Officers"/>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Swapan Ghosh</span>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation">Senior Office Executive</span>
-                                <span className="ach__about__ourTeam--academicCoordinatorsCardContact--edit">9830634812</span>
-                            </div>
+                    {/* Executive Officers */}
+                    <div className="ach__about__ourTeam--academicCoordinators">
+                        {/* <p className="careers__ourTeam--academicCoordinatorsHeading">EXECUTIVE OFFICERS</p> */}
+                        <div className="ach__about__ourTeam--academicCoordinatorsCard">
+                            <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={ExecutiveOfficer1} alt="Executive Officers"/>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Amir Hossai Molla</span>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation">Senior Office Executive</span>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardContact--edit">9831721417</span>
                         </div>
+
+                        <div className="ach__about__ourTeam--academicCoordinatorsCard">
+                            <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={ExecutiveOfficer2} alt="Executive Officers"/>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Swapan Ghosh</span>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation">Senior Office Executive</span>
+                            <span className="ach__about__ourTeam--academicCoordinatorsCardContact--edit">9830634812</span>
                         </div>
+                    </div>
+                </div>
+
+                {/* Contact Us */}
+                <div className="ach__about__contactUs">
+                    <h1 className="ach__about__contactUs--heading">Contact Us</h1>
+                    <p className="ach__about__contactUs--corporate">Corporate Head Office</p>
+                    <p className="ach__about__contactUs--p">Rashbehari Avenue (Head Office)</p>
+                    <p className="ach__about__contactUs--p">162, S.P. Mukherjee Road, Near Rashbehari Crossing, Landmark Kalighat Metro, Kolkata 700 026, WB, India.</p>
+                    <p className="ach__about__contactUs--p"><span className="ach__about__contactUs--p--Mobile">Mobile</span>: 9830287574/ 9830668808</p>
+                </div>
+                <iframe className="ach__about--map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.6968075786313!2d88.34359781479097!3d22.515555985212245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0270cad6279779%3A0x75e981a9bff8fd2b!2s162%2C%20Shyama%20Prasad%20Mukherjee%20Rd%2C%20Sahanagar%2C%20Kalighat%2C%20Kolkata%2C%20West%20Bengal%20700026!5e0!3m2!1sen!2sin!4v1618663419696!5m2!1sen!2sin"></iframe>
+                
         </div>
         <Footer />
         </>

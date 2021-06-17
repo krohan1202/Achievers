@@ -6,7 +6,8 @@
   /* height: 10vw; */
 }
 .ach__about--heading--aboutAch,
-.ach__about--heading--boardOfDirectors {
+.ach__about--heading--boardOfDirectors,
+.ach__about__contactUs--heading {
   position: relative;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -26,7 +27,10 @@
   font-family: "Montserrat", sans-serif;
 }
 .ach__about--subHeading--corporateEstablishment,
-.ach__about--subHeading--achSoFar {
+.ach__about--subHeading--achSoFar,
+.ach__about__contactUs--corporate,
+.ach__about__contactUs--p,
+.ach__about__contactUs--p--Mobile {
   position: relative;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -172,4 +176,35 @@
 }
 .ach__about__ourTeam--academicCoordinatorsCardDesignation--Simantini {
   width: 15vw;
+}
+
+/* Contact Us */
+.ach__about__contactUs {
+  width: 40vw;
+  height: 25vw;
+  display: inline-block;
+}
+.ach__about__contactUs--heading {
+  font-size: 2.5vw;
+}
+.ach__about__contactUs--corporate,
+.ach__about__contactUs--p--Mobile {
+  font-size: 1.3vw;
+  color: #004aad;
+}
+.ach__about__contactUs--p--Mobile {
+  font-size: 1.1vw;
+  font-weight: 600;
+}
+.ach__about__contactUs--p {
+  font-size: 1.1vw;
+  font-weight: 600;
+  margin: 1vw 0;
+  width: 35vw;
+}
+.ach__about--map {
+  position: relative;
+  width: 44vw;
+  height: 25vw;
+  margin-top: 6vw;
 }
