@@ -13,6 +13,7 @@ import NotFound from './utils/not_found/NotFound';
 import Categories from './categories/Categories';
 import CreateProduct from './createProduct/CreateProduct';
 import Careers from './career/Careers';
+import About from "./about/About";
 
 import {GlobalState} from '../../GlobalState';
 
@@ -42,6 +43,7 @@ function Pages() {
             <Route path="/success" exact component={isLogged ? PaySuccess : NotFound} />
 
             <Route path="/careers" exact component={Careers} />
+            <Route path="/about" exact component={About} />
             
             <Route path="*" exact component={NotFound} />
         </Switch>

@@ -113,7 +113,7 @@ function Header() {
 
         <ul className="smallNav">
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="/">Home</a></li>
-            <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">About Us</a></li>
+            <li className="nav__smallNav--li"><a className="nav__smallNav" href="/about">About Us</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="/our_courses">Our Courses</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">Result</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">Testimonials</a></li>
