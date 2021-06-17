@@ -4,9 +4,16 @@ import Header from "../../headers/Header";
 import Footer from "../../footers/footer";
 
 //Assets
+import PresidentPic from "../../../assets/Pics/About/President.png";
 import VP1Pic from "../../../assets/Pics/About/VP/VP1.png";
 import VP2Pic from "../../../assets/Pics/About/VP/VP2.png";
 import VP3Pic from "../../../assets/Pics/About/VP/VP3.png";
+import AcademicCoordinator1 from "../../../assets/Pics/About/Team/Indranil Dalui.png";
+import AcademicCoordinator2 from "../../../assets/Pics/About/Team/Rashbehari Choudhury.png";
+import AdministrativeDept1 from "../../../assets/Pics/About/Team/Anandarup Das.png";
+import AdministrativeDept2 from "../../../assets/Pics/About/Team/Simantini Debnath.png";
+import ExecutiveOfficer1 from "../../../assets/Pics/About/Team/Amir Mollah.png";
+import ExecutiveOfficer2 from "../../../assets/Pics/About/Team/Swapan Ghosh.png";
 
 export default function About() {
     return (
@@ -125,26 +132,89 @@ export default function About() {
 
             {/* Board of Directors */}
             <h1 className="ach__about--heading--boardOfDirectors">Board of Directors</h1>
+                <img className="ach__about--president" src={PresidentPic} alt="President"/>
+                <p className="ach__about--presidentName">Dr. Sujoy Roy Chowdhury (SRC)</p>
+                <p className="ach__about--presidentDesignation">President, Founder and CEO</p>
 
+            {/* VPs */}
             <div className="careers__welcomeToAch--vicePresidents">
                 <div className="careers__welcomeToAch--vicePresidentCard">
                     <img className="careers__welcomeToAch--vicePresidentCardImg" src={VP1Pic} alt="Vice President"/>
-                    <p className="careers__welcomeToAch--vicePresidentCardName">Prof.Anindya Das (AD)</p>
+                    <p className="careers__welcomeToAch--vicePresidentCardName" style={{color: '#1d85ff'}}>Prof.Anindya Das (AD)</p>
                     <p className="careers__welcomeToAch--vicePresidentCardDesignation">Vice President (Academic) and Controller of Examination</p>
+                    <p className="careers__welcomeToAch--vicePresidentCardDesignation" style={{color: '#f92b32'}}>8697025317 | e-mail: anindyadas3@gmail.com</p>
                 </div>
                 <div className="careers__welcomeToAch--vicePresidentCard">
                     <img className="careers__welcomeToAch--vicePresidentCardImg" src={VP2Pic} alt="Vice President"/>
-                    <p className="careers__welcomeToAch--vicePresidentCardName">Mr. Debdut Gangopadhyay</p>
-                    <p className="careers__welcomeToAch--vicePresidentCardDesignation2">Vice President (Administration) and Operations Head</p>
+                    <p className="careers__welcomeToAch--vicePresidentCardName" style={{color: '#1d85ff'}}>Mr. Debdut Gangopadhyay</p>
+                    <p className="careers__welcomeToAch--vicePresidentCardDesignation">Vice President (Administration) and Operations Head</p>
+                    <p className="careers__welcomeToAch--vicePresidentCardDesignation" style={{color: '#f92b32'}}>9831083937 | e-mail: debdut.g@gmail.com</p>
                 </div>
                 <div className="careers__welcomeToAch--vicePresidentCard">
                     <img className="careers__welcomeToAch--vicePresidentCardImg" src={VP3Pic} alt="Vice President"/>
-                    <p className="careers__welcomeToAch--vicePresidentCardName">Dr. Sayan Roy Chowdhury</p>
+                    <p className="careers__welcomeToAch--vicePresidentCardName" style={{color: '#1d85ff'}}>Dr. Sayan Roy Chowdhury</p>
                     <p className="careers__welcomeToAch--vicePresidentCardDesignation">Vice President (Academic) and Dean of Science</p>
+                    <p className="careers__welcomeToAch--vicePresidentCardDesignation" style={{color: '#f92b32'}}>9836862824 | e-mail: roychowdhury.romee@gmail.com</p>
                 </div>
-
-
             </div>
+
+            {/* Administrative Body */}
+            <p className="ach__about__ourTeam--Heading">Administrative Body</p>
+                        <div className="ach__about__ourTeam--TeamCards">
+                        {/* Academic Coordinators */}
+                        <div className="ach__about__ourTeam--academicCoordinators">
+                            {/* <p className="careers__ourTeam--academicCoordinatorsHeading">ACADEMIC COORDINATORS</p> */}
+                            <div className="ach__about__ourTeam--academicCoordinatorsCard">
+                                <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={AcademicCoordinator1} alt="Academic Coordinators"/>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation">Academic Coordinator and Faculty</span>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardContact">8420435780 | e-mail: indranil.dalui@achieverscircle.org</span>
+                            </div>
+
+                            <div className="ach__about__ourTeam--academicCoordinatorsCard">
+                                <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={AcademicCoordinator2} alt="Academic Coordinators"/>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Rashbehari Choudhury</span>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation--Rashbehari">Administrative Associate</span>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardContact--edit">7384905704 | e-mail: rashuu.chaudhari056@gmail.com</span>
+                            </div>
+                        </div>
+
+                        {/* Administrative Department */}
+                        <div className="ach__about__ourTeam--academicCoordinators">
+                            {/* <p className="careers__ourTeam--academicCoordinatorsHeading">ADMINISTRATIVE DEPARTMENT</p> */}
+                            <div className="ach__about__ourTeam--academicCoordinatorsCard">
+                                <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={AdministrativeDept1} alt="Administrative Department"/>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Anandarup Das</span>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation">Administrative Service Officer</span>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardContact">9830668808 | e-mail: anandarup.das@achieverscircle.org</span>
+                            </div>
+
+                            <div className="ach__about__ourTeam--academicCoordinatorsCard">
+                                <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={AdministrativeDept2} alt="Administrative Department"/>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardName">Ms. Simantini Debnath</span>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation--Simantini">Academic and Administrative Coordinator</span>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardContact">9007871854 | e-mail: achieversbackoffice0303@gmail.com</span>
+                            </div>
+                        </div>
+
+                        {/* Executive Officers */}
+                        <div className="ach__about__ourTeam--academicCoordinators">
+                            {/* <p className="careers__ourTeam--academicCoordinatorsHeading">EXECUTIVE OFFICERS</p> */}
+                            <div className="ach__about__ourTeam--academicCoordinatorsCard">
+                                <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={ExecutiveOfficer1} alt="Executive Officers"/>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Amir Hossai Molla</span>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation">Senior Office Executive</span>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardContact--edit">9831721417</span>
+                            </div>
+
+                            <div className="ach__about__ourTeam--academicCoordinatorsCard">
+                                <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={ExecutiveOfficer2} alt="Executive Officers"/>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Swapan Ghosh</span>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardDesignation">Senior Office Executive</span>
+                                <span className="ach__about__ourTeam--academicCoordinatorsCardContact--edit">9830634812</span>
+                            </div>
+                        </div>
+                        </div>
         </div>
         <Footer />
         </>

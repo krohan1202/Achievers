@@ -94,7 +94,7 @@ function Careers() {
                         <div className="careers__welcomeToAch--vicePresidentCard">
                             <img className="careers__welcomeToAch--vicePresidentCardImg" src={VP2Pic} alt="Vice President"/>
                             <p className="careers__welcomeToAch--vicePresidentCardName">Mr. Debdut Gangopadhyay</p>
-                            <p className="careers__welcomeToAch--vicePresidentCardDesignation2">Vice President (Administration) and Operations Head</p>
+                            <p className="careers__welcomeToAch--vicePresidentCardDesignation">Vice President (Administration) and Operations Head</p>
                         </div>
                         <div className="careers__welcomeToAch--vicePresidentCard">
                             <img className="careers__welcomeToAch--vicePresidentCardImg" src={VP3Pic} alt="Vice President"/>
