@@ -1,5 +1,5 @@
 .ach__footer--ul {
-  width: 10vw;
+  width: 10.5vw;
 }
 .ach__footer {
   background-color: #010e26;
@@ -21,7 +21,7 @@
 .ach__footer--aboutPart--li,
 .ach__footer--policyPart--li {
   margin: 0.7vw 0;
-  width: 10vw;
+  width: 10.5vw;
 }
 .ach__footer--aboutPart--heading,
 .ach__footer--policyPart--heading {
@@ -101,19 +101,21 @@
   font-size: 1.4vw;
   position: relative;
   left: 87.7vw;
-  top: 2vw;
+  top: 2.3vw;
   margin-bottom: 2vw;
 }
 .ach__footer--social--icons {
   position: relative;
-  left: 77.5vw;
+  left: 79vw;
   top: 2vw;
 }
 .ach__footer--social--icons-yt,
 .ach__footer--social--icons-Play,
-.ach__footer--social--icons-wp,
-.ach__footer--social--icons-insta,
-.ach__footer--social--icons-fb {
+.ach__footer--social--icons-fb,
+.ach__footer--social--icons-telegram {
   width: 1.9vw;
-  margin: 0 0.6vw;
+  margin: 0 0.8vw;
+}
+.ach__footer--social--icons-telegram {
+  width: 2vw;
 }
