@@ -20,7 +20,12 @@ const breakPoints = [
     { width: 768, itemsToShow: 5 },
     { width: 1200, itemsToShow: 6 },
   ];
-
+  const breakPointsYoutubeVids = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+  ];
 function Products() {
     const state = useContext(GlobalState);
     const [products, setProducts] = state.HomeProductsAPI.products;
@@ -299,6 +304,7 @@ function Products() {
             <hr className="ach__hallOfFame--underline"></hr>
 
             <div className="ach__hallOfFame--vidCards">
+            <Carousel breakPoints={breakPointsYoutubeVids}>
                 <span className="ach__hallOfFame--vidCard">
                     <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
                     <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
@@ -315,6 +321,19 @@ function Products() {
                     <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
                     <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                 </span>
+                <span className="ach__hallOfFame--vidCard">
+                    <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
+                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </span>
+                <span className="ach__hallOfFame--vidCard">
+                    <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
+                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </span>
+                <span className="ach__hallOfFame--vidCard">
+                    <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
+                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </span>
+                </Carousel>
             </div>    
         </div>
         
