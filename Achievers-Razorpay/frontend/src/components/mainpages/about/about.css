@@ -56,14 +56,12 @@
   margin-top: 1vw;
 }
 .ach__about--aboutAch--pLeft {
-  /* display: inline-block; */
   width: 45vw;
   font-weight: 400;
 }
 .ach__about--study1 {
   position: absolute;
   left: 45vw;
-  /* position: relative; */
   width: 36vw;
   top: 49vw;
 }
@@ -90,10 +88,22 @@
   width: 36vw;
   height: 17vw;
 }
-.ach__about--whyAch--flexDiv {
+.ach__about--whyAch--flexDiv,
+.ach__about--coreValuesflexDiv,
+.ach__about--coreValuesflexDiv2 {
   position: relative;
   display: flex;
   justify-content: space-between;
+}
+.ach__about--coreValuesflexDiv,
+.ach__about--coreValuesflexDiv2 {
+  width: 65vw;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2.5vw;
+}
+.ach__about--coreValuesflexDiv2 {
+  width: 50vw;
 }
 .ach__about--whyAch--flexDiv--writing {
   width: 45vw;
@@ -113,6 +123,11 @@
 }
 .ach__about--studyMat--ul {
   margin-top: 1.3vw;
+}
+.ach__about--coreValues--meanings {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.45vw;
 }
 .ach__about--heading--boardOfDirectors {
   font-size: 2.6vw;

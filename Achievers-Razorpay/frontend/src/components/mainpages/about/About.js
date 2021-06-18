@@ -130,9 +130,25 @@ export default function About() {
                 <p className="ach__about--whyAch--p" style={{margin: '0.3vw 0'}}>1. Practice commission review test papers</p>
                 <p className="ach__about--whyAch--p" style={{margin: '0.3vw 0'}}>2. Online Mock assessments for different Competitive Exams</p>
                 </div>
-            </div>    
+            </div>
+
+            {/* Our Core Values */}
             <h3 className="ach__about--subHeading--achSoFar">Our Core Values</h3>
             
+            <div className="ach__about--coreValuesflexDiv">
+                <span className="ach__about--coreValues--meanings"><span className="ach__about--heading--A"> A</span><span className="ach__about--heading--CHIEVERS">ssertive</span></span>
+                <span className="ach__about--coreValues--meanings"><span className="ach__about--heading--A"> C</span><span className="ach__about--heading--CHIEVERS">redibility</span></span>
+                <span className="ach__about--coreValues--meanings"><span className="ach__about--heading--A"> H</span><span className="ach__about--heading--CHIEVERS">ard Work</span></span>
+                <span className="ach__about--coreValues--meanings"><span className="ach__about--heading--A"> I</span><span className="ach__about--heading--CHIEVERS">ntegrity</span></span>
+                <span className="ach__about--coreValues--meanings"><span className="ach__about--heading--A"> E</span><span className="ach__about--heading--CHIEVERS">xcellence</span></span>
+                <span className="ach__about--coreValues--meanings"><span className="ach__about--heading--A"> V</span><span className="ach__about--heading--CHIEVERS">ision</span></span>
+            </div>
+            <div className="ach__about--coreValuesflexDiv2">
+                <span className="ach__about--coreValues--meanings"><span className="ach__about--heading--A"> E</span><span className="ach__about--heading--CHIEVERS">ncouragement</span></span>
+                <span className="ach__about--coreValues--meanings"><span className="ach__about--heading--A"> R</span><span className="ach__about--heading--CHIEVERS">esilience</span></span>
+                <span className="ach__about--coreValues--meanings"><span className="ach__about--heading--A"> S</span><span className="ach__about--heading--CHIEVERS">tudent-first</span></span>
+            </div>
+
             <h3 className="ach__about--subHeading--achSoFar">Our Vision</h3>
             <p className="ach__about--whyAch--p">Our vision is to become one of the most respected brands in the education field and empower young students to make their dreams come true through quality teaching, technology-enabled programs, and dedication. And with consistent and sincere hard work, we will become a leading global technology university that provides a transformative education to create leaders and innovators, and generates new knowledge for society and industry.</p>
 
@@ -199,7 +215,6 @@ export default function About() {
                 <div className="ach__about__ourTeam--TeamCards">
                     {/* Academic Coordinators */}
                     <div className="ach__about__ourTeam--academicCoordinators">
-                        {/* <p className="careers__ourTeam--academicCoordinatorsHeading">ACADEMIC COORDINATORS</p> */}
                         <div className="ach__about__ourTeam--academicCoordinatorsCard">
                             <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={AcademicCoordinator1} alt="Academic Coordinators"/>
                             <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Indranil Dalui</span>
@@ -217,7 +232,6 @@ export default function About() {
 
                     {/* Administrative Department */}
                     <div className="ach__about__ourTeam--academicCoordinators">
-                        {/* <p className="careers__ourTeam--academicCoordinatorsHeading">ADMINISTRATIVE DEPARTMENT</p> */}
                         <div className="ach__about__ourTeam--academicCoordinatorsCard">
                             <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={AdministrativeDept1} alt="Administrative Department"/>
                             <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Anandarup Das</span>
