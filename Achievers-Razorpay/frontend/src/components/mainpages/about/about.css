@@ -273,3 +273,14 @@
   height: 25vw;
   margin-bottom: 2.5vw;
 }
+
+/* Terms */
+.ach__terms--redPara {
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 2.5vw 0 3vw;
+  font-weight: 600;
+  text-align: center;
+  color: #f92b32;
+  width: 77vw;
+}
