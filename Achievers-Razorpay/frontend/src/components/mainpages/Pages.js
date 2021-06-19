@@ -14,6 +14,7 @@ import Categories from './categories/Categories';
 import CreateProduct from './createProduct/CreateProduct';
 import Careers from './career/Careers';
 import About from "./about/About";
+import Terms from "./policy/Terms";
 
 import {GlobalState} from '../../GlobalState';
 
@@ -44,6 +45,8 @@ function Pages() {
 
             <Route path="/careers" exact component={Careers} />
             <Route path="/about" exact component={About} />
+
+            <Route path="/terms" exact component={Terms} />
             
             <Route path="*" exact component={NotFound} />
         </Switch>
