@@ -22,7 +22,7 @@ function Footer() {
                 <li className="ach__footer--policyPart--li"><p className="ach__footer--policyPart--heading">POLICY</p></li>
                 <li className="ach__footer--policyPart--li"><a className="ach__footer--policyPart--links" href="#">Return Policy</a></li>
                 <li className="ach__footer--policyPart--li"><a className="ach__footer--policyPart--links" href="/terms">Terms of Use</a></li>
-                <li className="ach__footer--policyPart--li"><a className="ach__footer--policyPart--links" href="#">Security & Privacy</a></li>
+                <li className="ach__footer--policyPart--li"><a className="ach__footer--policyPart--links" href="/security&privacy">Security & Privacy</a></li>
                 </ul>
             </span>
 

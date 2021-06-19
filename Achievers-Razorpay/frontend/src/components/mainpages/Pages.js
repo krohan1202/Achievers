@@ -15,6 +15,7 @@ import CreateProduct from './createProduct/CreateProduct';
 import Careers from './career/Careers';
 import About from "./about/About";
 import Terms from "./policy/Terms";
+import Privacy from "./policy/Privacy";
 
 import {GlobalState} from '../../GlobalState';
 
@@ -47,6 +48,7 @@ function Pages() {
             <Route path="/about" exact component={About} />
 
             <Route path="/terms" exact component={Terms} />
+            <Route path="/security&privacy" exact component={Privacy} />
             
             <Route path="*" exact component={NotFound} />
         </Switch>
