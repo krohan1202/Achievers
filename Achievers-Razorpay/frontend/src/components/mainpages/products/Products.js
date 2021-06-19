@@ -306,32 +306,32 @@ function Products() {
             <div className="ach__hallOfFame--vidCards">
             <Carousel breakPoints={breakPointsYoutubeVids}>
                 <span className="ach__hallOfFame--vidCard">
-                    <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
-                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p className="ach__hallOfFame--vidCardHeading">ACHIEVERS CIRCLE | AN INTERVIEW OF TUHINA KHAN</p>
+                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/CxmobDo4Nc4" title="Interview of Tuhina Khan"></iframe>
                 </span>
                 <span className="ach__hallOfFame--vidCard">
-                    <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
-                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p className="ach__hallOfFame--vidCardHeading">ACHIEVERS CIRCLE | AN INTERVIEW OF SAMPREETI BHATTACHARYA</p>
+                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/urW2bvemf6w" title="Interview of Sampreeti Bhattacharya"></iframe>
                 </span>
                 <span className="ach__hallOfFame--vidCard">
-                    <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
-                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p className="ach__hallOfFame--vidCardHeading">ACHIEVERS CIRCLE | MOTIVATIONAL SPEECH BY DR. RICKDEV SEN</p>
+                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/WvhujNlaETU" title="Motivational Speech by Dr. Rickdev Sen"></iframe>
                 </span>
                 <span className="ach__hallOfFame--vidCard">
-                    <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
-                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p className="ach__hallOfFame--vidCardHeading">ACHIEVERS CIRCLE | AN INTERVIEW OF UDIT CHAKRABORTY</p>
+                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/TSPqbBqcSdg" title="Interview of Udit Chakraborty"></iframe>
                 </span>
                 <span className="ach__hallOfFame--vidCard">
-                    <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
-                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p className="ach__hallOfFame--vidCardHeading">ACHIEVERS CIRCLE | AN INTERVIEW OF ANIRUDDHA NAG</p>
+                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/l_O6ZdZ0wBo" title="An Interview of Aniruddha Nag"></iframe>
                 </span>
                 <span className="ach__hallOfFame--vidCard">
-                    <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
-                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p className="ach__hallOfFame--vidCardHeading">ACHIEVERS CIRCLE | AN INTERVIEW OF KUNTAL CHATTERJEE</p>
+                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/z2SUEIB-FJY" title="Interview of Kuntal Chatterjee"></iframe>
                 </span>
                 <span className="ach__hallOfFame--vidCard">
-                    <p className="ach__hallOfFame--vidCardHeading">CHEM ACADEMY LIVE IS BACK | SUBSCRIBE THE CHANNEL | TARGET 100K | IIT-JAM | CSIRNET | GATE | JEE NEET</p>
-                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p className="ach__hallOfFame--vidCardHeading">ACHIEVERS CIRCLE | SPEECH FROM ACPL CMD</p>
+                    <iframe className="ach__hallOfFame--vidCardLink" src="https://www.youtube.com/embed/COu-2HTsJQU" title="Speech from ACPL CMD"></iframe>
                 </span>
                 </Carousel>
             </div>    
