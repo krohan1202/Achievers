@@ -1,12 +1,14 @@
 import React from "react";
 import Header from "../../headers/Header";
 import Footer from "../../footers/footer";
+import ReturnPolicyPic from "../../../assets/Pics/Policy/return policy.png";
 // CSS same as About.js (some are in About.css) 
 
 export default function ReturnPolicy() {
     return (
         <>
         <Header />
+        <img style={{width: '100%'}} src={ReturnPolicyPic} />
         <div className="ach__about"> 
             <p style={{marginTop: '4vw'}} className="ach__about--aboutAch--p">At Achievers, the refund process is translucently clear. Our refund policy guarantees that all returns are handled fairly. If a student decides not to attend the institute and withdraws his or her enrolment:</p>
         
@@ -30,8 +32,8 @@ export default function ReturnPolicy() {
             </span>
 
             <span>
-                <li className="ach__about--aboutAch--p">email at <span className="ach__about--heading--A">mailusatachievers@gmail.com or</span></li>
-                <li className="ach__about--aboutAch--p">Call/Whatsapp at +91 - <span className="ach__about--heading--CHIEVERS">8420435780 (ID) / 9007871854 (SD) / 9830668808 (ARD) / 7384905704 (RC) / 9830287574 (SRC) / 86970 25317 (AD)</span></li>
+                <li className="ach__about--aboutAch--p">email at <span className="ach__about--heading--A">mailusatachievers@gmail.com</span> or</li>
+                <li style={{marginBottom: '3.5vw'}} className="ach__about--aboutAch--p">Call/Whatsapp at +91 - <span className="ach__about--heading--CHIEVERS">8420435780 (ID) / 9007871854 (SD) / 9830668808 (ARD) / 7384905704 (RC) / 9830287574 (SRC) / 86970 25317 (AD)</span></li>
             </span>
         </div>
         <Footer />
