@@ -274,7 +274,7 @@ export default function About() {
                     <p className="ach__about__contactUs--p">162, S.P. Mukherjee Road, Near Rashbehari Crossing, Landmark Kalighat Metro, Kolkata 700 026, WB, India.</p>
                     <p className="ach__about__contactUs--p"><span className="ach__about__contactUs--p--Mobile">Mobile</span>: 9830287574/ 9830668808</p>
                 </div>
-                <iframe className="ach__about--map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.6968075786313!2d88.34359781479097!3d22.515555985212245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0270cad6279779%3A0x75e981a9bff8fd2b!2s162%2C%20Shyama%20Prasad%20Mukherjee%20Rd%2C%20Sahanagar%2C%20Kalighat%2C%20Kolkata%2C%20West%20Bengal%20700026!5e0!3m2!1sen!2sin!4v1618663419696!5m2!1sen!2sin"></iframe>
+                <iframe className="ach__about--map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.6968075786313!2d88.34359781479097!3d22.515555985212245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0270cad6279779%3A0x75e981a9bff8fd2b!2s162%2C%20Shyama%20Prasad%20Mukherjee%20Rd%2C%20Sahanagar%2C%20Kalighat%2C%20Kolkata%2C%20West%20Bengal%20700026!5e0!3m2!1sen!2sin!4v1618663419696!5m2!1sen!2sin" title="GMap location"></iframe>
         </div>
         <Footer />
         </>

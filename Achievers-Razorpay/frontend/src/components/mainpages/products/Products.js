@@ -90,16 +90,16 @@ function Products() {
     }
     
     const categoryIds = [];
-    products.map((product) => {
-        categoryIds.push(product.category);
-    })
+    products.map((product) => 
+        categoryIds.push(product.category)
+    )
     
     function checkStudyMatCatId(cat) {
-        return (cat === "60be699c7b148a49c09ec637");
+        return (cat === process.env.REACT_APP_STUDYMAT_CAT_ID);
     }
 
     function checkPopularEntranceCatId(cat) {
-        return (cat === "60c0c9b76beb883fb0a00dc1");
+        return (cat === process.env.REACT_APP_POP_ENTRANCE_CAT_ID);
     }
 
     const checkProductinStudyMatCat = (categoryIds.some(checkStudyMatCatId));
@@ -109,7 +109,7 @@ function Products() {
     return (
         <>
         <Header />
-        <img src={HeroVid} alt="Hero Picture" className="hero__vid" />
+        <img src={HeroVid} alt="Hero Banner" className="hero__vid" />
         
         <span className="hero__card1">
             <p className="hero__card1--heading">ACHIEVERS SCHOOL PROGRAM</p>

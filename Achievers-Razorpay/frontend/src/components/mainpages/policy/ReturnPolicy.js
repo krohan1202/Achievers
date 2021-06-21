@@ -8,7 +8,7 @@ export default function ReturnPolicy() {
     return (
         <>
         <Header />
-        <img style={{width: '100%'}} src={ReturnPolicyPic} />
+        <img style={{width: '100%'}} src={ReturnPolicyPic} alt="Return Policy Pic"/>
         <div className="ach__about"> 
             <p style={{marginTop: '4vw'}} className="ach__about--aboutAch--p">At Achievers, the refund process is translucently clear. Our refund policy guarantees that all returns are handled fairly. If a student decides not to attend the institute and withdraws his or her enrolment:</p>
         

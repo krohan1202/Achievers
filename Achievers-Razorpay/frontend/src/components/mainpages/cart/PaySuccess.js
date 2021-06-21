@@ -6,13 +6,13 @@ function PaySuccess() {
         <>
         <div className="ach__successPg">
         <div className="ach__success">
-            <h1 className="ach__success--heading">Your Payment was successful 🎉</h1>
+            <h1 className="ach__success--heading">Your Payment was successful <span role="img" aria-label="Confetti">🎉</span></h1>
             <p className="ach__success--thankYou">Thanks for buying from us. Hope to see you soon!</p>
             <a href="/">
                 <button className="ach__success--redirect">Back to Home Page</button>
             </a>
         </div>
-        <img className="ach__successPg--logo" src={Logo} />
+        <img className="ach__successPg--logo" src={Logo} alt="Logo"/>
         
         <span>
             <svg className="ach__success--phoneIcon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">

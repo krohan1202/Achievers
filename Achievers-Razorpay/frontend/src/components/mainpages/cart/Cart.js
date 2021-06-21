@@ -97,8 +97,8 @@ function Cart() {
             const data = fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) => {
                 t.json();
             })
+            
             const {REACT_APP_RAZ_TEST_KEY_ID, REACT_APP_RAZ_PRODUCTION_KEY_ID} = process.env;
-            console.log(REACT_APP_RAZ_PRODUCTION_KEY_ID)
 
             const cartAmount = total * 100;
             const options = {
@@ -170,13 +170,13 @@ function Cart() {
             <div className="total">
                 <h1 className="total--checkout">Checkout</h1>
                 <h2>Total: Rs. {total}</h2>
-                <a
+                <button
 					className="checkout-btn"
 					onClick={displayRazorpay}
 					rel="noopener noreferrer"
 				>
 					Proceed to Buy
-				</a>
+				</button>
             </div>
             <Footer />
         </div>

@@ -15,31 +15,40 @@
   left: 2.8vw;
   top: 1vw;
 }
+.nav__contact {
+  position: relative;
+  top: -6.7vw;
+  left: 10.4vw;
+  width: 41vw;
+}
+.nav__contact--email {
+  margin-left: 3.5vw;
+}
 .nav__phoneIcon,
 .nav__emailIcon {
   position: relative;
-  top: -7vw;
-  left: 9.3vw;
+  top: -0.1vw;
   width: 1.17vw;
 }
 .nav__emailIcon {
-  top: -9.87vw;
-  left: 80.25vw;
   width: 1.3vw;
 }
 .nav__helpLine,
 .nav__email {
   position: relative;
-  top: -8.6vw;
-  left: 43.9vw;
+  top: -0.4vw;
+  left: 0.5vw;
   color: #8fd0ff;
   font-family: "Montserrat", sans-serif;
   font-size: 0.91vw;
   font-weight: 700;
 }
-.nav__email {
-  top: -11.3vw;
-  left: 82.5vw;
+.nav__helpLine--a {
+  top: 0;
+  margin-right: 0.4vw;
+}
+.nav__email--mail {
+  top: 0;
 }
 .nav__createProduct {
   color: #fff;
