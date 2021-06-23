@@ -284,7 +284,7 @@ function Products() {
              checkProductinPopularEntranceCat ?
                 products.map(product => {
                     // console.log(product);
-                    return product.category === "60c0c9b76beb883fb0a00dc1"
+                    return product.category === process.env.REACT_APP_POP_ENTRANCE_CAT_ID
                         ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> 
                         : null
                 })
