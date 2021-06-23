@@ -1,12 +1,15 @@
 import React from "react";
 import Header from "../../headers/Header";
 import Footer from "../../footers/footer";
+
+import TermsBannerPic from "../../../assets/Pics/Policy/terms of use.png";
 // CSS same as About.js (some are in About.css) 
 
 export default function Terms() {
     return (
         <>
         <Header />
+        <img style={{width: '100%'}} src={TermsBannerPic} alt="Terms of Use Banner Pic"/>
         <div className="ach__about">
             <h3 style={{marginTop: '4vw'}} className="ach__about--subHeading--corporateEstablishment">WELCOME TO ACHIEVERS</h3>
             <p className="ach__about--aboutAch--p">Achievers Circle Private Limited having its registered office at 162, S. P. Mukherjee Road, Rashbehari Avenue (Ground Floor), Kolkata - 700026 (hereinafter referred to as "Achievers", "we", "us", or " our") provides online and offline courses including classes, live demo, doubt clearing sessions for the students seeking to enrol for such courses. By trying to access or using the Site, Application, or Services, or by downloading or posting any content from or on the Site, via the Applications, you are indicating that you have read, understood, and agreed to be bound by these “Terms of Use” between you and Achievers, regardless of whether you have registered with the Site and/or Application. So please carefully read these Terms of Use, as they contain important information about your legal rights, remedies, and obligations. You have no right to access or use the Site, Application, Services, or Achievers Content if you do not agree to these Terms.</p>
