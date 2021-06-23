@@ -1,10 +1,8 @@
 import React from "react";
 import Header from "../../headers/Header";
 import Footer from "../../footers/footer";
-// CSS same as About.js (some are in About.css) 
-
-// Assets
 import PrivacyBannerPic from "../../../assets/Pics/Policy/security & privacy.png";
+// CSS same as About.js (some are in About.css)
 
 export default function Privacy() {
     return (

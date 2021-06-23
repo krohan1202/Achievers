@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../../headers/Header";
 import Footer from "../../footers/footer";
-
 import TermsBannerPic from "../../../assets/Pics/Policy/terms of use.png";
 // CSS same as About.js (some are in About.css) 
 

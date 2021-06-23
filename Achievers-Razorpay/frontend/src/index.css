@@ -65,7 +65,6 @@ button {
 /* ----------------- Responsive ------------------ */
 @media (max-width: 820px) {
   header .logo {
-    min-width: 115px;
     flex: none;
   }
   header ul {

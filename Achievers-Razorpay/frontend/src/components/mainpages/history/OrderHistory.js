@@ -36,13 +36,15 @@ function OrderHistory() {
             <Header />
             <h2>History</h2>
 
-            <h4>You have {history.length} ordered</h4>
+            <h4>{history.length} 
+                {history.length === 1 ? <span> order</span> : <span> orders</span>}
+            </h4>
 
             <table>
                 <thead>
                     <tr>
                         <th>Payment ID</th>
-                        <th>Date of Purchased</th>
+                        <th>Date of Purchase</th>
                         <th></th>
                     </tr>
                 </thead>
