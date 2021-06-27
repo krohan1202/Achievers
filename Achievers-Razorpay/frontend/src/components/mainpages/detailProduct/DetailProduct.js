@@ -35,9 +35,9 @@ function DetailProduct() {
                     </div>
                     
                     <hr className="lineUnderTitle"></hr> 
-                    <span className="price">Rs. {detailProduct.price}.00</span>
+                    <span className="price">Rs. {detailProduct.price}</span>
                     <span className="price--inclusiveOfTaxes">Inclusive of all taxes</span>
-                    <p className="prevPrice"><s>Rs. {detailProduct.previousPrice}.00</s> (Save Rs.{(detailProduct.previousPrice)-(detailProduct.price)})</p>
+                    <p className="prevPrice"><s>Rs. {detailProduct.previousPrice}</s> (Save Rs.{(detailProduct.previousPrice)-(detailProduct.price)})</p>
                     <p className="content">{detailProduct.content}</p>
                     <Link to="/cart" className="cart" style={{width: "11.2vw"}}
                     onClick={() => addCart(detailProduct)}>

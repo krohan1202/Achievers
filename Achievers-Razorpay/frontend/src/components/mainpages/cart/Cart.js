@@ -169,7 +169,7 @@ function Cart() {
 
             <div className="total">
                 <h1 className="total--checkout">Checkout</h1>
-                <h2>Total: Rs. {total}</h2>
+                <h2>Total: Rs. {total.toFixed(2)}</h2>
                 <button
 					className="checkout-btn"
 					onClick={displayRazorpay}

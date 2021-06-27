@@ -179,8 +179,7 @@ function Products() {
                 checkProductinStudyMatCat ?
                 products.map(product => {
                     // console.log((categoryIds.some(checkCatId)));
-                    console.log(product.category === "60be699c7b148a49c09ec637")
-                    return (product.category === "60be699c7b148a49c09ec637")
+                    return (product.category === process.env.REACT_APP_STUDYMAT_CAT_ID)
                         ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> 
                         : null
                 })
