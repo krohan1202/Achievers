@@ -11,14 +11,14 @@
 }
 .logo {
   position: relative;
-  width: 32.55vw;
+  width: 29vw;
   left: 2.8vw;
-  top: 1vw;
+  top: 0.7vw;
 }
 .nav__contact {
   position: relative;
-  top: -6.7vw;
-  left: 10.4vw;
+  top: -8vw;
+  left: 14.8vw;
   width: 41vw;
 }
 .nav__contact--email {
