@@ -96,12 +96,12 @@ function Header() {
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="/">Home</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="/about">About Us</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="/our_courses">Our Courses</a></li>
-            <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">Result</a></li>
-            <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">Testimonials</a></li>
-            <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">General Info.</a></li>
+            <li className="nav__smallNav--li"><a className="nav__smallNav" href="https://achieverscircle.ml/results">Result</a></li>
+            <li className="nav__smallNav--li"><a className="nav__smallNav" href="https://achieverscircle.ml/testimonial">Testimonials</a></li>
+            <li className="nav__smallNav--li"><a className="nav__smallNav" href="https://achieverscircle.ml/help">General Info.</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="/careers">Careers</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="/about#ach__about__contactUs">Contact Us</a></li>
-            <li className="nav__smallNav--li"><a className="nav__smallNav" href="#">LIVE Enquiry Desk</a></li>
+            <li className="nav__smallNav--li"><a className="nav__smallNav" href="https://achieverscircle.ml/live">LIVE Enquiry Desk</a></li>
         </ul>
         </>
     )

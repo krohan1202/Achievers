@@ -48,7 +48,7 @@ function Pages() {
             <Route path="/careers" exact component={Careers} />
             <Route path="/about" exact component={About} />
 
-            <Route path="/return-policy" exact component={ReturnPolicy} />
+            <Route path="/refund-policy" exact component={ReturnPolicy} />
             <Route path="/terms-of-use" exact component={Terms} />
             <Route path="/security&privacy" exact component={Privacy} />
             

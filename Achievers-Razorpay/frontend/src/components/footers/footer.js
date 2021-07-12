@@ -20,7 +20,7 @@ function Footer() {
             <span className="ach__footer--policyPart">
                 <ul className="ach__footer--ul">
                 <li className="ach__footer--policyPart--li"><p className="ach__footer--policyPart--heading">POLICY</p></li>
-                <li className="ach__footer--policyPart--li"><a className="ach__footer--policyPart--links" href="/return-policy">Return Policy</a></li>
+                <li className="ach__footer--policyPart--li"><a className="ach__footer--policyPart--links" href="/refund-policy">Refund Policy</a></li>
                 <li className="ach__footer--policyPart--li"><a className="ach__footer--policyPart--links" href="/terms-of-use">Terms of Use</a></li>
                 <li className="ach__footer--policyPart--li"><a className="ach__footer--policyPart--links" href="/security&privacy">Security & Privacy</a></li>
                 </ul>

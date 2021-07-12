@@ -114,41 +114,41 @@ function Products() {
         <span className="hero__card1">
             <p className="hero__card1--heading">ACHIEVERS SCHOOL PROGRAM</p>
             <hr className="hero__card1--underline"></hr>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font">Class 4</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font">Class 5</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font">Class 6</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font">Class 7</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font">Class 8</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font">Class 9</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font">Class 10</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font">Class 11</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font">Class 12</a>
+            <a href="https://achieverscircle.ml/school" className="hero__card--btn hero__card3-font">Class 4</a>
+            <a href="https://achieverscircle.ml/school" className="hero__card--btn hero__card3-font">Class 5</a>
+            <a href="https://achieverscircle.ml/school" className="hero__card--btn hero__card3-font">Class 6</a>
+            <a href="https://achieverscircle.ml/school" className="hero__card--btn hero__card3-font">Class 7</a>
+            <a href="https://achieverscircle.ml/school" className="hero__card--btn hero__card3-font">Class 8</a>
+            <a href="https://achieverscircle.ml/school" className="hero__card--btn hero__card3-font">Class 9</a>
+            <a href="https://achieverscircle.ml/school" className="hero__card--btn hero__card3-font">Class 10</a>
+            <a href="https://achieverscircle.ml/school" className="hero__card--btn hero__card3-font">Class 11</a>
+            <a href="https://achieverscircle.ml/school" className="hero__card--btn hero__card3-font">Class 12</a>
         </span>
         <span className="hero__card2">
             <p className="hero__card1--heading">ACHIEVERS GRADUATION PROGRAM</p>
             <hr className="hero__card1--underline"></hr>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">Chemistry</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">Maths</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">Physics</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">Statistics</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">Comp Sc.</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">Economics</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">Bio Sc.</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">Literature</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">Others</a>
+            <a href="https://achieverscircle.ml/graduation" className="hero__card--btn hero__card3-font1">Chemistry</a>
+            <a href="https://achieverscircle.ml/graduation" className="hero__card--btn hero__card3-font1">Maths</a>
+            <a href="https://achieverscircle.ml/graduation" className="hero__card--btn hero__card3-font1">Physics</a>
+            <a href="https://achieverscircle.ml/graduation" className="hero__card--btn hero__card3-font1">Statistics</a>
+            <a href="https://achieverscircle.ml/graduation" className="hero__card--btn hero__card3-font1">Comp Sc.</a>
+            <a href="https://achieverscircle.ml/graduation" className="hero__card--btn hero__card3-font1">Economics</a>
+            <a href="https://achieverscircle.ml/graduation" className="hero__card--btn hero__card3-font1">Bio Sc.</a>
+            <a href="https://achieverscircle.ml/graduation" className="hero__card--btn hero__card3-font1">Literature</a>
+            <a href="https://achieverscircle.ml/graduation" className="hero__card--btn hero__card3-font1">Others</a>
         </span>
         <span className="hero__card3">
             <p className="hero__card1--heading">ACHIEVERS ENTRANCE PROGRAM</p>
             <hr className="hero__card1--underline"></hr>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font2">IIT-JEE (Main & Adv)</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">NEET</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font2">KVPY & Olympiad</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">IIT-JAM</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">BL-BT</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font2">Other MSc entrances</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">CSIR-NET</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">CSIR + Gate</a>
-            <a href="/our_courses#searchProducts" className="hero__card--btn hero__card3-font1">Others</a>
+            <a href="https://achieverscircle.ml/entrance" className="hero__card--btn hero__card3-font2">IIT-JEE (Main & Adv)</a>
+            <a href="https://achieverscircle.ml/entrance" className="hero__card--btn hero__card3-font1">NEET</a>
+            <a href="https://achieverscircle.ml/entrance" className="hero__card--btn hero__card3-font2">KVPY & Olympiad</a>
+            <a href="https://achieverscircle.ml/entrance" className="hero__card--btn hero__card3-font1">IIT-JAM</a>
+            <a href="https://achieverscircle.ml/entrance" className="hero__card--btn hero__card3-font1">BL-BT</a>
+            <a href="https://achieverscircle.ml/entrance" className="hero__card--btn hero__card3-font2">Other MSc entrances</a>
+            <a href="https://achieverscircle.ml/entrance" className="hero__card--btn hero__card3-font1">CSIR-NET</a>
+            <a href="https://achieverscircle.ml/entrance" className="hero__card--btn hero__card3-font1">CSIR + Gate</a>
+            <a href="https://achieverscircle.ml/entrance" className="hero__card--btn hero__card3-font1">Others</a>
         </span>
 
         {/* Achievers Study Materials  */}
@@ -197,57 +197,57 @@ function Products() {
                 <hr className="ach__allIndiaEntranceTest--underline"></hr>
                 <p className="ach__allIndiaEntranceTest--description">Our integrated teaching approach not only makes you shine in your school / board exams but also ensures that you are listed as a top Achiever in All India Entrance exams</p>
                 
-                <a className="ach__allIndiacard--btn ach__allIndiacard--btnNeet" href="/our_courses#searchProducts">NEET
+                <a className="ach__allIndiacard--btn ach__allIndiacard--btnNeet" href="https://achieverscircle.ml/test">NEET
                     <svg className="ach__allIndiaArrow" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.0148 12.7583L14.2417 7.98525C13.9118 7.65534 13.3777 7.65534 13.0486 7.98525C12.7187 8.31516 12.7187 8.84925 13.0486 9.17832L16.5257 12.6562H7.59375C7.128 12.6562 6.75 13.0343 6.75 13.5C6.75 13.9658 7.128 14.3438 7.59375 14.3438H16.5257L13.0486 17.8208C12.7187 18.1508 12.7187 18.6848 13.0486 19.0139C13.3785 19.3438 13.9126 19.3438 14.2416 19.0139L19.0147 14.2408C19.2172 14.0383 19.2796 13.7616 19.2341 13.4992C19.2797 13.2384 19.2164 12.9608 19.0148 12.7583ZM13.5 0C6.04377 0 0 6.04377 0 13.5C0 20.9562 6.04377 27 13.5 27C20.9562 27 27 20.9554 27 13.5C27 6.04465 20.9562 0 13.5 0ZM13.5 25.3125C6.9761 25.3125 1.6875 20.0239 1.6875 13.5C1.6875 6.9761 6.9761 1.6875 13.5 1.6875C20.0239 1.6875 25.3125 6.9761 25.3125 13.5C25.3125 20.0239 20.0239 25.3125 13.5 25.3125Z" fill="white"/>
                     </svg>
                 </a>
-                <a className="ach__allIndiacard--btn ach__allIndiacard--btnKVPY" href="/our_courses#searchProducts">KVPY
+                <a className="ach__allIndiacard--btn ach__allIndiacard--btnKVPY" href="https://achieverscircle.ml/test">KVPY
                     <svg className="ach__allIndiaArrow" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.0148 12.7583L14.2417 7.98525C13.9118 7.65534 13.3777 7.65534 13.0486 7.98525C12.7187 8.31516 12.7187 8.84925 13.0486 9.17832L16.5257 12.6562H7.59375C7.128 12.6562 6.75 13.0343 6.75 13.5C6.75 13.9658 7.128 14.3438 7.59375 14.3438H16.5257L13.0486 17.8208C12.7187 18.1508 12.7187 18.6848 13.0486 19.0139C13.3785 19.3438 13.9126 19.3438 14.2416 19.0139L19.0147 14.2408C19.2172 14.0383 19.2796 13.7616 19.2341 13.4992C19.2797 13.2384 19.2164 12.9608 19.0148 12.7583ZM13.5 0C6.04377 0 0 6.04377 0 13.5C0 20.9562 6.04377 27 13.5 27C20.9562 27 27 20.9554 27 13.5C27 6.04465 20.9562 0 13.5 0ZM13.5 25.3125C6.9761 25.3125 1.6875 20.0239 1.6875 13.5C1.6875 6.9761 6.9761 1.6875 13.5 1.6875C20.0239 1.6875 25.3125 6.9761 25.3125 13.5C25.3125 20.0239 20.0239 25.3125 13.5 25.3125Z" fill="white"/>
                     </svg>
                 </a>
-                <a className="ach__allIndiacard--btn" href="/our_courses#searchProducts">
+                <a className="ach__allIndiacard--btn" href="https://achieverscircle.ml/test">
                     IIT-JEE
                     <p className="ach__allIndiaIITJEEMainAdv">MAIN & ADV.</p>
                     <svg className="ach__allIndiaArrow" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.0148 12.7583L14.2417 7.98525C13.9118 7.65534 13.3777 7.65534 13.0486 7.98525C12.7187 8.31516 12.7187 8.84925 13.0486 9.17832L16.5257 12.6562H7.59375C7.128 12.6562 6.75 13.0343 6.75 13.5C6.75 13.9658 7.128 14.3438 7.59375 14.3438H16.5257L13.0486 17.8208C12.7187 18.1508 12.7187 18.6848 13.0486 19.0139C13.3785 19.3438 13.9126 19.3438 14.2416 19.0139L19.0147 14.2408C19.2172 14.0383 19.2796 13.7616 19.2341 13.4992C19.2797 13.2384 19.2164 12.9608 19.0148 12.7583ZM13.5 0C6.04377 0 0 6.04377 0 13.5C0 20.9562 6.04377 27 13.5 27C20.9562 27 27 20.9554 27 13.5C27 6.04465 20.9562 0 13.5 0ZM13.5 25.3125C6.9761 25.3125 1.6875 20.0239 1.6875 13.5C1.6875 6.9761 6.9761 1.6875 13.5 1.6875C20.0239 1.6875 25.3125 6.9761 25.3125 13.5C25.3125 20.0239 20.0239 25.3125 13.5 25.3125Z" fill="white"/>
                     </svg>
                 </a>
-                <a className="ach__allIndiacard--btn" href="/our_courses#searchProducts">
+                <a className="ach__allIndiacard--btn" href="https://achieverscircle.ml/test">
                     IIT-JAM 
                     <p className="ach__allIndiaIITJAMCrash">CRASH COURSE</p>
                     <svg className="ach__allIndiaArrow" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.0148 12.7583L14.2417 7.98525C13.9118 7.65534 13.3777 7.65534 13.0486 7.98525C12.7187 8.31516 12.7187 8.84925 13.0486 9.17832L16.5257 12.6562H7.59375C7.128 12.6562 6.75 13.0343 6.75 13.5C6.75 13.9658 7.128 14.3438 7.59375 14.3438H16.5257L13.0486 17.8208C12.7187 18.1508 12.7187 18.6848 13.0486 19.0139C13.3785 19.3438 13.9126 19.3438 14.2416 19.0139L19.0147 14.2408C19.2172 14.0383 19.2796 13.7616 19.2341 13.4992C19.2797 13.2384 19.2164 12.9608 19.0148 12.7583ZM13.5 0C6.04377 0 0 6.04377 0 13.5C0 20.9562 6.04377 27 13.5 27C20.9562 27 27 20.9554 27 13.5C27 6.04465 20.9562 0 13.5 0ZM13.5 25.3125C6.9761 25.3125 1.6875 20.0239 1.6875 13.5C1.6875 6.9761 6.9761 1.6875 13.5 1.6875C20.0239 1.6875 25.3125 6.9761 25.3125 13.5C25.3125 20.0239 20.0239 25.3125 13.5 25.3125Z" fill="white"/>
                     </svg>
                 </a>
-                <a className="ach__allIndiacard--btn" href="/our_courses#searchProducts">
+                <a className="ach__allIndiacard--btn" href="https://achieverscircle.ml/test">
                     CU & DU
                     <p className="ach__allIndiaCuDu">ENTR. EXAMS</p>
                     <svg className="ach__allIndiaArrow" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.0148 12.7583L14.2417 7.98525C13.9118 7.65534 13.3777 7.65534 13.0486 7.98525C12.7187 8.31516 12.7187 8.84925 13.0486 9.17832L16.5257 12.6562H7.59375C7.128 12.6562 6.75 13.0343 6.75 13.5C6.75 13.9658 7.128 14.3438 7.59375 14.3438H16.5257L13.0486 17.8208C12.7187 18.1508 12.7187 18.6848 13.0486 19.0139C13.3785 19.3438 13.9126 19.3438 14.2416 19.0139L19.0147 14.2408C19.2172 14.0383 19.2796 13.7616 19.2341 13.4992C19.2797 13.2384 19.2164 12.9608 19.0148 12.7583ZM13.5 0C6.04377 0 0 6.04377 0 13.5C0 20.9562 6.04377 27 13.5 27C20.9562 27 27 20.9554 27 13.5C27 6.04465 20.9562 0 13.5 0ZM13.5 25.3125C6.9761 25.3125 1.6875 20.0239 1.6875 13.5C1.6875 6.9761 6.9761 1.6875 13.5 1.6875C20.0239 1.6875 25.3125 6.9761 25.3125 13.5C25.3125 20.0239 20.0239 25.3125 13.5 25.3125Z" fill="white"/>
                     </svg>    
                 </a>
-                <a className="ach__allIndiacard--btn ach__allIndiacard--btnCSIR" href="/our_courses#searchProducts">
+                <a className="ach__allIndiacard--btn ach__allIndiacard--btnCSIR" href="https://achieverscircle.ml/test">
                     CSIR-NET &nbsp; + GATE
                     <svg className="ach__allIndiaArrow" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.0148 12.7583L14.2417 7.98525C13.9118 7.65534 13.3777 7.65534 13.0486 7.98525C12.7187 8.31516 12.7187 8.84925 13.0486 9.17832L16.5257 12.6562H7.59375C7.128 12.6562 6.75 13.0343 6.75 13.5C6.75 13.9658 7.128 14.3438 7.59375 14.3438H16.5257L13.0486 17.8208C12.7187 18.1508 12.7187 18.6848 13.0486 19.0139C13.3785 19.3438 13.9126 19.3438 14.2416 19.0139L19.0147 14.2408C19.2172 14.0383 19.2796 13.7616 19.2341 13.4992C19.2797 13.2384 19.2164 12.9608 19.0148 12.7583ZM13.5 0C6.04377 0 0 6.04377 0 13.5C0 20.9562 6.04377 27 13.5 27C20.9562 27 27 20.9554 27 13.5C27 6.04465 20.9562 0 13.5 0ZM13.5 25.3125C6.9761 25.3125 1.6875 20.0239 1.6875 13.5C1.6875 6.9761 6.9761 1.6875 13.5 1.6875C20.0239 1.6875 25.3125 6.9761 25.3125 13.5C25.3125 20.0239 20.0239 25.3125 13.5 25.3125Z" fill="white"/>
                     </svg>
                 </a>
-                <a className="ach__allIndiacard--btn" href="/our_courses#searchProducts">
+                <a className="ach__allIndiacard--btn" href="https://achieverscircle.ml/test">
                     TIFR
                     <p className="ach__allIndiaTIRFEntr">ENTR. TEST</p>
                     <svg className="ach__allIndiaArrow" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.0148 12.7583L14.2417 7.98525C13.9118 7.65534 13.3777 7.65534 13.0486 7.98525C12.7187 8.31516 12.7187 8.84925 13.0486 9.17832L16.5257 12.6562H7.59375C7.128 12.6562 6.75 13.0343 6.75 13.5C6.75 13.9658 7.128 14.3438 7.59375 14.3438H16.5257L13.0486 17.8208C12.7187 18.1508 12.7187 18.6848 13.0486 19.0139C13.3785 19.3438 13.9126 19.3438 14.2416 19.0139L19.0147 14.2408C19.2172 14.0383 19.2796 13.7616 19.2341 13.4992C19.2797 13.2384 19.2164 12.9608 19.0148 12.7583ZM13.5 0C6.04377 0 0 6.04377 0 13.5C0 20.9562 6.04377 27 13.5 27C20.9562 27 27 20.9554 27 13.5C27 6.04465 20.9562 0 13.5 0ZM13.5 25.3125C6.9761 25.3125 1.6875 20.0239 1.6875 13.5C1.6875 6.9761 6.9761 1.6875 13.5 1.6875C20.0239 1.6875 25.3125 6.9761 25.3125 13.5C25.3125 20.0239 20.0239 25.3125 13.5 25.3125Z" fill="white"/>
                     </svg>
                 </a>
-                <a className="ach__allIndiacard--btn ach__allIndiacard--btnBHU" href="/our_courses#searchProducts">
+                <a className="ach__allIndiacard--btn ach__allIndiacard--btnBHU" href="https://achieverscircle.ml/test">
                     BHU & IISER
                     <svg className="ach__allIndiaArrow" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.0148 12.7583L14.2417 7.98525C13.9118 7.65534 13.3777 7.65534 13.0486 7.98525C12.7187 8.31516 12.7187 8.84925 13.0486 9.17832L16.5257 12.6562H7.59375C7.128 12.6562 6.75 13.0343 6.75 13.5C6.75 13.9658 7.128 14.3438 7.59375 14.3438H16.5257L13.0486 17.8208C12.7187 18.1508 12.7187 18.6848 13.0486 19.0139C13.3785 19.3438 13.9126 19.3438 14.2416 19.0139L19.0147 14.2408C19.2172 14.0383 19.2796 13.7616 19.2341 13.4992C19.2797 13.2384 19.2164 12.9608 19.0148 12.7583ZM13.5 0C6.04377 0 0 6.04377 0 13.5C0 20.9562 6.04377 27 13.5 27C20.9562 27 27 20.9554 27 13.5C27 6.04465 20.9562 0 13.5 0ZM13.5 25.3125C6.9761 25.3125 1.6875 20.0239 1.6875 13.5C1.6875 6.9761 6.9761 1.6875 13.5 1.6875C20.0239 1.6875 25.3125 6.9761 25.3125 13.5C25.3125 20.0239 20.0239 25.3125 13.5 25.3125Z" fill="white"/>
                     </svg>
                 </a>
-                <a className="ach__allIndiacard--btn ach__allIndiacard--btnViewAll" href="/our_courses#searchProducts">
+                <a className="ach__allIndiacard--btn ach__allIndiacard--btnViewAll" href="https://achieverscircle.ml/test">
                     View All
                     <svg className="ach__allIndiaArrow" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.0148 12.7583L14.2417 7.98525C13.9118 7.65534 13.3777 7.65534 13.0486 7.98525C12.7187 8.31516 12.7187 8.84925 13.0486 9.17832L16.5257 12.6562H7.59375C7.128 12.6562 6.75 13.0343 6.75 13.5C6.75 13.9658 7.128 14.3438 7.59375 14.3438H16.5257L13.0486 17.8208C12.7187 18.1508 12.7187 18.6848 13.0486 19.0139C13.3785 19.3438 13.9126 19.3438 14.2416 19.0139L19.0147 14.2408C19.2172 14.0383 19.2796 13.7616 19.2341 13.4992C19.2797 13.2384 19.2164 12.9608 19.0148 12.7583ZM13.5 0C6.04377 0 0 6.04377 0 13.5C0 20.9562 6.04377 27 13.5 27C20.9562 27 27 20.9554 27 13.5C27 6.04465 20.9562 0 13.5 0ZM13.5 25.3125C6.9761 25.3125 1.6875 20.0239 1.6875 13.5C1.6875 6.9761 6.9761 1.6875 13.5 1.6875C20.0239 1.6875 25.3125 6.9761 25.3125 13.5C25.3125 20.0239 20.0239 25.3125 13.5 25.3125Z" fill="white"/>
@@ -260,7 +260,7 @@ function Products() {
         <div>
             <h1 className="ach__popularEntranceCourses--heading">ACHIEVERS POPULAR ENTRANCE COURSES</h1>
             <hr className="ach__popularEntranceCourses--underline"></hr>
-            <a className="ach__popularEntranceCourses--viewAllBtn" href="/our_courses#searchProducts">VIEW ALL</a>
+            <a className="ach__popularEntranceCourses--viewAllBtn" href="https://achieverscircle.ml/entrance">VIEW ALL</a>
 
             <p className="ach__popularEntranceCourses--description">Achievers provides comprehensive test preparatory services for students preparing for medical, engineering and various All-India entrance
                 examinations for Class 11, 12 as well as college students. We provide our services through classroom-based coaching and digital and distance
