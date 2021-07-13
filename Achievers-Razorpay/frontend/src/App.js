@@ -12,7 +12,7 @@ function App() {
           <div className="App">
             <MainPages />
           </div>
-          <h1 id="responsive--heading">View from desktop for a better experience ✨</h1>
+          <h1 id="responsive--heading">View from desktop for a better experience <span role="img" aria-label="Sparkle">✨</span></h1>
         </>
       </Router>
     </DataProvider>
