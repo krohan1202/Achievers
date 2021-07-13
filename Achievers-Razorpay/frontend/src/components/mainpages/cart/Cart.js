@@ -147,7 +147,7 @@ function Cart() {
                         <div className="box-detail">
                             <h2>{product.title}</h2>
 
-                            <h3>Rs. {product.price * product.quantity}</h3>
+                            <h3>Rs. {(product.price * product.quantity).toFixed(2)}</h3>
                             <p>{product.description}</p>
                             <p>{product.content}</p>
 
