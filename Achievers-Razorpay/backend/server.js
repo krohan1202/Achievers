@@ -24,31 +24,23 @@ app.use('/api', require('./routes/upload'));
 app.use('/api', require('./routes/productRouter'));
 app.use('/api', require('./routes/paymentRouter'));
 
-
 // Connect to mongodb
-const URI = process.env.MONGODB_URL
-mongoose.connect(URI, {
-    useCreateIndex: true,
-    useFindAndModify: false,
+mongoose
+  .connect(process.env.DATABASE, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
-}, err =>{
-    if(err) throw err;
-    console.log('Connected to MongoDB')
-})
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+	useFindAndModify: false
+  })
+  .then(() => {
+    console.log("DB CONNECTED!!");
+  });
 
 // Razorpay Integration
-const KEY_ID = process.env.PAYMENT_KEY_ID;
-const KEY_SECRET = process.env.PAYMENT_KEY_SECRET;
-
 const razorpay = new Razorpay({
-	key_id: KEY_ID,
-	key_secret: KEY_SECRET
+	key_id: process.env.PAYMENT_KEY_ID,
+	key_secret: process.env.PAYMENT_KEY_SECRET
 })
-
-// app.get('/logo.svg', (req, res) => {
-// 	res.sendFile(path.join(__dirname, 'logo.svg'))
-// })
 
 app.post('/verification', (req, res) => {
 	// do a validation
@@ -104,36 +96,10 @@ app.post("/sendTotal", (req, res) => {
 	})
 })
 
-// app.post('/razorpay', async (req, res) => {
-// 	const payment_capture = 1
-// 	const amount = 60
-// 	const currency = 'INR'
-
-// 	const options = {
-// 		amount: (amount * 100),
-// 		currency,
-// 		receipt: shortid.generate(),
-// 		payment_capture
-// 	}
-	
-// 	try {
-// 		const response = await razorpay.orders.create(options)
-// 		console.log(response)
-// 		res.json({
-// 			id: response.id,
-// 			currency: response.currency,
-// 			amount: response.amount
-// 		})
-// 	} catch (error) {
-// 		console.log(error)
-// 	}
-// })
-
 app.get('/',(req,res) => {
 	return res.send('Route Working.');
 });
 
-const PORT = process.env.PORT || 5000
-app.listen(PORT, () =>{
-    console.log('Server is running on port', PORT);
+app.listen(process.env.PORT || 5000, () =>{
+    console.log('Server is running on port');
 })
