@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
-import axios from 'axios'
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
+import axios from 'axios';
 
 function Login() {
     const [user, setUser] = useState({
@@ -16,8 +16,12 @@ function Login() {
     const loginSubmit = async e =>{
         e.preventDefault()
         try {
-            await axios.post('/user/login', {...user})
-
+            await axios.post('https://achievers-backend.herokuapp.com/user/login', {...user})
+            .then((req, res) => {
+                console.log(res);
+                console.log(req);
+                localStorage.setItem('accesstoken',req.data.accesstoken);
+            })
             localStorage.setItem('firstLogin', true)
             localStorage.setItem('email', {...user}.email)
             window.location.href = "/";
@@ -25,7 +29,6 @@ function Login() {
             alert(err.response.data.msg)
         }
     }
-
 
     return (
         <div className="login-page">
@@ -46,4 +49,4 @@ function Login() {
     )
 }
 
-export default Login
+export default Login;

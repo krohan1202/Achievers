@@ -1,5 +1,5 @@
-import {useState, useEffect} from 'react'
-import axios from 'axios'
+import {useState, useEffect} from 'react';
+import axios from 'axios';
 
 function CategoriesAPI() {
     const [categories, setCategories] = useState([])
@@ -7,7 +7,7 @@ function CategoriesAPI() {
 
     useEffect(() =>{
         const getCategories = async () =>{
-            const res = await axios.get('/api/category')
+            const res = await axios.get('https://achievers-backend.herokuapp.com/api/category')
             setCategories(res.data)
         }
 
@@ -19,4 +19,4 @@ function CategoriesAPI() {
     }
 }
 
-export default CategoriesAPI
+export default CategoriesAPI;

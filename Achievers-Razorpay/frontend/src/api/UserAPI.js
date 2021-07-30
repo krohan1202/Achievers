@@ -11,17 +11,16 @@ function UserAPI(token) {
         if(token){
             const getUser = async () =>{
                 try {
-                    const res = await axios.get('/user/infor', {
+                    const res = await axios.get('https://achievers-backend.herokuapp.com/user/infor', {
                         headers: {Authorization: token}
                     })
-
                     setIsLogged(true)
                     res.data.role === 1 ? setIsAdmin(true) : setIsAdmin(false)
 
                     setCart(res.data.cart)
 
                 } catch (err) {
-                    alert(err.response.data.msg)
+                    console.log(err.response.data.msg);
                 }
             }
 
@@ -42,7 +41,7 @@ function UserAPI(token) {
         if(check){
             setCart([...cart, {...product, quantity: 1}])
 
-            await axios.patch('/user/addcart', {cart: [...cart, {...product, quantity: 1}]}, {
+            await axios.patch('https://achievers-backend.herokuapp.com/user/addcart', {cart: [...cart, {...product, quantity: 1}]}, {
                 headers: {Authorization: token}
             })
 

@@ -26,7 +26,7 @@ function Cart() {
     },[cart])
 
     const addToCart = async (cart) =>{
-        await axios.patch('/user/addcart', {cart}, {
+        await axios.patch('https://achievers-backend.herokuapp.com/user/addcart', {cart}, {
             headers: {Authorization: token}
         })
     }
@@ -94,7 +94,7 @@ function Cart() {
             }
             // console.log(cart);
 
-            const data = fetch('http://localhost:5000/razorpay', { method: 'POST' }).then((t) => {
+            const data = fetch('https://achievers-backend.herokuapp.com/razorpay', { method: 'POST' }).then((t) => {
                 t.json();
             })
             
@@ -109,10 +109,9 @@ function Cart() {
                 order_id: data.id,
                 name: 'Achievers Pay',
                 description: 'Make your payment',
-                // image: 'http://localhost:1337/logo.svg',
                 handler: function (response) {
                     const razPayId = response.razorpay_payment_id;
-                    axios.post(`/api/razorpay_payment`, {email:email, cart: cart, razPayId: razPayId})
+                    axios.post(`https://achievers-backend.herokuapp.com/api/razorpay_payment`, {email:email, cart: cart, razPayId: razPayId})
                     window.location.href = "/success"
                     setCart([])
                     addToCart([])
@@ -131,24 +130,23 @@ function Cart() {
             return (
                 <>
                 <Header />
-                <h2 style={{textAlign: "center", fontSize: "5rem", margin: "5.5vw auto"}}>Cart Empty</h2>
+                <h2 className="cart--empty">Cart Empty</h2>
                 <Footer />
                 </>
             )}
-
+        
     return (
         <div>
            <Header />
+           <div className="cartProd">
             {
                 cart.map(product => (
-                    <div className="detail cart" key={product._id}>
+                    <div className="detail cart cartProd--mobile" key={product._id}>
                         <img src={product.images.url} alt="" />
 
                         <div className="box-detail">
                             <h2>{product.title}</h2>
-
                             <h3>Rs. {(product.price * product.quantity).toFixed(2)}</h3>
-                            <p>{product.description}</p>
                             <p>{product.content}</p>
 
                             <div className="amount">
@@ -177,6 +175,7 @@ function Cart() {
 				>
 					Proceed to Buy
 				</button>
+            </div>
             </div>
             <Footer />
         </div>

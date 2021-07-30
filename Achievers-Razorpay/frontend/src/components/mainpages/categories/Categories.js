@@ -1,5 +1,5 @@
-import React, {useState, useContext} from 'react'
-import {GlobalState} from '../../../GlobalState'
+import React, {useState, useContext} from 'react';
+import {GlobalState} from '../../../GlobalState';
 import axios from 'axios';
 import Header from "../../headers/Header";
 import Footer from "../../footers/footer";
@@ -17,12 +17,12 @@ function Categories() {
         e.preventDefault()
         try {
             if(onEdit){
-                const res = await axios.put(`/api/category/${id}`, {name: category}, {
+                const res = await axios.put(`https://achievers-backend.herokuapp.com/api/category/${id}`, {name: category}, {
                     headers: {Authorization: token}
                 })
                 alert(res.data.msg)
             }else{
-                const res = await axios.post('/api/category', {name: category}, {
+                const res = await axios.post('https://achievers-backend.herokuapp.com/api/category', {name: category}, {
                     headers: {Authorization: token}
                 })
                 alert(res.data.msg)
@@ -44,7 +44,7 @@ function Categories() {
 
     const deleteCategory = async id =>{
         try {
-            const res = await axios.delete(`/api/category/${id}`, {
+            const res = await axios.delete(`https://achievers-backend.herokuapp.com/api/category/${id}`, {
                 headers: {Authorization: token}
             })
             alert(res.data.msg)
@@ -62,7 +62,7 @@ function Categories() {
                 <input type="text" name="category" value={category} required
                 onChange={e => setCategory(e.target.value)} />
 
-                <button type="submit">{onEdit? "Update" : "Create"}</button>
+                <button className="category--newCatInputButton" type="submit">{onEdit? "Update" : "Create"}</button>
             </form>
 
             <div className="col">
@@ -83,4 +83,4 @@ function Categories() {
     )
 }
 
-export default Categories
+export default Categories;

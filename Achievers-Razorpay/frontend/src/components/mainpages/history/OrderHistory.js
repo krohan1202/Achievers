@@ -1,7 +1,7 @@
-import React, {useContext, useEffect} from 'react'
-import {GlobalState} from '../../../GlobalState'
-import {Link} from 'react-router-dom'
-import axios from 'axios'
+import React, {useContext, useEffect} from 'react';
+import {GlobalState} from '../../../GlobalState';
+import {Link} from 'react-router-dom';
+import axios from 'axios';
 import Header from "../../headers/Header";
 import Footer from "../../footers/footer";
 
@@ -16,12 +16,12 @@ function OrderHistory() {
         if(token){
             const getHistory = async() =>{
                 if(isAdmin){
-                    const res = await axios.get('/api/payment', {
+                    const res = await axios.get('https://achievers-backend.herokuapp.com/api/payment', {
                         headers: {Authorization: token}
                     })
                     setHistory(res.data)
                 }else{
-                    const res = await axios.get('/user/history', {
+                    const res = await axios.get('https://achievers-backend.herokuapp.com/user/history', {
                         headers: {Authorization: token}
                     })
                     setHistory(res.data)

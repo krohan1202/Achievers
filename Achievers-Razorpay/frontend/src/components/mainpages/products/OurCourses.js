@@ -48,10 +48,10 @@ function OurCourses() {
     const deleteProduct = async(id, public_id) => {
         try {
             setLoading(true)
-            const destroyImg = axios.post('/api/destroy', {public_id},{
+            const destroyImg = axios.post('https://achievers-backend.herokuapp.com/api/destroy', {public_id},{
                 headers: {Authorization: token}
             })
-            const deleteProduct = axios.delete(`/api/products/${id}`, {
+            const deleteProduct = axios.delete(`https://achievers-backend.herokuapp.com/api/products/${id}`, {
                 headers: {Authorization: token}
             })
 
@@ -151,7 +151,7 @@ function OurCourses() {
                     <span className="courses__filters--categoryRow">
                         <span>Filters: </span>
                         <select className="courses__filters--categoryRow--dropdown" name="category" value={category} onChange={handleCategory} >
-                            <option value=''>All Products</option>
+                            <option className="courses__filters--categoryRow--dropdown--AllProds" value=''>All Products</option>
                             {
                                 categories.map(category => (
                                     <option value={"category=" + category._id} key={category._id}>
@@ -218,7 +218,7 @@ function OurCourses() {
                     <div className="courses__experienceTheBest--Row1Card">
                         <img className="courses__experienceTheBest--Pic" src={PersonalizedDetailedAnalysis} alt="Icon"/>
                         <p className="courses__experienceTheBest--Heading">Personalized, detailed Analysis</p>
-                        <p className="courses__experienceTheBest--description">Know your weaknesses, strengths and everything else that you need to know to improve your score and rank.</p>
+                        <p className="courses__experienceTheBest--description courses__experienceTheBest--description--mobile">Know your weaknesses, strengths and everything else that you need to know to improve your score and rank.</p>
                     </div>
                 </div>
 
@@ -226,12 +226,12 @@ function OurCourses() {
                     <div className="courses__experienceTheBest--Row2Card">
                         <img className="courses__experienceTheBest--Pic" src={LiveTest} alt="Icon"/>
                         <p className="courses__experienceTheBest--Heading">Live Tests for Real Exam Experience</p>
-                        <p className="courses__experienceTheBest--description">Get your All-India Rank and feel the thrill of a real-exam. Groom your pressure handling and time management skills</p>
+                        <p className="courses__experienceTheBest--description courses__experienceTheBest--description--mobile">Get your All-India Rank and feel the thrill of a real-exam. Groom your pressure handling and time management skills</p>
                     </div>
                     <div className="courses__experienceTheBest--Row2Card">
                         <img className="courses__experienceTheBest--Pic" src={CommunityForLearning} alt="Icon"/>
                         <p className="courses__experienceTheBest--Heading">Community for Learning</p>
-                        <p className="courses__experienceTheBest--description">Clear all your queries and doubts on our discussion platform. Directly interact with experts, teachers and your peers.</p>
+                        <p className="courses__experienceTheBest--description courses__experienceTheBest--description--mobile">Clear all your queries and doubts on our discussion platform. Directly interact with experts, teachers and your peers.</p>
                     </div>
                     <div className="courses__experienceTheBest--Row2Card">
                         <img className="courses__experienceTheBest--Pic" src={GraphicPresentation} alt="Icon"/>

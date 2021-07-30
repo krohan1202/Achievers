@@ -67,7 +67,7 @@ button {
 @import url("./components/mainpages/createProduct/createProduct.css");
 
 /* ----------------- Responsive ------------------ */
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
   .App {
     display: none;
   }
@@ -81,4 +81,4 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
+} */

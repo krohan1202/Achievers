@@ -1,5 +1,5 @@
-import {useState, useEffect} from 'react'
-import axios from 'axios'
+import {useState, useEffect} from 'react';
+import axios from 'axios';
 
 
 function HomeProductsAPI() {
@@ -13,7 +13,7 @@ function HomeProductsAPI() {
 
     useEffect(() =>{
         const getProducts = async () => {
-            const res = await axios.get(`/api/products?limit=${page*20}&${category}&${sort}&title[regex]=${search}`)
+            const res = await axios.get(`https://achievers-backend.herokuapp.com/api/products?limit=${page*20}&${category}&${sort}&title[regex]=${search}`)
             setProducts(res.data.products)
             setResult(res.data.result)
         }

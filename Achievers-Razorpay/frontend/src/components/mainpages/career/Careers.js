@@ -71,7 +71,7 @@ function Careers() {
                     <div className="careers__statsUnderTopBanner--stat">
                         <img className="careers__statsUnderTopBanner--statImg" src={StatCloudPic} alt="Stats"/>
                         <span className="careers__statsUnderTopBanner--statNumber">1K+</span>
-                        <span className="careers__statsUnderTopBanner--statDescription">App Downloads</span>
+                        <span className="careers__statsUnderTopBanner--statDescription">&nbsp;App Downloads</span>
                     </div>
                 </div>
                 <div id="careers__welcomeToAch" className="careers__welcomeToAch">

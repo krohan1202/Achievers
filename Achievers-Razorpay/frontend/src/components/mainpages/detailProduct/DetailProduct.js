@@ -1,7 +1,7 @@
-import React, {useContext, useState, useEffect} from 'react'
-import {useParams, Link} from 'react-router-dom'
-import {GlobalState} from '../../../GlobalState'
-import ProductItem from '../utils/productItem/ProductItem'
+import React, {useContext, useState, useEffect} from 'react';
+import {useParams, Link} from 'react-router-dom';
+import {GlobalState} from '../../../GlobalState';
+import ProductItem from '../utils/productItem/ProductItem';
 import Header from "../../headers/Header";
 import Footer from "../../footers/footer";
 
@@ -28,6 +28,7 @@ function DetailProduct() {
         <>
         <Header />
             <div className="detail">
+            <h2 className="detail--title--mobile">{detailProduct.title}</h2>
                 <img src={detailProduct.images.url} alt="" />
                 <div className="box-detail">
                     <div className="row">
@@ -39,7 +40,7 @@ function DetailProduct() {
                     <span className="price--inclusiveOfTaxes">Inclusive of all taxes</span>
                     <p className="prevPrice"><s>Rs. {detailProduct.previousPrice}</s> (Save Rs.{(detailProduct.previousPrice)-(detailProduct.price)})</p>
                     <p className="content">{detailProduct.content}</p>
-                    <Link to="/cart" className="cart" style={{width: "11.2vw"}}
+                    <Link to="/cart" className="cart"
                     onClick={() => addCart(detailProduct)}>
                         Buy Now
                     </Link>

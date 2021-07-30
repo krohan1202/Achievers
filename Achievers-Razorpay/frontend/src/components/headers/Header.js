@@ -12,11 +12,13 @@ function Header() {
     const [isLogged] = state.userAPI.isLogged
     const [isAdmin] = state.userAPI.isAdmin
     const [cart] = state.userAPI.cart
-
+    // console.log(state.userAPI.isLogged);
     const logoutUser = async () =>{
-        await axios.get('/user/logout')
+        await axios.get('https://achievers-backend.herokuapp.com/user/logout')
         
         localStorage.removeItem('firstLogin')
+        localStorage.removeItem('accesstoken')
+        localStorage.removeItem('email')
         
         window.location.href = "/";
     }
@@ -30,19 +32,34 @@ function Header() {
         )
     }
 
+    const adminMobileSmallNavRouter = () =>{
+        return(
+            <ul className="navAdminSmallNav--ul">
+                <li><Link className="navAdminSmallNav__createProduct" to="/create_product">Create Product</Link></li>
+                <li><Link className="navAdminSmallNav__category" to="/category">Categories</Link></li>
+            </ul>
+        )
+    }
+
     const loggedRouter = () =>{
         return(
             <>
                 {isAdmin ? null : <li><Link to="/history"><span className="nav__orderHistory">History</span></Link></li>}
                 <li><Link to="/" onClick={logoutUser}>
-                        <svg className="nav__loginIcon" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.5 0C8.288 0 0 8.288 0 18.5C0 28.712 8.288 37 18.5 37C28.712 37 37 28.712 37 18.5C37 8.288 28.712 0 18.5 0ZM18.5 5.55C21.571 5.55 24.05 8.029 24.05 11.1C24.05 14.171 21.571 16.65 18.5 16.65C15.429 16.65 12.95 14.171 12.95 11.1C12.95 8.029 15.429 5.55 18.5 5.55ZM18.5 31.82C16.3019 31.82 14.138 31.2761 12.2013 30.2367C10.2645 29.1973 8.61504 27.6947 7.4 25.863C7.4555 22.1815 14.8 20.165 18.5 20.165C22.1815 20.165 29.5445 22.1815 29.6 25.863C28.385 27.6947 26.7355 29.1973 24.7987 30.2367C22.862 31.2761 20.6981 31.82 18.5 31.82Z" fill="white"/>
+                        <svg className="nav__logoutIcon" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29 0H0V29H29V0Z" fill="white" fillOpacity="0.01"/>
+                            <path d="M14.495 3.625H3.625V25.375H14.5" stroke="white" strokeWidth="2.41667" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M19.9375 19.9375L25.375 14.5L19.9375 9.0625" stroke="white" strokeWidth="2.41667" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M9.66669 14.495H25.375" stroke="#FFFDFD" strokeWidth="2.41667" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                         <span className="nav__logout">Logout</span>
                     </Link></li>
             </>
         )
     }
+
+    // For Hamburger
+    let x = ["hamburger"];
 
     return (
         <>
@@ -68,19 +85,19 @@ function Header() {
                 {isAdmin && adminRouter()}
 
                 {
-                    isLogged ? loggedRouter() : <li><Link to="/login">
+                    isLogged ? loggedRouter() : <Link to="/login">
                         <svg className="nav__loginIcon" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18.5 0C8.288 0 0 8.288 0 18.5C0 28.712 8.288 37 18.5 37C28.712 37 37 28.712 37 18.5C37 8.288 28.712 0 18.5 0ZM18.5 5.55C21.571 5.55 24.05 8.029 24.05 11.1C24.05 14.171 21.571 16.65 18.5 16.65C15.429 16.65 12.95 14.171 12.95 11.1C12.95 8.029 15.429 5.55 18.5 5.55ZM18.5 31.82C16.3019 31.82 14.138 31.2761 12.2013 30.2367C10.2645 29.1973 8.61504 27.6947 7.4 25.863C7.4555 22.1815 14.8 20.165 18.5 20.165C22.1815 20.165 29.5445 22.1815 29.6 25.863C28.385 27.6947 26.7355 29.1973 24.7987 30.2367C22.862 31.2761 20.6981 31.82 18.5 31.82Z" fill="white"/>
                         </svg>
-                        <span className="nav__login">Login / Signup</span></Link></li>
+                        <span className="nav__login">Login / Signup</span></Link>
                 }
             </ul>
 
             {
                 isAdmin ? '' 
                 :<span className="cart-icon">
-                    <span>{cart.length}</span>
                     <Link to="/cart">
+                    <span>{cart.length}</span>
                         <svg width="1.82vw" viewBox="0 0 576 512" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M528.12 301.319L575.393 93.319C578.806 78.301 567.391 64 551.99 64H159.208L150.042 19.19C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24V40C0 53.255 10.745 64 24 64H93.883L164.131 407.435C147.325 417.1 136 435.222 136 456C136 486.928 161.072 512 192 512C222.928 512 248 486.928 248 456C248 440.326 241.553 426.165 231.176 416H440.823C430.447 426.165 424 440.326 424 456C424 486.928 449.072 512 480 512C510.928 512 536 486.928 536 456C536 433.828 523.112 414.668 504.421 405.595L509.938 381.319C513.351 366.301 501.936 352 486.535 352H218.117L211.572 320H504.717C515.923 320 525.637 312.246 528.12 301.319Z" fill="white"/>
                         </svg>
@@ -103,6 +120,33 @@ function Header() {
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="/about#ach__about__contactUs">Contact Us</a></li>
             <li className="nav__smallNav--li"><a className="nav__smallNav" href="/">LIVE Enquiry Desk</a></li>
         </ul>
+        <ul>
+            {isAdmin && adminMobileSmallNavRouter()}
+        </ul>
+        <div className="menu-wrap">
+                    <input type="checkbox" className="toggler" />
+                    <div className="hamburger">
+                        <div className="line"></div>
+                        <div className="line2"></div>
+                        <div className="line3"></div>
+                    </div>
+                    <div className="menu">
+                        <div>
+                            <img className="ham__logo" src={Logo} alt="Logo" />
+                            <ul>
+                                <li className="hamlinks"><a className="hamburger__navlinks__shop" href="/">Home</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__about" href="/about">About Us</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__pods" href="/our_courses">Our Courses</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__news" href="https://achieverscircle.ml/results">Result</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__contact" href="https://achieverscircle.ml/testimonial">Testimonials</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__contact" href="/">General Info</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__contact" href="/careers">Careers</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__contact" href="/about#ach__about__contactUs">Contact Us</a></li>
+                                <li className="hamlinks"><a className="hamburger__navlinks__contact" href="/">LIVE Enquiry Desk</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
         </>
     )
 }

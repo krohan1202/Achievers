@@ -12,6 +12,11 @@ function JobCards(props) {
             <p className="careers__jobCards--jobTitle">{props.jobTitle}</p>
             <p className="careers__jobCards--jobHighlightsHeading">Job Highlights</p>
             <p className="careers__jobCards--jobRequirements">{props.jobRequirements}</p>
+            <div className="careers__jobCards--mobile">
+              <p className="careers__jobCards--jobDescription">Job Description</p>
+              <p className="careers__jobCards--rolesAndResponsibilitiesHeading">Roles And Responsibilities</p>
+              {rolesAndResponsibilities}
+            </div>
             <a href={props.link} className="careers__jobCards--applyBtn">Apply Now</a>
           </div>
 
@@ -19,7 +24,8 @@ function JobCards(props) {
             <p className="careers__jobCards--jobDescription">Job Description</p>
             <p className="careers__jobCards--rolesAndResponsibilitiesHeading">Roles And Responsibilities</p>
             {rolesAndResponsibilities}
-          </div>  
+          </div>
+          <a href={props.link} className="careers__jobCards--applyBtn--mobile">Apply Now</a>
          
       </div>
     );

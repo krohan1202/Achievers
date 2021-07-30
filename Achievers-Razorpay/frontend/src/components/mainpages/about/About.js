@@ -249,7 +249,6 @@ export default function About() {
 
                     {/* Executive Officers */}
                     <div className="ach__about__ourTeam--academicCoordinators">
-                        {/* <p className="careers__ourTeam--academicCoordinatorsHeading">EXECUTIVE OFFICERS</p> */}
                         <div className="ach__about__ourTeam--academicCoordinatorsCard">
                             <img className="ach__about__ourTeam--academicCoordinatorsCardImg" src={ExecutiveOfficer1} alt="Executive Officers"/>
                             <span className="ach__about__ourTeam--academicCoordinatorsCardName">Mr. Amir Hossai Molla</span>

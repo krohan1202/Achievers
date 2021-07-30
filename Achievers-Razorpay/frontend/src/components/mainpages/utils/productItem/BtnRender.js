@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-import {Link} from 'react-router-dom';
 import {GlobalState} from '../../../../GlobalState';
 
 function BtnRender({product, deleteProduct}) {
@@ -12,14 +11,14 @@ function BtnRender({product, deleteProduct}) {
             {
                 isAdmin ? 
                 <>
-                    <Link id="btn_view" to={`/edit_product/${product._id}`}>
+                    <a id="btn_view" href={`/edit_product/${product._id}`}>
                         Edit
-                    </Link>
+                    </a>
                 </>
                 : <>
-                    <Link id="btn_view" to={`/detail/${product._id}`}>
+                    <a id="btn_view" href={`/detail/${product._id}`}>
                         View
-                    </Link>
+                    </a>
                 </>
             }
                 

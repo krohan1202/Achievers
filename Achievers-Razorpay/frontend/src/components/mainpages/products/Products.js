@@ -8,16 +8,16 @@ import Header from "../../headers/Header";
 import Footer from "../../footers/footer";
 
 //Assets
-import HeroVid from "../../../assets/Pics/Home/2-Hero/Video Part.png";
 import StudyMatStarredTexts from "../../../assets/Pics/Home/3-Study Materials/Starred Texts.png";
-import PopularEntranceCoursesVid from "../../../assets/Pics/Home/5-Popular Entrance Courses/Video Part.png";
+import StudyMatStarredTextsMobile from "../../../assets/Pics/Home/3-Study Materials/Starred Texts--mobile.png";
 import WhyAchStarredTexts from "../../../assets/Pics/Home/6-Why Achievers/Starred Texts.png";
+import WhyAchStarredTextsMobile from "../../../assets/Pics/Home/6-Why Achievers/Starred Texts--mobile.png";
 import TopperMoreInfo from "../../../assets/Pics/Home/7-Topper Fav/Topper & More info.png";
 
 const breakPoints = [
-    { width: 1, itemsToShow: 3 },
-    { width: 550, itemsToShow: 4 },
-    { width: 768, itemsToShow: 5 },
+    { width: 1, itemsToShow: 2 },
+    { width: 550, itemsToShow: 2 },
+    { width: 768, itemsToShow: 3 },
     { width: 1200, itemsToShow: 6 },
   ];
   const breakPointsYoutubeVids = [
@@ -45,10 +45,10 @@ function Products() {
     const deleteProduct = async(id, public_id) => {
         try {
             setLoading(true)
-            const destroyImg = axios.post('/api/destroy', {public_id},{
+            const destroyImg = axios.post('https://achievers-backend.herokuapp.com/api/destroy', {public_id},{
                 headers: {Authorization: token}
             })
-            const deleteProduct = axios.delete(`/api/products/${id}`, {
+            const deleteProduct = axios.delete(`https://achievers-backend.herokuapp.com/api/products/${id}`, {
                 headers: {Authorization: token}
             })
 
@@ -82,7 +82,7 @@ function Products() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await axios.post('/api/', {firstName: firstName, lastName: lastName, email: email, phone: phone})
+        await axios.post('https://achievers-backend.herokuapp.com/api/', {firstName: firstName, lastName: lastName, email: email, phone: phone})
         setFirstName("");
         setLastName("");
         setEmail("");
@@ -109,8 +109,9 @@ function Products() {
     return (
         <>
         <Header />
-        <img src={HeroVid} alt="Hero Banner" className="hero__vid" />
-        
+        <video autoPlay loop muted className="hero__vid">
+            <source src={"https://res.cloudinary.com/achievers-cloud/video/upload/v1627015069/test/HeroVid_bjawe3.mp4"} type="video/mp4" alt="Hero Banner"/>
+        </video>
         <span className="hero__card1">
             <p className="hero__card1--heading">ACHIEVERS SCHOOL PROGRAM</p>
             <hr className="hero__card1--underline"></hr>
@@ -160,6 +161,7 @@ function Products() {
                 <span className="ach__studyMat--innovativeStudyMat">Innovative</span>
                 <span className="ach__studyMat--innovativeStudyMat ach__studyMat--studyMat"> Study Materials</span>
                 <img className="ach__studyMat--starredTexts" src={StudyMatStarredTexts} alt="Benefits" />
+                <img className="ach__studyMat--starredTexts--mobile" src={StudyMatStarredTextsMobile} alt="Benefits" />
             </span>
             <p className="ach__stdyMat--carefully">Carefully prepared by the experts at Achievers</p>
 
@@ -183,7 +185,7 @@ function Products() {
                         ? <ProductItem key={product._id} product={product} isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} /> 
                         : null
                 })
-                : <p className="ach__cat--noProducts">Stay tuned! More courses coming soon...</p>
+                : <p className="ach__cat--noProducts">Stay tuned! More study materials coming soon...</p>
             }
             </Carousel>
         </div>
@@ -191,7 +193,7 @@ function Products() {
         {products.length === 0 && <Loading />}
         
         <div className="ach__allIndiaPart">
-            <div className="ach__allIndiaVid"></div>
+            <iframe className="ach__allIndiaVid" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FAchieversCirclePrivateLimited%2Fvideos%2F1415833671799794%2F&show_text=false&width=560&t=0" scrolling="no" frameBorder="0" allowFullScreen={true} allow="clipboard-write; encrypted-media; picture-in-picture; web-share" title="Nikita Chirpal Interview"></iframe>
             <div className="ach__allIndiaEntranceTest">
                 <p className="ach__allIndiaEntranceTest--heading">ACHIEVERS ALL INDIA ENTRANCE TEST SERIES</p>
                 <hr className="ach__allIndiaEntranceTest--underline"></hr>
@@ -262,10 +264,8 @@ function Products() {
             <hr className="ach__popularEntranceCourses--underline"></hr>
             <a className="ach__popularEntranceCourses--viewAllBtn" href="https://achieverscircle.ml/entrance">VIEW ALL</a>
 
-            <p className="ach__popularEntranceCourses--description">Achievers provides comprehensive test preparatory services for students preparing for medical, engineering and various All-India entrance
-                examinations for Class 11, 12 as well as college students. We provide our services through classroom-based coaching and digital and distance
-                learning, which supplement our classroom courses and allow students to engage in self-paced learning, which supplement our classroom courses and
-                allow students in self-paced learning. We also offer short-term classroom courses to prepare students for their upcoming examinations.
+            <p className="ach__popularEntranceCourses--description">
+            Achievers provides comprehensive test preparatory services for students preparing for medical, engineering and various All-India entrance examinations for Class 11, 12 as well as college students.
             </p>
 
             {
@@ -294,7 +294,9 @@ function Products() {
 
         {products.length === 0 && <Loading />}
 
-        <img className="ach__popularEntranceCourses--vid" src={PopularEntranceCoursesVid} alt="Popular Entrance Courses"/>
+        <video autoPlay loop muted className="ach__popularEntranceCourses--vid">
+            <source src={"https://res.cloudinary.com/achievers-cloud/video/upload/v1627028321/test/BottomHomeVid_y42lij.mp4"} type="video/mp4" alt="Hero Banner"/>
+        </video>
         </div>
 
         {/* Achievers Hall of Fame */}
@@ -342,6 +344,7 @@ function Products() {
             <h1 className="ach__whyAch--heading">WHY ACHIEVERS?</h1>
             <hr className="ach__whyAch--underline"></hr>
             <img className="ach__whyAch--starredTexts" src={WhyAchStarredTexts} alt="Benefits" />
+            <img className="ach__whyAch--starredTexts--mobile" src={WhyAchStarredTextsMobile} alt="Benefits" />
         </span>
 
         {/* General Enquiry */}

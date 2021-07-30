@@ -8,7 +8,7 @@ export default function Privacy() {
     return (
         <>
         <Header />
-        <img style={{width: '100%'}} src={PrivacyBannerPic} alt="Terms of Use Banner Pic"/>
+        <img className="policy__banner policy__banner--privacy" src={PrivacyBannerPic} alt="Terms of Use Banner Pic"/>
         <div className="ach__about">
             <p style={{marginTop: '4vw'}} className="ach__about--aboutAch--p">This privacy statement explains how Achievers Circle Private Limited (“ACPL”) uses and safeguards any information you provide to Achievers Circle Private Limited when using this website. Achievers Circle Private Limited (“ACPL”) is committed to protecting your privacy. If we ask you to give information that may be used to identify you while using this website, you can be certain that it will only be used in line with this privacy policy. Achievers Circle Private Limited (“ACPL”) reserves the right to alter this policy at any time by updating this website. You should revisit this page on a regular basis to confirm that you are satisfied with any changes.</p> 
             

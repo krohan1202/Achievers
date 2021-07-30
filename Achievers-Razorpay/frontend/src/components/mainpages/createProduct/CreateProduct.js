@@ -71,7 +71,7 @@ function CreateProduct() {
       console.log(formData.get("file"));
 
       setLoading(true);
-      const res = await axios.post("/api/upload", formData, {
+      const res = await axios.post("https://achievers-backend.herokuapp.com/api/upload", formData, {
         headers: { "content-type": "multipart/form-data", Authorization: token },
       });
       setLoading(false);
@@ -87,7 +87,7 @@ function CreateProduct() {
       if (!isAdmin) return alert("You're not an admin");
       setLoading(true);
       await axios.post(
-        "/api/destroy",
+        "https://achievers-backend.herokuapp.com/api/destroy",
         { public_id: images.public_id },
         {
           headers: { Authorization: token },
@@ -110,11 +110,11 @@ function CreateProduct() {
     e.preventDefault();
     try {
       if (!isAdmin) return alert("You're not an admin");
-      if (!images) return alert("No Image Upload");
+      if (!images) return alert("No Image Uploaded");
 
       if (onEdit) {
         await axios.put(
-          `/api/products/${product._id}`,
+          `https://achievers-backend.herokuapp.com/api/products/${product._id}`,
           { ...product, images },
           {
             headers: { Authorization: token },
@@ -122,7 +122,7 @@ function CreateProduct() {
         );
       } else {
         await axios.post(
-          "/api/products",
+          "https://achievers-backend.herokuapp.com/api/products",
           { ...product, images },
           {
             headers: { Authorization: token },

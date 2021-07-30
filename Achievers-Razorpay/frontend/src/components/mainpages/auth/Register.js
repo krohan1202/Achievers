@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
-import axios from 'axios'
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
+import axios from 'axios';
 
 function Register() {
     const [user, setUser] = useState({
@@ -15,7 +15,7 @@ function Register() {
     const registerSubmit = async e =>{
         e.preventDefault()
         try {
-            await axios.post('/user/register', {...user})
+            await axios.post('https://achievers-backend.herokuapp.com/user/register', {...user})
             
             window.location.href = "/";
         } catch (err) {
