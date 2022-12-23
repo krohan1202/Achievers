@@ -19,7 +19,7 @@
     "express-fileupload": "^1.2.0",
     "express-validator": "^6.10.0",
     "instamojo-nodejs": "0.0.5",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.10.1",
     "razorpay": "^2.0.6",
     "shortid": "^2.2.15"
